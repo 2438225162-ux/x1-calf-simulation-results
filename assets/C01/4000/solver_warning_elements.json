@@ -1,0 +1,1995 @@
+{
+  "schema": "c01-solver-diagnostics/v1",
+  "status": "parsed",
+  "source_files": [
+    {
+      "size_bytes": 7217,
+      "sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca",
+      "filename": "file.err"
+    },
+    {
+      "size_bytes": 106592,
+      "sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700",
+      "filename": "solve.out"
+    }
+  ],
+  "messages": [
+    {
+      "severity": "WARNING",
+      "category": "material_property_warning",
+      "text": "Material number 60 (used by element 1217161) should normally have at least one MP or one TB type command associated with it.  Output of energy by material may not be available.",
+      "element_ids": [
+        1217161
+      ],
+      "critical": false,
+      "critical_shape": false,
+      "metric": null,
+      "occurrences": [
+        {
+          "header_line": 3,
+          "header": "*** WARNING ***                         ELAPSED TIME =      10.822   TIME= 20:16:04",
+          "body_lines": [
+            " Material number 60 (used by element 1217161) should normally have at",
+            " least one MP or one TB type command associated with it.  Output of",
+            " energy by material may not be available."
+          ],
+          "log_filename": "file.err",
+          "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+        },
+        {
+          "header_line": 81,
+          "header": "*** WARNING ***                         ELAPSED TIME =      23.429   TIME= 20:16:17",
+          "body_lines": [
+            " Material number 60 (used by element 1217161) should normally have at",
+            " least one MP or one TB type command associated with it.  Output of",
+            " energy by material may not be available."
+          ],
+          "log_filename": "file.err",
+          "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+        },
+        {
+          "header_line": 488,
+          "header": "*** WARNING ***                         ELAPSED TIME =      10.822   TIME= 20:16:04",
+          "body_lines": [
+            " Material number 60 (used by element 1217161) should normally have at",
+            " least one MP or one TB type command associated with it.  Output of",
+            " energy by material may not be available."
+          ],
+          "log_filename": "solve.out",
+          "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+        },
+        {
+          "header_line": 707,
+          "header": "*** WARNING ***                         ELAPSED TIME =      23.429   TIME= 20:16:17",
+          "body_lines": [
+            " Material number 60 (used by element 1217161) should normally have at",
+            " least one MP or one TB type command associated with it.  Output of",
+            " energy by material may not be available."
+          ],
+          "log_filename": "solve.out",
+          "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+        }
+      ],
+      "material_number": 60
+    },
+    {
+      "severity": "WARNING",
+      "category": "element_shape",
+      "text": "Tetrahedron element 842566 has an angle between adjacent edges of 165.5 degrees, which exceeds the warning limit of 165 degrees.",
+      "element_ids": [
+        842566
+      ],
+      "critical": false,
+      "critical_shape": false,
+      "metric": {
+        "name": "adjacent_edge_angle",
+        "value": 165.5,
+        "unit": "degree",
+        "reported_limit": 165.0
+      },
+      "occurrences": [
+        {
+          "header_line": 8,
+          "header": "*** WARNING ***                         ELAPSED TIME =      11.438   TIME= 20:16:05",
+          "body_lines": [
+            " Tetrahedron element 842566 has an angle between adjacent edges of",
+            " 165.5 degrees, which exceeds the warning limit of 165 degrees."
+          ],
+          "log_filename": "file.err",
+          "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+        },
+        {
+          "header_line": 493,
+          "header": "*** WARNING ***                         ELAPSED TIME =      11.438   TIME= 20:16:05",
+          "body_lines": [
+            " Tetrahedron element 842566 has an angle between adjacent edges of",
+            " 165.5 degrees, which exceeds the warning limit of 165 degrees."
+          ],
+          "log_filename": "solve.out",
+          "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+        }
+      ]
+    },
+    {
+      "severity": "WARNING",
+      "category": "other_solver_message",
+      "text": "Meshes made up of 10 percent or more of SOLID185 tetrahedra are not recommended.",
+      "element_ids": [],
+      "critical": false,
+      "critical_shape": false,
+      "metric": null,
+      "occurrences": [
+        {
+          "header_line": 12,
+          "header": "*** WARNING ***                         ELAPSED TIME =      11.547   TIME= 20:16:05",
+          "body_lines": [
+            " Meshes made up of 10 percent or more of SOLID185 tetrahedra are not",
+            " recommended."
+          ],
+          "log_filename": "file.err",
+          "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+        },
+        {
+          "header_line": 72,
+          "header": "*** WARNING ***                         ELAPSED TIME =      19.947   TIME= 20:16:13",
+          "body_lines": [
+            " Meshes made up of 10 percent or more of SOLID185 tetrahedra are not",
+            " recommended."
+          ],
+          "log_filename": "file.err",
+          "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+        },
+        {
+          "header_line": 497,
+          "header": "*** WARNING ***                         ELAPSED TIME =      11.547   TIME= 20:16:05",
+          "body_lines": [
+            " Meshes made up of 10 percent or more of SOLID185 tetrahedra are not",
+            " recommended."
+          ],
+          "log_filename": "solve.out",
+          "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+        },
+        {
+          "header_line": 586,
+          "header": "*** WARNING ***                         ELAPSED TIME =      19.947   TIME= 20:16:13",
+          "body_lines": [
+            " Meshes made up of 10 percent or more of SOLID185 tetrahedra are not",
+            " recommended."
+          ],
+          "log_filename": "solve.out",
+          "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+        }
+      ]
+    },
+    {
+      "severity": "WARNING",
+      "category": "element_shape",
+      "text": "Tetrahedron element 862715 has an aspect ratio of 21.97, which exceeds the warning limit of 20.",
+      "element_ids": [
+        862715
+      ],
+      "critical": false,
+      "critical_shape": false,
+      "metric": {
+        "name": "aspect_ratio",
+        "value": 21.97,
+        "unit": "dimensionless",
+        "reported_limit": 20.0
+      },
+      "occurrences": [
+        {
+          "header_line": 16,
+          "header": "*** WARNING ***                         ELAPSED TIME =      11.808   TIME= 20:16:05",
+          "body_lines": [
+            " Tetrahedron element 862715 has an aspect ratio of 21.97, which exceeds",
+            " the warning limit of 20."
+          ],
+          "log_filename": "file.err",
+          "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+        },
+        {
+          "header_line": 501,
+          "header": "*** WARNING ***                         ELAPSED TIME =      11.808   TIME= 20:16:05",
+          "body_lines": [
+            " Tetrahedron element 862715 has an aspect ratio of 21.97, which exceeds",
+            " the warning limit of 20."
+          ],
+          "log_filename": "solve.out",
+          "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+        }
+      ]
+    },
+    {
+      "severity": "WARNING",
+      "category": "element_shape",
+      "text": "Tetrahedron element 862715 has an angle between adjacent edges of 168.4 degrees, which exceeds the warning limit of 165 degrees.",
+      "element_ids": [
+        862715
+      ],
+      "critical": false,
+      "critical_shape": false,
+      "metric": {
+        "name": "adjacent_edge_angle",
+        "value": 168.4,
+        "unit": "degree",
+        "reported_limit": 165.0
+      },
+      "occurrences": [
+        {
+          "header_line": 20,
+          "header": "*** WARNING ***                         ELAPSED TIME =      11.808   TIME= 20:16:05",
+          "body_lines": [
+            " Tetrahedron element 862715 has an angle between adjacent edges of",
+            " 168.4 degrees, which exceeds the warning limit of 165 degrees."
+          ],
+          "log_filename": "file.err",
+          "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+        },
+        {
+          "header_line": 505,
+          "header": "*** WARNING ***                         ELAPSED TIME =      11.808   TIME= 20:16:05",
+          "body_lines": [
+            " Tetrahedron element 862715 has an angle between adjacent edges of",
+            " 168.4 degrees, which exceeds the warning limit of 165 degrees."
+          ],
+          "log_filename": "solve.out",
+          "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+        }
+      ]
+    },
+    {
+      "severity": "WARNING",
+      "category": "element_shape",
+      "text": "Tetrahedron element 865586 has an aspect ratio of 22.51, which exceeds the warning limit of 20.",
+      "element_ids": [
+        865586
+      ],
+      "critical": false,
+      "critical_shape": false,
+      "metric": {
+        "name": "aspect_ratio",
+        "value": 22.51,
+        "unit": "dimensionless",
+        "reported_limit": 20.0
+      },
+      "occurrences": [
+        {
+          "header_line": 24,
+          "header": "*** WARNING ***                         ELAPSED TIME =      11.860   TIME= 20:16:05",
+          "body_lines": [
+            " Tetrahedron element 865586 has an aspect ratio of 22.51, which exceeds",
+            " the warning limit of 20."
+          ],
+          "log_filename": "file.err",
+          "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+        },
+        {
+          "header_line": 509,
+          "header": "*** WARNING ***                         ELAPSED TIME =      11.860   TIME= 20:16:05",
+          "body_lines": [
+            " Tetrahedron element 865586 has an aspect ratio of 22.51, which exceeds",
+            " the warning limit of 20."
+          ],
+          "log_filename": "solve.out",
+          "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+        }
+      ]
+    },
+    {
+      "severity": "WARNING",
+      "category": "element_shape",
+      "text": "Tetrahedron element 865586 has an angle between adjacent edges of 170.4 degrees, which exceeds the warning limit of 165 degrees.",
+      "element_ids": [
+        865586
+      ],
+      "critical": false,
+      "critical_shape": false,
+      "metric": {
+        "name": "adjacent_edge_angle",
+        "value": 170.4,
+        "unit": "degree",
+        "reported_limit": 165.0
+      },
+      "occurrences": [
+        {
+          "header_line": 28,
+          "header": "*** WARNING ***                         ELAPSED TIME =      11.860   TIME= 20:16:05",
+          "body_lines": [
+            " Tetrahedron element 865586 has an angle between adjacent edges of",
+            " 170.4 degrees, which exceeds the warning limit of 165 degrees."
+          ],
+          "log_filename": "file.err",
+          "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+        },
+        {
+          "header_line": 513,
+          "header": "*** WARNING ***                         ELAPSED TIME =      11.860   TIME= 20:16:05",
+          "body_lines": [
+            " Tetrahedron element 865586 has an angle between adjacent edges of",
+            " 170.4 degrees, which exceeds the warning limit of 165 degrees."
+          ],
+          "log_filename": "solve.out",
+          "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+        }
+      ]
+    },
+    {
+      "severity": "WARNING",
+      "category": "element_shape",
+      "text": "Tetrahedron element 817637 has an aspect ratio of 35.76, which exceeds the warning limit of 20.",
+      "element_ids": [
+        817637
+      ],
+      "critical": false,
+      "critical_shape": false,
+      "metric": {
+        "name": "aspect_ratio",
+        "value": 35.76,
+        "unit": "dimensionless",
+        "reported_limit": 20.0
+      },
+      "occurrences": [
+        {
+          "header_line": 32,
+          "header": "*** WARNING ***                         ELAPSED TIME =      14.704   TIME= 20:16:08",
+          "body_lines": [
+            " Tetrahedron element 817637 has an aspect ratio of 35.76, which exceeds",
+            " the warning limit of 20."
+          ],
+          "log_filename": "file.err",
+          "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+        },
+        {
+          "header_line": 517,
+          "header": "*** WARNING ***                         ELAPSED TIME =      14.704   TIME= 20:16:08",
+          "body_lines": [
+            " Tetrahedron element 817637 has an aspect ratio of 35.76, which exceeds",
+            " the warning limit of 20."
+          ],
+          "log_filename": "solve.out",
+          "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+        }
+      ]
+    },
+    {
+      "severity": "WARNING",
+      "category": "element_shape",
+      "text": "Tetrahedron element 817638 has an aspect ratio of 35.79, which exceeds the warning limit of 20.",
+      "element_ids": [
+        817638
+      ],
+      "critical": false,
+      "critical_shape": false,
+      "metric": {
+        "name": "aspect_ratio",
+        "value": 35.79,
+        "unit": "dimensionless",
+        "reported_limit": 20.0
+      },
+      "occurrences": [
+        {
+          "header_line": 36,
+          "header": "*** WARNING ***                         ELAPSED TIME =      14.704   TIME= 20:16:08",
+          "body_lines": [
+            " Tetrahedron element 817638 has an aspect ratio of 35.79, which exceeds",
+            " the warning limit of 20."
+          ],
+          "log_filename": "file.err",
+          "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+        },
+        {
+          "header_line": 521,
+          "header": "*** WARNING ***                         ELAPSED TIME =      14.704   TIME= 20:16:08",
+          "body_lines": [
+            " Tetrahedron element 817638 has an aspect ratio of 35.79, which exceeds",
+            " the warning limit of 20."
+          ],
+          "log_filename": "solve.out",
+          "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+        }
+      ]
+    },
+    {
+      "severity": "WARNING",
+      "category": "element_shape",
+      "text": "Tetrahedron element 817639 has an aspect ratio of 65.44, which exceeds the warning limit of 20.",
+      "element_ids": [
+        817639
+      ],
+      "critical": false,
+      "critical_shape": false,
+      "metric": {
+        "name": "aspect_ratio",
+        "value": 65.44,
+        "unit": "dimensionless",
+        "reported_limit": 20.0
+      },
+      "occurrences": [
+        {
+          "header_line": 40,
+          "header": "*** WARNING ***                         ELAPSED TIME =      14.704   TIME= 20:16:08",
+          "body_lines": [
+            " Tetrahedron element 817639 has an aspect ratio of 65.44, which exceeds",
+            " the warning limit of 20."
+          ],
+          "log_filename": "file.err",
+          "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+        },
+        {
+          "header_line": 525,
+          "header": "*** WARNING ***                         ELAPSED TIME =      14.704   TIME= 20:16:08",
+          "body_lines": [
+            " Tetrahedron element 817639 has an aspect ratio of 65.44, which exceeds",
+            " the warning limit of 20."
+          ],
+          "log_filename": "solve.out",
+          "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+        }
+      ]
+    },
+    {
+      "severity": "WARNING",
+      "category": "element_shape",
+      "text": "Tetrahedron element 817640 has an aspect ratio of 65.44, which exceeds the warning limit of 20.",
+      "element_ids": [
+        817640
+      ],
+      "critical": false,
+      "critical_shape": false,
+      "metric": {
+        "name": "aspect_ratio",
+        "value": 65.44,
+        "unit": "dimensionless",
+        "reported_limit": 20.0
+      },
+      "occurrences": [
+        {
+          "header_line": 44,
+          "header": "*** WARNING ***                         ELAPSED TIME =      14.704   TIME= 20:16:08",
+          "body_lines": [
+            " Tetrahedron element 817640 has an aspect ratio of 65.44, which exceeds",
+            " the warning limit of 20."
+          ],
+          "log_filename": "file.err",
+          "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+        },
+        {
+          "header_line": 529,
+          "header": "*** WARNING ***                         ELAPSED TIME =      14.704   TIME= 20:16:08",
+          "body_lines": [
+            " Tetrahedron element 817640 has an aspect ratio of 65.44, which exceeds",
+            " the warning limit of 20."
+          ],
+          "log_filename": "solve.out",
+          "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+        }
+      ]
+    },
+    {
+      "severity": "WARNING",
+      "category": "element_shape",
+      "text": "Tetrahedron element 817641 has an aspect ratio of 48.45, which exceeds the warning limit of 20.",
+      "element_ids": [
+        817641
+      ],
+      "critical": false,
+      "critical_shape": false,
+      "metric": {
+        "name": "aspect_ratio",
+        "value": 48.45,
+        "unit": "dimensionless",
+        "reported_limit": 20.0
+      },
+      "occurrences": [
+        {
+          "header_line": 48,
+          "header": "*** WARNING ***                         ELAPSED TIME =      14.705   TIME= 20:16:08",
+          "body_lines": [
+            " Tetrahedron element 817641 has an aspect ratio of 48.45, which exceeds",
+            " the warning limit of 20."
+          ],
+          "log_filename": "file.err",
+          "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+        },
+        {
+          "header_line": 533,
+          "header": "*** WARNING ***                         ELAPSED TIME =      14.705   TIME= 20:16:08",
+          "body_lines": [
+            " Tetrahedron element 817641 has an aspect ratio of 48.45, which exceeds",
+            " the warning limit of 20."
+          ],
+          "log_filename": "solve.out",
+          "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+        }
+      ]
+    },
+    {
+      "severity": "WARNING",
+      "category": "element_shape",
+      "text": "Tetrahedron element 817642 has an aspect ratio of 48.65, which exceeds the warning limit of 20.",
+      "element_ids": [
+        817642
+      ],
+      "critical": false,
+      "critical_shape": false,
+      "metric": {
+        "name": "aspect_ratio",
+        "value": 48.65,
+        "unit": "dimensionless",
+        "reported_limit": 20.0
+      },
+      "occurrences": [
+        {
+          "header_line": 52,
+          "header": "*** WARNING ***                         ELAPSED TIME =      14.705   TIME= 20:16:08",
+          "body_lines": [
+            " Tetrahedron element 817642 has an aspect ratio of 48.65, which exceeds",
+            " the warning limit of 20."
+          ],
+          "log_filename": "file.err",
+          "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+        },
+        {
+          "header_line": 537,
+          "header": "*** WARNING ***                         ELAPSED TIME =      14.705   TIME= 20:16:08",
+          "body_lines": [
+            " Tetrahedron element 817642 has an aspect ratio of 48.65, which exceeds",
+            " the warning limit of 20."
+          ],
+          "log_filename": "solve.out",
+          "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+        }
+      ]
+    },
+    {
+      "severity": "WARNING",
+      "category": "element_shape",
+      "text": "Tetrahedron element 817643 has an aspect ratio of 26.36, which exceeds the warning limit of 20.",
+      "element_ids": [
+        817643
+      ],
+      "critical": false,
+      "critical_shape": false,
+      "metric": {
+        "name": "aspect_ratio",
+        "value": 26.36,
+        "unit": "dimensionless",
+        "reported_limit": 20.0
+      },
+      "occurrences": [
+        {
+          "header_line": 56,
+          "header": "*** WARNING ***                         ELAPSED TIME =      14.705   TIME= 20:16:08",
+          "body_lines": [
+            " Tetrahedron element 817643 has an aspect ratio of 26.36, which exceeds",
+            " the warning limit of 20."
+          ],
+          "log_filename": "file.err",
+          "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+        },
+        {
+          "header_line": 541,
+          "header": "*** WARNING ***                         ELAPSED TIME =      14.705   TIME= 20:16:08",
+          "body_lines": [
+            " Tetrahedron element 817643 has an aspect ratio of 26.36, which exceeds",
+            " the warning limit of 20."
+          ],
+          "log_filename": "solve.out",
+          "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+        }
+      ]
+    },
+    {
+      "severity": "WARNING",
+      "category": "element_shape",
+      "text": "Tetrahedron element 817644 has an aspect ratio of 36.13, which exceeds the warning limit of 20.",
+      "element_ids": [
+        817644
+      ],
+      "critical": false,
+      "critical_shape": false,
+      "metric": {
+        "name": "aspect_ratio",
+        "value": 36.13,
+        "unit": "dimensionless",
+        "reported_limit": 20.0
+      },
+      "occurrences": [
+        {
+          "header_line": 60,
+          "header": "*** WARNING ***                         ELAPSED TIME =      14.705   TIME= 20:16:08",
+          "body_lines": [
+            " Tetrahedron element 817644 has an aspect ratio of 36.13, which exceeds",
+            " the warning limit of 20."
+          ],
+          "log_filename": "file.err",
+          "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+        },
+        {
+          "header_line": 545,
+          "header": "*** WARNING ***                         ELAPSED TIME =      14.705   TIME= 20:16:08",
+          "body_lines": [
+            " Tetrahedron element 817644 has an aspect ratio of 36.13, which exceeds",
+            " the warning limit of 20."
+          ],
+          "log_filename": "solve.out",
+          "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+        }
+      ]
+    },
+    {
+      "severity": "WARNING",
+      "category": "element_shape",
+      "text": "Tetrahedron element 818854 has an aspect ratio of 20.73, which exceeds the warning limit of 20.",
+      "element_ids": [
+        818854
+      ],
+      "critical": false,
+      "critical_shape": false,
+      "metric": {
+        "name": "aspect_ratio",
+        "value": 20.73,
+        "unit": "dimensionless",
+        "reported_limit": 20.0
+      },
+      "occurrences": [
+        {
+          "header_line": 64,
+          "header": "*** WARNING ***                         ELAPSED TIME =      14.714   TIME= 20:16:08",
+          "body_lines": [
+            " Tetrahedron element 818854 has an aspect ratio of 20.73, which exceeds",
+            " the warning limit of 20."
+          ],
+          "log_filename": "file.err",
+          "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+        },
+        {
+          "header_line": 549,
+          "header": "*** WARNING ***                         ELAPSED TIME =      14.714   TIME= 20:16:08",
+          "body_lines": [
+            " Tetrahedron element 818854 has an aspect ratio of 20.73, which exceeds",
+            " the warning limit of 20."
+          ],
+          "log_filename": "solve.out",
+          "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+        }
+      ]
+    },
+    {
+      "severity": "WARNING",
+      "category": "element_shape",
+      "text": "Tetrahedron element 818854 has an angle between adjacent edges of 167.5 degrees, which exceeds the warning limit of 165 degrees.",
+      "element_ids": [
+        818854
+      ],
+      "critical": false,
+      "critical_shape": false,
+      "metric": {
+        "name": "adjacent_edge_angle",
+        "value": 167.5,
+        "unit": "degree",
+        "reported_limit": 165.0
+      },
+      "occurrences": [
+        {
+          "header_line": 68,
+          "header": "*** WARNING ***                         ELAPSED TIME =      14.714   TIME= 20:16:08",
+          "body_lines": [
+            " Tetrahedron element 818854 has an angle between adjacent edges of",
+            " 167.5 degrees, which exceeds the warning limit of 165 degrees."
+          ],
+          "log_filename": "file.err",
+          "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+        },
+        {
+          "header_line": 553,
+          "header": "*** WARNING ***                         ELAPSED TIME =      14.714   TIME= 20:16:08",
+          "body_lines": [
+            " Tetrahedron element 818854 has an angle between adjacent edges of",
+            " 167.5 degrees, which exceeds the warning limit of 165 degrees."
+          ],
+          "log_filename": "solve.out",
+          "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+        }
+      ]
+    },
+    {
+      "severity": "WARNING",
+      "category": "shape_summary",
+      "text": "Previous testing revealed that 12 of the 993608 selected elements violate shape warning limits.  To review warning messages, please see the output or error file, or issue the CHECK command.",
+      "element_ids": [],
+      "critical": false,
+      "critical_shape": false,
+      "metric": null,
+      "occurrences": [
+        {
+          "header_line": 76,
+          "header": "*** WARNING ***                         ELAPSED TIME =      21.079   TIME= 20:16:15",
+          "body_lines": [
+            " Previous testing revealed that 12 of the 993608 selected elements",
+            " violate shape warning limits.  To review warning messages, please see",
+            " the output or error file, or issue the CHECK command."
+          ],
+          "log_filename": "file.err",
+          "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+        },
+        {
+          "header_line": 590,
+          "header": "*** WARNING ***                         ELAPSED TIME =      21.079   TIME= 20:16:15",
+          "body_lines": [
+            " Previous testing revealed that 12 of the 993608 selected elements",
+            " violate shape warning limits.  To review warning messages, please see",
+            " the output or error file, or issue the CHECK command."
+          ],
+          "log_filename": "solve.out",
+          "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+        }
+      ],
+      "shape_summary": {
+        "violating_element_count": 12,
+        "tested_element_count": 993608,
+        "limit_severity": "warning"
+      }
+    },
+    {
+      "severity": "WARNING",
+      "category": "other_solver_message",
+      "text": "The Sparse Matrix Solver is running in out-of-core memory mode.  This mode may result in significantly lower performance than in-core memory mode, depending on available system memory and I/O speed.  Monitor solver performance to ensure that high I/O to solver files does not create a performance bottleneck.",
+      "element_ids": [],
+      "critical": false,
+      "critical_shape": false,
+      "metric": null,
+      "occurrences": [
+        {
+          "header_line": 86,
+          "header": "*** WARNING ***                         ELAPSED TIME =     130.677   TIME= 20:18:04",
+          "body_lines": [
+            " The Sparse Matrix Solver is running in out-of-core memory mode.  This",
+            " mode may result in significantly lower performance than in-core memory",
+            " mode, depending on available system memory and I/O speed.  Monitor",
+            " solver performance to ensure that high I/O to solver files does not",
+            " create a performance bottleneck."
+          ],
+          "log_filename": "file.err",
+          "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+        }
+      ]
+    },
+    {
+      "severity": "WARNING",
+      "category": "other_solver_message",
+      "text": "A reference moment value times the tolerance is used by the Newton-Raphson method for checking convergence.  The calculated reference MOMENT CONVERGENCE VALUE = 0 is less than a threshold.  This threshold is internally calculated.  You can overwrite it by specifying MINREF on the CNVTOL command.  Check results carefully.",
+      "element_ids": [],
+      "critical": false,
+      "critical_shape": false,
+      "metric": null,
+      "occurrences": [
+        {
+          "header_line": 93,
+          "header": "*** WARNING ***                         ELAPSED TIME =     685.829   TIME= 20:27:19",
+          "body_lines": [
+            " A reference moment value times the tolerance is used by the",
+            " Newton-Raphson method for checking convergence.  The calculated",
+            " reference MOMENT CONVERGENCE VALUE = 0 is less than a threshold.  This",
+            " threshold is internally calculated.  You can overwrite it by",
+            " specifying MINREF on the CNVTOL command.  Check results carefully."
+          ],
+          "log_filename": "file.err",
+          "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+        }
+      ]
+    },
+    {
+      "severity": "WARNING",
+      "category": "other_solver_message",
+      "text": "During this session the elapsed time exceeds the CPU time by 185%. This often indicates either a lack of physical memory (RAM) required to efficiently handle this simulation or a particularly slow hard drive configuration.  This simulation can be expected to run faster on identical hardware if additional RAM or a faster hard drive configuration is made available.  For more details, please see the Mechanical APDL Performance Guide which is part of the Ansys Help system.",
+      "element_ids": [],
+      "critical": false,
+      "critical_shape": false,
+      "metric": null,
+      "occurrences": [
+        {
+          "header_line": 100,
+          "header": "*** WARNING ***                         ELAPSED TIME =    1187.874   TIME= 20:35:41",
+          "body_lines": [
+            " During this session the elapsed time exceeds the CPU time by 185%.",
+            " This often indicates either a lack of physical memory (RAM) required",
+            " to efficiently handle this simulation or a particularly slow hard",
+            " drive configuration.  This simulation can be expected to run faster on",
+            " identical hardware if additional RAM or a faster hard drive",
+            " configuration is made available.  For more details, please see the",
+            " Mechanical APDL Performance Guide which is part of the Ansys Help",
+            " system."
+          ],
+          "log_filename": "file.err",
+          "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+        },
+        {
+          "header_line": 1924,
+          "header": "*** WARNING ***                         ELAPSED TIME =    1187.874   TIME= 20:35:41",
+          "body_lines": [
+            " During this session the elapsed time exceeds the CPU time by 185%.",
+            " This often indicates either a lack of physical memory (RAM) required",
+            " to efficiently handle this simulation or a particularly slow hard",
+            " drive configuration.  This simulation can be expected to run faster on",
+            " identical hardware if additional RAM or a faster hard drive",
+            " configuration is made available.  For more details, please see the",
+            " Mechanical APDL Performance Guide which is part of the Ansys Help",
+            " system."
+          ],
+          "log_filename": "solve.out",
+          "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+        }
+      ]
+    },
+    {
+      "severity": "WARNING",
+      "category": "other_solver_message",
+      "text": "During this session a solution was performed using 6 CPU cores in shared-memory parallel (SMP) mode (-np 6).  It is strongly recommended to use distributed-memory parallel (DMP) mode instead (-dis -np 6). DMP mode typically outperforms SMP mode, even when running on a single system.  For more information, see the Mechanical APDL Parallel Processing Guide in the Ansys Help system.",
+      "element_ids": [],
+      "critical": false,
+      "critical_shape": false,
+      "metric": null,
+      "occurrences": [
+        {
+          "header_line": 110,
+          "header": "*** WARNING ***                         ELAPSED TIME =    1187.874   TIME= 20:35:41",
+          "body_lines": [
+            " During this session a solution was performed using 6 CPU cores in",
+            " shared-memory parallel (SMP) mode (-np 6).  It is strongly recommended",
+            " to use distributed-memory parallel (DMP) mode instead (-dis -np 6).",
+            " DMP mode typically outperforms SMP mode, even when running on a single",
+            " system.  For more information, see the Mechanical APDL Parallel",
+            " Processing Guide in the Ansys Help system."
+          ],
+          "log_filename": "file.err",
+          "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+        },
+        {
+          "header_line": 1934,
+          "header": "*** WARNING ***                         ELAPSED TIME =    1187.874   TIME= 20:35:41",
+          "body_lines": [
+            " During this session a solution was performed using 6 CPU cores in",
+            " shared-memory parallel (SMP) mode (-np 6).  It is strongly recommended",
+            " to use distributed-memory parallel (DMP) mode instead (-dis -np 6).",
+            " DMP mode typically outperforms SMP mode, even when running on a single",
+            " system.  For more information, see the Mechanical APDL Parallel",
+            " Processing Guide in the Ansys Help system."
+          ],
+          "log_filename": "solve.out",
+          "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+        }
+      ]
+    },
+    {
+      "severity": "WARNING",
+      "category": "other_solver_message",
+      "text": "The Sparse Matrix Solver is running in out-of-core memory mode.  This mode may result in significantly lower performance than in-core memory mode, depending on available system memory and I/O speed.  Monitor solver performance to ensure that high I/O to solver files does not create a performance bottleneck. curEqn= 138087  totEqn= 646650 Job CP sec=    239.297 Factor Done=  25% Factor Wall sec=     10.249 rate=       2.3 GFlops curEqn= 342482  totEqn= 646650 Job CP sec=    254.562 Factor Done=  50% Factor Wall sec=     19.426 rate=       2.5 GFlops curEqn= 494285  totEqn= 646650 Job CP sec=    266.875 Factor Done=  75% Factor Wall sec=     24.919 rate=       2.9 GFlops curEqn= 646650  totEqn= 646650 Job CP sec=    277.766 Factor Done= 100% Factor Wall sec=     30.281 rate=       3.1 GFlops Sparse solver maximum pivot= 58542139.2 at node 220712 ROTZ. Sparse solver minimum pivot= 1180.04801 at node 65278 UX. Sparse solver minimum pivot in absolute value= 1180.04801 at node 65278 UX. DISP CONVERGENCE VALUE   =  0.5635      CRITERION=  0.2817E-01 EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.5635 DISP CONVERGENCE VALUE   =  0.5635      CRITERION=  0.2817E-01 LINE SEARCH PARAMETER =   1.000     SCALED MAX DOF INC =  0.5635 FORCE CONVERGENCE VALUE  =   271.3      CRITERION=   1.854 MOMENT CONVERGENCE VALUE =   4.378      CRITERION=  0.1233 EQUIL ITER   2 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.4483E-02 DISP CONVERGENCE VALUE   =  0.4483E-02  CRITERION=  0.2817E-01 <<< CONVERGED LINE SEARCH PARAMETER =   1.000     SCALED MAX DOF INC = -0.4483E-02 FORCE CONVERGENCE VALUE  =   128.8      CRITERION=   1.854 MOMENT CONVERGENCE VALUE =   4.129      CRITERION=  0.1233 EQUIL ITER   3 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.3701E-02 DISP CONVERGENCE VALUE   =  0.3701E-02  CRITERION=  0.2817E-01 <<< CONVERGED LINE SEARCH PARAMETER =   1.000     SCALED MAX DOF INC = -0.3701E-02 FORCE CONVERGENCE VALUE  =   41.20      CRITERION=   1.854 MOMENT CONVERGENCE VALUE =  0.8068E-01  CRITERION=  0.1233     <<< CONVERGED",
+      "element_ids": [],
+      "critical": false,
+      "critical_shape": false,
+      "metric": null,
+      "occurrences": [
+        {
+          "header_line": 1696,
+          "header": "*** WARNING ***                         ELAPSED TIME =     130.677   TIME= 20:18:04",
+          "body_lines": [
+            " The Sparse Matrix Solver is running in out-of-core memory mode.  This",
+            " mode may result in significantly lower performance than in-core memory",
+            " mode, depending on available system memory and I/O speed.  Monitor",
+            " solver performance to ensure that high I/O to solver files does not",
+            " create a performance bottleneck.",
+            " curEqn= 138087  totEqn= 646650 Job CP sec=    239.297",
+            "      Factor Done=  25% Factor Wall sec=     10.249 rate=       2.3 GFlops",
+            " curEqn= 342482  totEqn= 646650 Job CP sec=    254.562",
+            "      Factor Done=  50% Factor Wall sec=     19.426 rate=       2.5 GFlops",
+            " curEqn= 494285  totEqn= 646650 Job CP sec=    266.875",
+            "      Factor Done=  75% Factor Wall sec=     24.919 rate=       2.9 GFlops",
+            " curEqn= 646650  totEqn= 646650 Job CP sec=    277.766",
+            "      Factor Done= 100% Factor Wall sec=     30.281 rate=       3.1 GFlops",
+            " Sparse solver maximum pivot= 58542139.2 at node 220712 ROTZ.",
+            " Sparse solver minimum pivot= 1180.04801 at node 65278 UX.",
+            " Sparse solver minimum pivot in absolute value= 1180.04801 at node 65278",
+            " UX.",
+            "     DISP CONVERGENCE VALUE   =  0.5635      CRITERION=  0.2817E-01",
+            "    EQUIL ITER   1 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.5635",
+            "     DISP CONVERGENCE VALUE   =  0.5635      CRITERION=  0.2817E-01",
+            "     LINE SEARCH PARAMETER =   1.000     SCALED MAX DOF INC =  0.5635",
+            "     FORCE CONVERGENCE VALUE  =   271.3      CRITERION=   1.854",
+            "     MOMENT CONVERGENCE VALUE =   4.378      CRITERION=  0.1233",
+            "    EQUIL ITER   2 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.4483E-02",
+            "     DISP CONVERGENCE VALUE   =  0.4483E-02  CRITERION=  0.2817E-01 <<< CONVERGED",
+            "     LINE SEARCH PARAMETER =   1.000     SCALED MAX DOF INC = -0.4483E-02",
+            "     FORCE CONVERGENCE VALUE  =   128.8      CRITERION=   1.854",
+            "     MOMENT CONVERGENCE VALUE =   4.129      CRITERION=  0.1233",
+            "    EQUIL ITER   3 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.3701E-02",
+            "     DISP CONVERGENCE VALUE   =  0.3701E-02  CRITERION=  0.2817E-01 <<< CONVERGED",
+            "     LINE SEARCH PARAMETER =   1.000     SCALED MAX DOF INC = -0.3701E-02",
+            "     FORCE CONVERGENCE VALUE  =   41.20      CRITERION=   1.854",
+            "     MOMENT CONVERGENCE VALUE =  0.8068E-01  CRITERION=  0.1233     <<< CONVERGED"
+          ],
+          "log_filename": "solve.out",
+          "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+        }
+      ]
+    },
+    {
+      "severity": "WARNING",
+      "category": "other_solver_message",
+      "text": "A reference moment value times the tolerance is used by the Newton-Raphson method for checking convergence.  The calculated reference MOMENT CONVERGENCE VALUE = 0 is less than a threshold.  This threshold is internally calculated.  You can overwrite it by specifying MINREF on the CNVTOL command.  Check results carefully. EQUIL ITER   4 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.2432E-03 DISP CONVERGENCE VALUE   =  0.2432E-03  CRITERION=  0.2817E-01 <<< CONVERGED LINE SEARCH PARAMETER =   1.000     SCALED MAX DOF INC = -0.2432E-03 FORCE CONVERGENCE VALUE  =   12.07      CRITERION=   1.854 MOMENT CONVERGENCE VALUE =  0.1675      CRITERION=  0.1233 EQUIL ITER   5 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.5746E-04 DISP CONVERGENCE VALUE   =  0.5746E-04  CRITERION=  0.2817E-01 <<< CONVERGED LINE SEARCH PARAMETER =   1.000     SCALED MAX DOF INC =  0.5746E-04 FORCE CONVERGENCE VALUE  =   1.824      CRITERION=   1.854     <<< CONVERGED MOMENT CONVERGENCE VALUE =  0.2172E-01  CRITERION=  0.1233     <<< CONVERGED >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   5",
+      "element_ids": [],
+      "critical": false,
+      "critical_shape": false,
+      "metric": null,
+      "occurrences": [
+        {
+          "header_line": 1731,
+          "header": "*** WARNING ***                         ELAPSED TIME =     685.829   TIME= 20:27:19",
+          "body_lines": [
+            " A reference moment value times the tolerance is used by the",
+            " Newton-Raphson method for checking convergence.  The calculated",
+            " reference MOMENT CONVERGENCE VALUE = 0 is less than a threshold.  This",
+            " threshold is internally calculated.  You can overwrite it by",
+            " specifying MINREF on the CNVTOL command.  Check results carefully.",
+            "    EQUIL ITER   4 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC= -0.2432E-03",
+            "     DISP CONVERGENCE VALUE   =  0.2432E-03  CRITERION=  0.2817E-01 <<< CONVERGED",
+            "     LINE SEARCH PARAMETER =   1.000     SCALED MAX DOF INC = -0.2432E-03",
+            "     FORCE CONVERGENCE VALUE  =   12.07      CRITERION=   1.854",
+            "     MOMENT CONVERGENCE VALUE =  0.1675      CRITERION=  0.1233",
+            "    EQUIL ITER   5 COMPLETED.  NEW TRIANG MATRIX.  MAX DOF INC=  0.5746E-04",
+            "     DISP CONVERGENCE VALUE   =  0.5746E-04  CRITERION=  0.2817E-01 <<< CONVERGED",
+            "     LINE SEARCH PARAMETER =   1.000     SCALED MAX DOF INC =  0.5746E-04",
+            "     FORCE CONVERGENCE VALUE  =   1.824      CRITERION=   1.854     <<< CONVERGED",
+            "     MOMENT CONVERGENCE VALUE =  0.2172E-01  CRITERION=  0.1233     <<< CONVERGED",
+            "    >>> SOLUTION CONVERGED AFTER EQUILIBRIUM ITERATION   5"
+          ],
+          "log_filename": "solve.out",
+          "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+        }
+      ]
+    }
+  ],
+  "shape_summary_records": [
+    {
+      "violating_element_count": 12,
+      "tested_element_count": 993608,
+      "limit_severity": "warning"
+    }
+  ],
+  "reported_shape_element_ids": [
+    817637,
+    817638,
+    817639,
+    817640,
+    817641,
+    817642,
+    817643,
+    817644,
+    818854,
+    842566,
+    862715,
+    865586
+  ],
+  "reported_all_message_element_ids": [
+    817637,
+    817638,
+    817639,
+    817640,
+    817641,
+    817642,
+    817643,
+    817644,
+    818854,
+    842566,
+    862715,
+    865586,
+    1217161
+  ],
+  "critical_solver_message_count": 0,
+  "unique_shape_element_count": 12,
+  "shape_warning_message_count": 15,
+  "policy": "Raw native WARNING/ERROR/FATAL records retained; warnings are not reclassified as shape-test passes",
+  "elements": [
+    {
+      "element_id": 817637,
+      "rst_connectivity_node_ids": [
+        48424,
+        48425,
+        119720,
+        123120
+      ],
+      "solid_named_selection_owners": [
+        "Calf_Main"
+      ],
+      "actual_named_selections": [
+        "CALF_MAIN"
+      ],
+      "native_messages": [
+        {
+          "severity": "WARNING",
+          "category": "element_shape",
+          "text": "Tetrahedron element 817637 has an aspect ratio of 35.76, which exceeds the warning limit of 20.",
+          "element_ids": [
+            817637
+          ],
+          "critical": false,
+          "critical_shape": false,
+          "metric": {
+            "name": "aspect_ratio",
+            "value": 35.76,
+            "unit": "dimensionless",
+            "reported_limit": 20.0
+          },
+          "occurrences": [
+            {
+              "header_line": 32,
+              "header": "*** WARNING ***                         ELAPSED TIME =      14.704   TIME= 20:16:08",
+              "body_lines": [
+                " Tetrahedron element 817637 has an aspect ratio of 35.76, which exceeds",
+                " the warning limit of 20."
+              ],
+              "log_filename": "file.err",
+              "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+            },
+            {
+              "header_line": 517,
+              "header": "*** WARNING ***                         ELAPSED TIME =      14.704   TIME= 20:16:08",
+              "body_lines": [
+                " Tetrahedron element 817637 has an aspect ratio of 35.76, which exceeds",
+                " the warning limit of 20."
+              ],
+              "log_filename": "solve.out",
+              "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+            }
+          ]
+        }
+      ],
+      "apdl_element_type": 185,
+      "mat": 2,
+      "centroid_native": [
+        -82.5424368375,
+        682.5639967249999,
+        -12.267515294999999
+      ],
+      "centroid_unit": "mm",
+      "centroid_mm": [
+        -82.5424368375,
+        682.5639967249999,
+        -12.267515294999999
+      ],
+      "volume_native": 0.004890178704342812,
+      "volume_unit": "mm*mm*mm",
+      "volume_conversion_basis": "field unit",
+      "volume_mm3": 0.004890178704342812,
+      "classification": "retained load-bearing solid element"
+    },
+    {
+      "element_id": 817638,
+      "rst_connectivity_node_ids": [
+        48426,
+        48428,
+        48943,
+        182218
+      ],
+      "solid_named_selection_owners": [
+        "Calf_Main"
+      ],
+      "actual_named_selections": [
+        "CALF_MAIN"
+      ],
+      "native_messages": [
+        {
+          "severity": "WARNING",
+          "category": "element_shape",
+          "text": "Tetrahedron element 817638 has an aspect ratio of 35.79, which exceeds the warning limit of 20.",
+          "element_ids": [
+            817638
+          ],
+          "critical": false,
+          "critical_shape": false,
+          "metric": {
+            "name": "aspect_ratio",
+            "value": 35.79,
+            "unit": "dimensionless",
+            "reported_limit": 20.0
+          },
+          "occurrences": [
+            {
+              "header_line": 36,
+              "header": "*** WARNING ***                         ELAPSED TIME =      14.704   TIME= 20:16:08",
+              "body_lines": [
+                " Tetrahedron element 817638 has an aspect ratio of 35.79, which exceeds",
+                " the warning limit of 20."
+              ],
+              "log_filename": "file.err",
+              "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+            },
+            {
+              "header_line": 521,
+              "header": "*** WARNING ***                         ELAPSED TIME =      14.704   TIME= 20:16:08",
+              "body_lines": [
+                " Tetrahedron element 817638 has an aspect ratio of 35.79, which exceeds",
+                " the warning limit of 20."
+              ],
+              "log_filename": "solve.out",
+              "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+            }
+          ]
+        }
+      ],
+      "apdl_element_type": 185,
+      "mat": 2,
+      "centroid_native": [
+        -82.5457214875,
+        682.026800975,
+        -7.64741559975
+      ],
+      "centroid_unit": "mm",
+      "centroid_mm": [
+        -82.5457214875,
+        682.026800975,
+        -7.64741559975
+      ],
+      "volume_native": 0.006203158644063641,
+      "volume_unit": "mm*mm*mm",
+      "volume_conversion_basis": "field unit",
+      "volume_mm3": 0.006203158644063641,
+      "classification": "retained load-bearing solid element"
+    },
+    {
+      "element_id": 817639,
+      "rst_connectivity_node_ids": [
+        48426,
+        48427,
+        48428,
+        183144
+      ],
+      "solid_named_selection_owners": [
+        "Calf_Main"
+      ],
+      "actual_named_selections": [
+        "CALF_MAIN"
+      ],
+      "native_messages": [
+        {
+          "severity": "WARNING",
+          "category": "element_shape",
+          "text": "Tetrahedron element 817639 has an aspect ratio of 65.44, which exceeds the warning limit of 20.",
+          "element_ids": [
+            817639
+          ],
+          "critical": false,
+          "critical_shape": false,
+          "metric": {
+            "name": "aspect_ratio",
+            "value": 65.44,
+            "unit": "dimensionless",
+            "reported_limit": 20.0
+          },
+          "occurrences": [
+            {
+              "header_line": 40,
+              "header": "*** WARNING ***                         ELAPSED TIME =      14.704   TIME= 20:16:08",
+              "body_lines": [
+                " Tetrahedron element 817639 has an aspect ratio of 65.44, which exceeds",
+                " the warning limit of 20."
+              ],
+              "log_filename": "file.err",
+              "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+            },
+            {
+              "header_line": 525,
+              "header": "*** WARNING ***                         ELAPSED TIME =      14.704   TIME= 20:16:08",
+              "body_lines": [
+                " Tetrahedron element 817639 has an aspect ratio of 65.44, which exceeds",
+                " the warning limit of 20."
+              ],
+              "log_filename": "solve.out",
+              "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+            }
+          ]
+        }
+      ],
+      "apdl_element_type": 185,
+      "mat": 2,
+      "centroid_native": [
+        -82.534107225,
+        682.74924105,
+        -8.56163373325
+      ],
+      "centroid_unit": "mm",
+      "centroid_mm": [
+        -82.534107225,
+        682.74924105,
+        -8.56163373325
+      ],
+      "volume_native": 0.015499386841832448,
+      "volume_unit": "mm*mm*mm",
+      "volume_conversion_basis": "field unit",
+      "volume_mm3": 0.015499386841832448,
+      "classification": "retained load-bearing solid element"
+    },
+    {
+      "element_id": 817640,
+      "rst_connectivity_node_ids": [
+        48424,
+        142058,
+        48427,
+        48425
+      ],
+      "solid_named_selection_owners": [
+        "Calf_Main"
+      ],
+      "actual_named_selections": [
+        "CALF_MAIN"
+      ],
+      "native_messages": [
+        {
+          "severity": "WARNING",
+          "category": "element_shape",
+          "text": "Tetrahedron element 817640 has an aspect ratio of 65.44, which exceeds the warning limit of 20.",
+          "element_ids": [
+            817640
+          ],
+          "critical": false,
+          "critical_shape": false,
+          "metric": {
+            "name": "aspect_ratio",
+            "value": 65.44,
+            "unit": "dimensionless",
+            "reported_limit": 20.0
+          },
+          "occurrences": [
+            {
+              "header_line": 44,
+              "header": "*** WARNING ***                         ELAPSED TIME =      14.704   TIME= 20:16:08",
+              "body_lines": [
+                " Tetrahedron element 817640 has an aspect ratio of 65.44, which exceeds",
+                " the warning limit of 20."
+              ],
+              "log_filename": "file.err",
+              "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+            },
+            {
+              "header_line": 529,
+              "header": "*** WARNING ***                         ELAPSED TIME =      14.704   TIME= 20:16:08",
+              "body_lines": [
+                " Tetrahedron element 817640 has an aspect ratio of 65.44, which exceeds",
+                " the warning limit of 20."
+              ],
+              "log_filename": "solve.out",
+              "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+            }
+          ]
+        }
+      ],
+      "apdl_element_type": 185,
+      "mat": 2,
+      "centroid_native": [
+        -82.53465087000001,
+        682.748420075,
+        -11.24024388
+      ],
+      "centroid_unit": "mm",
+      "centroid_mm": [
+        -82.53465087000001,
+        682.748420075,
+        -11.24024388
+      ],
+      "volume_native": 0.015462723846284046,
+      "volume_unit": "mm*mm*mm",
+      "volume_conversion_basis": "field unit",
+      "volume_mm3": 0.015462723846284046,
+      "classification": "retained load-bearing solid element"
+    },
+    {
+      "element_id": 817641,
+      "rst_connectivity_node_ids": [
+        48424,
+        48425,
+        123120,
+        142058
+      ],
+      "solid_named_selection_owners": [
+        "Calf_Main"
+      ],
+      "actual_named_selections": [
+        "CALF_MAIN"
+      ],
+      "native_messages": [
+        {
+          "severity": "WARNING",
+          "category": "element_shape",
+          "text": "Tetrahedron element 817641 has an aspect ratio of 48.45, which exceeds the warning limit of 20.",
+          "element_ids": [
+            817641
+          ],
+          "critical": false,
+          "critical_shape": false,
+          "metric": {
+            "name": "aspect_ratio",
+            "value": 48.45,
+            "unit": "dimensionless",
+            "reported_limit": 20.0
+          },
+          "occurrences": [
+            {
+              "header_line": 48,
+              "header": "*** WARNING ***                         ELAPSED TIME =      14.705   TIME= 20:16:08",
+              "body_lines": [
+                " Tetrahedron element 817641 has an aspect ratio of 48.45, which exceeds",
+                " the warning limit of 20."
+              ],
+              "log_filename": "file.err",
+              "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+            },
+            {
+              "header_line": 533,
+              "header": "*** WARNING ***                         ELAPSED TIME =      14.705   TIME= 20:16:08",
+              "body_lines": [
+                " Tetrahedron element 817641 has an aspect ratio of 48.45, which exceeds",
+                " the warning limit of 20."
+              ],
+              "log_filename": "solve.out",
+              "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+            }
+          ]
+        }
+      ],
+      "apdl_element_type": 185,
+      "mat": 2,
+      "centroid_native": [
+        -82.54004857,
+        682.957839225,
+        -11.910668690000001
+      ],
+      "centroid_unit": "mm",
+      "centroid_mm": [
+        -82.54004857,
+        682.957839225,
+        -11.910668690000001
+      ],
+      "volume_native": 0.008533838460220218,
+      "volume_unit": "mm*mm*mm",
+      "volume_conversion_basis": "field unit",
+      "volume_mm3": 0.008533838460220218,
+      "classification": "retained load-bearing solid element"
+    },
+    {
+      "element_id": 817642,
+      "rst_connectivity_node_ids": [
+        48426,
+        48428,
+        179778,
+        183144
+      ],
+      "solid_named_selection_owners": [
+        "Calf_Main"
+      ],
+      "actual_named_selections": [
+        "CALF_MAIN"
+      ],
+      "native_messages": [
+        {
+          "severity": "WARNING",
+          "category": "element_shape",
+          "text": "Tetrahedron element 817642 has an aspect ratio of 48.65, which exceeds the warning limit of 20.",
+          "element_ids": [
+            817642
+          ],
+          "critical": false,
+          "critical_shape": false,
+          "metric": {
+            "name": "aspect_ratio",
+            "value": 48.65,
+            "unit": "dimensionless",
+            "reported_limit": 20.0
+          },
+          "occurrences": [
+            {
+              "header_line": 52,
+              "header": "*** WARNING ***                         ELAPSED TIME =      14.705   TIME= 20:16:08",
+              "body_lines": [
+                " Tetrahedron element 817642 has an aspect ratio of 48.65, which exceeds",
+                " the warning limit of 20."
+              ],
+              "log_filename": "file.err",
+              "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+            },
+            {
+              "header_line": 537,
+              "header": "*** WARNING ***                         ELAPSED TIME =      14.705   TIME= 20:16:08",
+              "body_lines": [
+                " Tetrahedron element 817642 has an aspect ratio of 48.65, which exceeds",
+                " the warning limit of 20."
+              ],
+              "log_filename": "solve.out",
+              "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+            }
+          ]
+        }
+      ],
+      "apdl_element_type": 185,
+      "mat": 2,
+      "centroid_native": [
+        -82.5381813475,
+        682.961801075,
+        -7.890535151749999
+      ],
+      "centroid_unit": "mm",
+      "centroid_mm": [
+        -82.5381813475,
+        682.961801075,
+        -7.890535151749999
+      ],
+      "volume_native": 0.008652864603954247,
+      "volume_unit": "mm*mm*mm",
+      "volume_conversion_basis": "field unit",
+      "volume_mm3": 0.008652864603954247,
+      "classification": "retained load-bearing solid element"
+    },
+    {
+      "element_id": 817643,
+      "rst_connectivity_node_ids": [
+        48424,
+        48966,
+        119720,
+        48425
+      ],
+      "solid_named_selection_owners": [
+        "Calf_Main"
+      ],
+      "actual_named_selections": [
+        "CALF_MAIN"
+      ],
+      "native_messages": [
+        {
+          "severity": "WARNING",
+          "category": "element_shape",
+          "text": "Tetrahedron element 817643 has an aspect ratio of 26.36, which exceeds the warning limit of 20.",
+          "element_ids": [
+            817643
+          ],
+          "critical": false,
+          "critical_shape": false,
+          "metric": {
+            "name": "aspect_ratio",
+            "value": 26.36,
+            "unit": "dimensionless",
+            "reported_limit": 20.0
+          },
+          "occurrences": [
+            {
+              "header_line": 56,
+              "header": "*** WARNING ***                         ELAPSED TIME =      14.705   TIME= 20:16:08",
+              "body_lines": [
+                " Tetrahedron element 817643 has an aspect ratio of 26.36, which exceeds",
+                " the warning limit of 20."
+              ],
+              "log_filename": "file.err",
+              "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+            },
+            {
+              "header_line": 541,
+              "header": "*** WARNING ***                         ELAPSED TIME =      14.705   TIME= 20:16:08",
+              "body_lines": [
+                " Tetrahedron element 817643 has an aspect ratio of 26.36, which exceeds",
+                " the warning limit of 20."
+              ],
+              "log_filename": "solve.out",
+              "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+            }
+          ]
+        }
+      ],
+      "apdl_element_type": 185,
+      "mat": 2,
+      "centroid_native": [
+        -82.5457346325,
+        682.2355628749999,
+        -12.097090484999999
+      ],
+      "centroid_unit": "mm",
+      "centroid_mm": [
+        -82.5457346325,
+        682.2355628749999,
+        -12.097090484999999
+      ],
+      "volume_native": 0.002028208875806863,
+      "volume_unit": "mm*mm*mm",
+      "volume_conversion_basis": "field unit",
+      "volume_mm3": 0.002028208875806863,
+      "classification": "retained load-bearing solid element"
+    },
+    {
+      "element_id": 817644,
+      "rst_connectivity_node_ids": [
+        48426,
+        179778,
+        48428,
+        182218
+      ],
+      "solid_named_selection_owners": [
+        "Calf_Main"
+      ],
+      "actual_named_selections": [
+        "CALF_MAIN"
+      ],
+      "native_messages": [
+        {
+          "severity": "WARNING",
+          "category": "element_shape",
+          "text": "Tetrahedron element 817644 has an aspect ratio of 36.13, which exceeds the warning limit of 20.",
+          "element_ids": [
+            817644
+          ],
+          "critical": false,
+          "critical_shape": false,
+          "metric": {
+            "name": "aspect_ratio",
+            "value": 36.13,
+            "unit": "dimensionless",
+            "reported_limit": 20.0
+          },
+          "occurrences": [
+            {
+              "header_line": 60,
+              "header": "*** WARNING ***                         ELAPSED TIME =      14.705   TIME= 20:16:08",
+              "body_lines": [
+                " Tetrahedron element 817644 has an aspect ratio of 36.13, which exceeds",
+                " the warning limit of 20."
+              ],
+              "log_filename": "file.err",
+              "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+            },
+            {
+              "header_line": 545,
+              "header": "*** WARNING ***                         ELAPSED TIME =      14.705   TIME= 20:16:08",
+              "body_lines": [
+                " Tetrahedron element 817644 has an aspect ratio of 36.13, which exceeds",
+                " the warning limit of 20."
+              ],
+              "log_filename": "solve.out",
+              "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+            }
+          ]
+        }
+      ],
+      "apdl_element_type": 185,
+      "mat": 2,
+      "centroid_native": [
+        -82.541100035,
+        682.512206275,
+        -7.47631701775
+      ],
+      "centroid_unit": "mm",
+      "centroid_mm": [
+        -82.541100035,
+        682.512206275,
+        -7.47631701775
+      ],
+      "volume_native": 0.006958527760905861,
+      "volume_unit": "mm*mm*mm",
+      "volume_conversion_basis": "field unit",
+      "volume_mm3": 0.006958527760905861,
+      "classification": "retained load-bearing solid element"
+    },
+    {
+      "element_id": 818854,
+      "rst_connectivity_node_ids": [
+        61291,
+        186462,
+        113907,
+        71199
+      ],
+      "solid_named_selection_owners": [
+        "Calf_Main"
+      ],
+      "actual_named_selections": [
+        "CALF_MAIN"
+      ],
+      "native_messages": [
+        {
+          "severity": "WARNING",
+          "category": "element_shape",
+          "text": "Tetrahedron element 818854 has an aspect ratio of 20.73, which exceeds the warning limit of 20.",
+          "element_ids": [
+            818854
+          ],
+          "critical": false,
+          "critical_shape": false,
+          "metric": {
+            "name": "aspect_ratio",
+            "value": 20.73,
+            "unit": "dimensionless",
+            "reported_limit": 20.0
+          },
+          "occurrences": [
+            {
+              "header_line": 64,
+              "header": "*** WARNING ***                         ELAPSED TIME =      14.714   TIME= 20:16:08",
+              "body_lines": [
+                " Tetrahedron element 818854 has an aspect ratio of 20.73, which exceeds",
+                " the warning limit of 20."
+              ],
+              "log_filename": "file.err",
+              "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+            },
+            {
+              "header_line": 549,
+              "header": "*** WARNING ***                         ELAPSED TIME =      14.714   TIME= 20:16:08",
+              "body_lines": [
+                " Tetrahedron element 818854 has an aspect ratio of 20.73, which exceeds",
+                " the warning limit of 20."
+              ],
+              "log_filename": "solve.out",
+              "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+            }
+          ]
+        },
+        {
+          "severity": "WARNING",
+          "category": "element_shape",
+          "text": "Tetrahedron element 818854 has an angle between adjacent edges of 167.5 degrees, which exceeds the warning limit of 165 degrees.",
+          "element_ids": [
+            818854
+          ],
+          "critical": false,
+          "critical_shape": false,
+          "metric": {
+            "name": "adjacent_edge_angle",
+            "value": 167.5,
+            "unit": "degree",
+            "reported_limit": 165.0
+          },
+          "occurrences": [
+            {
+              "header_line": 68,
+              "header": "*** WARNING ***                         ELAPSED TIME =      14.714   TIME= 20:16:08",
+              "body_lines": [
+                " Tetrahedron element 818854 has an angle between adjacent edges of",
+                " 167.5 degrees, which exceeds the warning limit of 165 degrees."
+              ],
+              "log_filename": "file.err",
+              "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+            },
+            {
+              "header_line": 553,
+              "header": "*** WARNING ***                         ELAPSED TIME =      14.714   TIME= 20:16:08",
+              "body_lines": [
+                " Tetrahedron element 818854 has an angle between adjacent edges of",
+                " 167.5 degrees, which exceeds the warning limit of 165 degrees."
+              ],
+              "log_filename": "solve.out",
+              "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+            }
+          ]
+        }
+      ],
+      "apdl_element_type": 185,
+      "mat": 2,
+      "centroid_native": [
+        -148.84174767500002,
+        654.166470675,
+        45.740369055
+      ],
+      "centroid_unit": "mm",
+      "centroid_mm": [
+        -148.84174767500002,
+        654.166470675,
+        45.740369055
+      ],
+      "volume_native": 0.08236327911502844,
+      "volume_unit": "mm*mm*mm",
+      "volume_conversion_basis": "field unit",
+      "volume_mm3": 0.08236327911502844,
+      "classification": "retained load-bearing solid element"
+    },
+    {
+      "element_id": 842566,
+      "rst_connectivity_node_ids": [
+        190805,
+        191972,
+        191837,
+        192115
+      ],
+      "solid_named_selection_owners": [
+        "Upper_Stop"
+      ],
+      "actual_named_selections": [
+        "UPPER_STOP"
+      ],
+      "native_messages": [
+        {
+          "severity": "WARNING",
+          "category": "element_shape",
+          "text": "Tetrahedron element 842566 has an angle between adjacent edges of 165.5 degrees, which exceeds the warning limit of 165 degrees.",
+          "element_ids": [
+            842566
+          ],
+          "critical": false,
+          "critical_shape": false,
+          "metric": {
+            "name": "adjacent_edge_angle",
+            "value": 165.5,
+            "unit": "degree",
+            "reported_limit": 165.0
+          },
+          "occurrences": [
+            {
+              "header_line": 8,
+              "header": "*** WARNING ***                         ELAPSED TIME =      11.438   TIME= 20:16:05",
+              "body_lines": [
+                " Tetrahedron element 842566 has an angle between adjacent edges of",
+                " 165.5 degrees, which exceeds the warning limit of 165 degrees."
+              ],
+              "log_filename": "file.err",
+              "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+            },
+            {
+              "header_line": 493,
+              "header": "*** WARNING ***                         ELAPSED TIME =      11.438   TIME= 20:16:05",
+              "body_lines": [
+                " Tetrahedron element 842566 has an angle between adjacent edges of",
+                " 165.5 degrees, which exceeds the warning limit of 165 degrees."
+              ],
+              "log_filename": "solve.out",
+              "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+            }
+          ]
+        }
+      ],
+      "apdl_element_type": 185,
+      "mat": 4,
+      "centroid_native": [
+        -81.80030037,
+        751.414812475,
+        -26.30066395
+      ],
+      "centroid_unit": "mm",
+      "centroid_mm": [
+        -81.80030037,
+        751.414812475,
+        -26.30066395
+      ],
+      "volume_native": 0.0307259216304333,
+      "volume_unit": "mm*mm*mm",
+      "volume_conversion_basis": "field unit",
+      "volume_mm3": 0.0307259216304333,
+      "classification": "retained load-bearing solid element"
+    },
+    {
+      "element_id": 862715,
+      "rst_connectivity_node_ids": [
+        196454,
+        196471,
+        196470,
+        197237
+      ],
+      "solid_named_selection_owners": [
+        "Lower_Stop"
+      ],
+      "actual_named_selections": [
+        "LOWER_STOP"
+      ],
+      "native_messages": [
+        {
+          "severity": "WARNING",
+          "category": "element_shape",
+          "text": "Tetrahedron element 862715 has an aspect ratio of 21.97, which exceeds the warning limit of 20.",
+          "element_ids": [
+            862715
+          ],
+          "critical": false,
+          "critical_shape": false,
+          "metric": {
+            "name": "aspect_ratio",
+            "value": 21.97,
+            "unit": "dimensionless",
+            "reported_limit": 20.0
+          },
+          "occurrences": [
+            {
+              "header_line": 16,
+              "header": "*** WARNING ***                         ELAPSED TIME =      11.808   TIME= 20:16:05",
+              "body_lines": [
+                " Tetrahedron element 862715 has an aspect ratio of 21.97, which exceeds",
+                " the warning limit of 20."
+              ],
+              "log_filename": "file.err",
+              "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+            },
+            {
+              "header_line": 501,
+              "header": "*** WARNING ***                         ELAPSED TIME =      11.808   TIME= 20:16:05",
+              "body_lines": [
+                " Tetrahedron element 862715 has an aspect ratio of 21.97, which exceeds",
+                " the warning limit of 20."
+              ],
+              "log_filename": "solve.out",
+              "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+            }
+          ]
+        },
+        {
+          "severity": "WARNING",
+          "category": "element_shape",
+          "text": "Tetrahedron element 862715 has an angle between adjacent edges of 168.4 degrees, which exceeds the warning limit of 165 degrees.",
+          "element_ids": [
+            862715
+          ],
+          "critical": false,
+          "critical_shape": false,
+          "metric": {
+            "name": "adjacent_edge_angle",
+            "value": 168.4,
+            "unit": "degree",
+            "reported_limit": 165.0
+          },
+          "occurrences": [
+            {
+              "header_line": 20,
+              "header": "*** WARNING ***                         ELAPSED TIME =      11.808   TIME= 20:16:05",
+              "body_lines": [
+                " Tetrahedron element 862715 has an angle between adjacent edges of",
+                " 168.4 degrees, which exceeds the warning limit of 165 degrees."
+              ],
+              "log_filename": "file.err",
+              "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+            },
+            {
+              "header_line": 505,
+              "header": "*** WARNING ***                         ELAPSED TIME =      11.808   TIME= 20:16:05",
+              "body_lines": [
+                " Tetrahedron element 862715 has an angle between adjacent edges of",
+                " 168.4 degrees, which exceeds the warning limit of 165 degrees."
+              ],
+              "log_filename": "solve.out",
+              "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+            }
+          ]
+        }
+      ],
+      "apdl_element_type": 185,
+      "mat": 6,
+      "centroid_native": [
+        -154.815835975,
+        846.272719775,
+        -26.652898030000003
+      ],
+      "centroid_unit": "mm",
+      "centroid_mm": [
+        -154.815835975,
+        846.272719775,
+        -26.652898030000003
+      ],
+      "volume_native": 0.06234554133664008,
+      "volume_unit": "mm*mm*mm",
+      "volume_conversion_basis": "field unit",
+      "volume_mm3": 0.06234554133664008,
+      "classification": "retained load-bearing solid element"
+    },
+    {
+      "element_id": 865586,
+      "rst_connectivity_node_ids": [
+        196329,
+        196465,
+        196466,
+        196464
+      ],
+      "solid_named_selection_owners": [
+        "Lower_Stop"
+      ],
+      "actual_named_selections": [
+        "LOWER_STOP"
+      ],
+      "native_messages": [
+        {
+          "severity": "WARNING",
+          "category": "element_shape",
+          "text": "Tetrahedron element 865586 has an aspect ratio of 22.51, which exceeds the warning limit of 20.",
+          "element_ids": [
+            865586
+          ],
+          "critical": false,
+          "critical_shape": false,
+          "metric": {
+            "name": "aspect_ratio",
+            "value": 22.51,
+            "unit": "dimensionless",
+            "reported_limit": 20.0
+          },
+          "occurrences": [
+            {
+              "header_line": 24,
+              "header": "*** WARNING ***                         ELAPSED TIME =      11.860   TIME= 20:16:05",
+              "body_lines": [
+                " Tetrahedron element 865586 has an aspect ratio of 22.51, which exceeds",
+                " the warning limit of 20."
+              ],
+              "log_filename": "file.err",
+              "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+            },
+            {
+              "header_line": 509,
+              "header": "*** WARNING ***                         ELAPSED TIME =      11.860   TIME= 20:16:05",
+              "body_lines": [
+                " Tetrahedron element 865586 has an aspect ratio of 22.51, which exceeds",
+                " the warning limit of 20."
+              ],
+              "log_filename": "solve.out",
+              "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+            }
+          ]
+        },
+        {
+          "severity": "WARNING",
+          "category": "element_shape",
+          "text": "Tetrahedron element 865586 has an angle between adjacent edges of 170.4 degrees, which exceeds the warning limit of 165 degrees.",
+          "element_ids": [
+            865586
+          ],
+          "critical": false,
+          "critical_shape": false,
+          "metric": {
+            "name": "adjacent_edge_angle",
+            "value": 170.4,
+            "unit": "degree",
+            "reported_limit": 165.0
+          },
+          "occurrences": [
+            {
+              "header_line": 28,
+              "header": "*** WARNING ***                         ELAPSED TIME =      11.860   TIME= 20:16:05",
+              "body_lines": [
+                " Tetrahedron element 865586 has an angle between adjacent edges of",
+                " 170.4 degrees, which exceeds the warning limit of 165 degrees."
+              ],
+              "log_filename": "file.err",
+              "log_sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca"
+            },
+            {
+              "header_line": 513,
+              "header": "*** WARNING ***                         ELAPSED TIME =      11.860   TIME= 20:16:05",
+              "body_lines": [
+                " Tetrahedron element 865586 has an angle between adjacent edges of",
+                " 170.4 degrees, which exceeds the warning limit of 165 degrees."
+              ],
+              "log_filename": "solve.out",
+              "log_sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700"
+            }
+          ]
+        }
+      ],
+      "apdl_element_type": 185,
+      "mat": 6,
+      "centroid_native": [
+        -153.6976359,
+        848.0934812,
+        -26.7500047725
+      ],
+      "centroid_unit": "mm",
+      "centroid_mm": [
+        -153.6976359,
+        848.0934812,
+        -26.7500047725
+      ],
+      "volume_native": 0.08731350493893114,
+      "volume_unit": "mm*mm*mm",
+      "volume_conversion_basis": "field unit",
+      "volume_mm3": 0.08731350493893114,
+      "classification": "retained load-bearing solid element"
+    }
+  ],
+  "reported_ids_absent_from_rst_mesh": [
+    1217161
+  ],
+  "attribution_status": "partial; inspect missing IDs and reader errors",
+  "requested_element_count": 13,
+  "attributed_element_count": 12,
+  "critical_measured_nonpositive_volume_count": 0,
+  "rpc_scope_policy": "metadata, centroid and solid-volume requests restricted to reported IDs; one element-connectivity lookup per reported ID",
+  "source_result_set_id": 1,
+  "source_sha256": "a81b433cc8197c2c07f50f451fb5be1e9c009d7b22d5c4d66bf814b62be3abf9",
+  "source_unchanged_during_read": true
+}

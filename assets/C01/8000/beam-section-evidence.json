@@ -1,0 +1,1240 @@
+{
+  "result_set_id": 1,
+  "frame": "actual_BEAM188_local_I_J",
+  "sources": {
+    "sequence_table": "https://ansyshelp.ansys.com/public/Views/Secured/corp/v261/en/ans_elem/Hlp_E_BEAM188.html",
+    "smisc_reader": "https://dpf.docs.pyansys.com/version/stable/api/ansys/dpf/core/operators/result/smisc/smisc.html",
+    "probe_interpretation": "https://ansyshelp.ansys.com/public/Views/Secured/corp/v261/en/wb_sim/ds_Beam_Results.html"
+  },
+  "native_units": {
+    "force": "N",
+    "moment": "N mm"
+  },
+  "output_units": {
+    "force": "N",
+    "moment": "N mm"
+  },
+  "reader": "DPF result.smisc; explicit Elemental IDs; no averaging",
+  "coordinate_basis_policy": "Read orientation K node from ds.dat before any global transform; probe Orientation is not the beam basis",
+  "sequences": {
+    "I": {
+      "axial_force": 1,
+      "bending_my": 2,
+      "bending_mz": 3,
+      "torque": 4,
+      "shear_z": 5,
+      "shear_y": 6
+    },
+    "J": {
+      "axial_force": 14,
+      "bending_my": 15,
+      "bending_mz": 16,
+      "torque": 17,
+      "shear_z": 18,
+      "shear_y": 19
+    }
+  },
+  "fields": {
+    "SMISC1": {
+      "reported_unit": "",
+      "location": "Elemental",
+      "scale_to_output_unit": 1.0,
+      "unit_conversion_basis": "generic SMISC field unit; declared native solver unit"
+    },
+    "SMISC2": {
+      "reported_unit": "",
+      "location": "Elemental",
+      "scale_to_output_unit": 1.0,
+      "unit_conversion_basis": "generic SMISC field unit; declared native solver unit"
+    },
+    "SMISC3": {
+      "reported_unit": "",
+      "location": "Elemental",
+      "scale_to_output_unit": 1.0,
+      "unit_conversion_basis": "generic SMISC field unit; declared native solver unit"
+    },
+    "SMISC4": {
+      "reported_unit": "",
+      "location": "Elemental",
+      "scale_to_output_unit": 1.0,
+      "unit_conversion_basis": "generic SMISC field unit; declared native solver unit"
+    },
+    "SMISC5": {
+      "reported_unit": "",
+      "location": "Elemental",
+      "scale_to_output_unit": 1.0,
+      "unit_conversion_basis": "generic SMISC field unit; declared native solver unit"
+    },
+    "SMISC6": {
+      "reported_unit": "",
+      "location": "Elemental",
+      "scale_to_output_unit": 1.0,
+      "unit_conversion_basis": "generic SMISC field unit; declared native solver unit"
+    },
+    "SMISC14": {
+      "reported_unit": "",
+      "location": "Elemental",
+      "scale_to_output_unit": 1.0,
+      "unit_conversion_basis": "generic SMISC field unit; declared native solver unit"
+    },
+    "SMISC15": {
+      "reported_unit": "",
+      "location": "Elemental",
+      "scale_to_output_unit": 1.0,
+      "unit_conversion_basis": "generic SMISC field unit; declared native solver unit"
+    },
+    "SMISC16": {
+      "reported_unit": "",
+      "location": "Elemental",
+      "scale_to_output_unit": 1.0,
+      "unit_conversion_basis": "generic SMISC field unit; declared native solver unit"
+    },
+    "SMISC17": {
+      "reported_unit": "",
+      "location": "Elemental",
+      "scale_to_output_unit": 1.0,
+      "unit_conversion_basis": "generic SMISC field unit; declared native solver unit"
+    },
+    "SMISC18": {
+      "reported_unit": "",
+      "location": "Elemental",
+      "scale_to_output_unit": 1.0,
+      "unit_conversion_basis": "generic SMISC field unit; declared native solver unit"
+    },
+    "SMISC19": {
+      "reported_unit": "",
+      "location": "Elemental",
+      "scale_to_output_unit": 1.0,
+      "unit_conversion_basis": "generic SMISC field unit; declared native solver unit"
+    }
+  },
+  "beams": [
+    {
+      "pretension_N": 0,
+      "ReferenceNodeId": 220707,
+      "MobileNodeId": 220708,
+      "torque_Nmm": 0.0,
+      "material": "BOLT_TRIAL_STEEL_E210",
+      "bending_moment_at_I_Nmm": 0.0,
+      "beam_object_id": 455,
+      "is_solved": true,
+      "diameter_mm": 3.0,
+      "shear_at_J_N": 0.0,
+      "grade_confirmed": false,
+      "length_mm": 9.500000000048031,
+      "frame": "beam_local_I_J",
+      "axial_force_N": 0.0,
+      "shear_at_I_N": 0.0,
+      "name": "Bolt_01",
+      "mobile_point_mm": [
+        -139.874766369,
+        988.736623201,
+        0.599996340352
+      ],
+      "bending_moment_at_J_Nmm": 0.0,
+      "reference_point_mm": [
+        -139.874767133,
+        988.736623201,
+        10.0999963404
+      ],
+      "reference_node_id": 220707,
+      "mobile_node_id": 220708,
+      "element_id": 1189489,
+      "i_node_id": 220707,
+      "j_node_id": 220708,
+      "rst_connectivity_node_ids": [
+        220707,
+        220708
+      ],
+      "reference_is_I": true,
+      "mapping_method": "exact native remote-node pair plus APDL element type 188",
+      "ends": {
+        "I": {
+          "axial_force": 11.427870750427246,
+          "bending_my": -61.072227478027344,
+          "bending_mz": -5955.35302734375,
+          "torque": -15.154130935668945,
+          "shear_z": 13.59753131866455,
+          "shear_y": -1254.369384765625,
+          "shear_resultant": 1254.4430821265885,
+          "bending_resultant": 5955.666167378885
+        },
+        "J": {
+          "axial_force": 11.427870750427246,
+          "bending_my": 68.10432434082031,
+          "bending_mz": 5961.1552734375,
+          "torque": -15.154130935668945,
+          "shear_z": 13.59753131866455,
+          "shear_y": -1254.369384765625,
+          "shear_resultant": 1254.4430821265885,
+          "bending_resultant": 5961.544295987881
+        }
+      }
+    },
+    {
+      "pretension_N": 0,
+      "ReferenceNodeId": 220709,
+      "MobileNodeId": 220710,
+      "torque_Nmm": 0.0,
+      "material": "BOLT_TRIAL_STEEL_E210",
+      "bending_moment_at_I_Nmm": 0.0,
+      "beam_object_id": 469,
+      "is_solved": true,
+      "diameter_mm": 3.0,
+      "shear_at_J_N": 0.0,
+      "grade_confirmed": false,
+      "length_mm": 15.25000000005005,
+      "frame": "beam_local_I_J",
+      "axial_force_N": 0.0,
+      "shear_at_I_N": 0.0,
+      "name": "Bolt_02",
+      "mobile_point_mm": [
+        -139.874766147,
+        999.486623201,
+        -2.15000365965
+      ],
+      "bending_moment_at_J_Nmm": 0.0,
+      "reference_point_mm": [
+        -139.874767374,
+        999.486623201,
+        13.0999963404
+      ],
+      "reference_node_id": 220709,
+      "mobile_node_id": 220710,
+      "element_id": 1189490,
+      "i_node_id": 220709,
+      "j_node_id": 220710,
+      "rst_connectivity_node_ids": [
+        220709,
+        220710
+      ],
+      "reference_is_I": true,
+      "mapping_method": "exact native remote-node pair plus APDL element type 188",
+      "ends": {
+        "I": {
+          "axial_force": 220.3769989013672,
+          "bending_my": -52.994693756103516,
+          "bending_mz": -2440.08935546875,
+          "torque": -7.111526012420654,
+          "shear_z": 5.490225791931152,
+          "shear_y": -324.1114807128906,
+          "shear_resultant": 324.1579777040029,
+          "bending_resultant": 2440.6647660500616
+        },
+        "J": {
+          "axial_force": 220.3769989013672,
+          "bending_my": 30.731246948242188,
+          "bending_mz": 2502.61083984375,
+          "torque": -7.111526012420654,
+          "shear_z": 5.490225791931152,
+          "shear_y": -324.1114807128906,
+          "shear_resultant": 324.1579777040029,
+          "bending_resultant": 2502.799517588741
+        }
+      }
+    },
+    {
+      "pretension_N": 0,
+      "ReferenceNodeId": 220711,
+      "MobileNodeId": 220712,
+      "torque_Nmm": 0.0,
+      "material": "BOLT_TRIAL_STEEL_E210",
+      "bending_moment_at_I_Nmm": 0.0,
+      "beam_object_id": 483,
+      "is_solved": true,
+      "diameter_mm": 3.0,
+      "shear_at_J_N": 0.0,
+      "grade_confirmed": false,
+      "length_mm": 9.500000000055032,
+      "frame": "beam_local_I_J",
+      "axial_force_N": 0.0,
+      "shear_at_I_N": 0.0,
+      "name": "Bolt_03",
+      "mobile_point_mm": [
+        -139.874766369,
+        1010.2366232000002,
+        0.599996340345
+      ],
+      "bending_moment_at_J_Nmm": 0.0,
+      "reference_point_mm": [
+        -139.874767133,
+        1010.2366232000002,
+        10.0999963404
+      ],
+      "reference_node_id": 220711,
+      "mobile_node_id": 220712,
+      "element_id": 1189491,
+      "i_node_id": 220711,
+      "j_node_id": 220712,
+      "rst_connectivity_node_ids": [
+        220711,
+        220712
+      ],
+      "reference_is_I": true,
+      "mapping_method": "exact native remote-node pair plus APDL element type 188",
+      "ends": {
+        "I": {
+          "axial_force": 662.0892333984375,
+          "bending_my": -168.99795532226562,
+          "bending_mz": -5866.82275390625,
+          "torque": -21.254152297973633,
+          "shear_z": 24.92435646057129,
+          "shear_y": -1236.5133056640625,
+          "shear_resultant": 1236.7644798542854,
+          "bending_resultant": 5869.256301666781
+        },
+        "J": {
+          "axial_force": 662.0892333984375,
+          "bending_my": 67.78343200683594,
+          "bending_mz": 5880.05419921875,
+          "torque": -21.254152297973633,
+          "shear_z": 24.92435646057129,
+          "shear_y": -1236.5133056640625,
+          "shear_resultant": 1236.7644798542854,
+          "bending_resultant": 5880.444879378148
+        }
+      }
+    },
+    {
+      "pretension_N": 0,
+      "ReferenceNodeId": 220713,
+      "MobileNodeId": 220714,
+      "torque_Nmm": 0.0,
+      "material": "BOLT_TRIAL_STEEL_E210",
+      "bending_moment_at_I_Nmm": 0.0,
+      "beam_object_id": 497,
+      "is_solved": true,
+      "diameter_mm": 3.0,
+      "shear_at_J_N": 0.0,
+      "grade_confirmed": false,
+      "length_mm": 9.50000000004203,
+      "frame": "beam_local_I_J",
+      "axial_force_N": 0.0,
+      "shear_at_I_N": 0.0,
+      "name": "Bolt_04",
+      "mobile_point_mm": [
+        -120.374766366,
+        988.736623201,
+        0.599997907758
+      ],
+      "bending_moment_at_J_Nmm": 0.0,
+      "reference_point_mm": [
+        -120.37476713,
+        988.736623201,
+        10.0999979078
+      ],
+      "reference_node_id": 220713,
+      "mobile_node_id": 220714,
+      "element_id": 1189492,
+      "i_node_id": 220713,
+      "j_node_id": 220714,
+      "rst_connectivity_node_ids": [
+        220713,
+        220714
+      ],
+      "reference_is_I": true,
+      "mapping_method": "exact native remote-node pair plus APDL element type 188",
+      "ends": {
+        "I": {
+          "axial_force": 66.31043243408203,
+          "bending_my": 0.909645140171051,
+          "bending_mz": -5666.5947265625,
+          "torque": 0.04186917841434479,
+          "shear_z": -0.18142928183078766,
+          "shear_y": -1194.3685302734375,
+          "shear_resultant": 1194.3685440533486,
+          "bending_resultant": 5666.594799574098
+        },
+        "J": {
+          "axial_force": 66.31043243408203,
+          "bending_my": -0.8139329552650452,
+          "bending_mz": 5679.90625,
+          "torque": 0.04186917841434479,
+          "shear_z": -0.18142928183078766,
+          "shear_y": -1194.3685302734375,
+          "shear_resultant": 1194.3685440533486,
+          "bending_resultant": 5679.906308318467
+        }
+      }
+    },
+    {
+      "pretension_N": 0,
+      "ReferenceNodeId": 220715,
+      "MobileNodeId": 220716,
+      "torque_Nmm": 0.0,
+      "material": "BOLT_TRIAL_STEEL_E210",
+      "bending_moment_at_I_Nmm": 0.0,
+      "beam_object_id": 511,
+      "is_solved": true,
+      "diameter_mm": 3.0,
+      "shear_at_J_N": 0.0,
+      "grade_confirmed": false,
+      "length_mm": 9.500000000049031,
+      "frame": "beam_local_I_J",
+      "axial_force_N": 0.0,
+      "shear_at_I_N": 0.0,
+      "name": "Bolt_05",
+      "mobile_point_mm": [
+        -120.374766369,
+        1010.2366232000002,
+        0.599997907751
+      ],
+      "bending_moment_at_J_Nmm": 0.0,
+      "reference_point_mm": [
+        -120.374767132,
+        1010.2366232000002,
+        10.0999979078
+      ],
+      "reference_node_id": 220715,
+      "mobile_node_id": 220716,
+      "element_id": 1189493,
+      "i_node_id": 220715,
+      "j_node_id": 220716,
+      "rst_connectivity_node_ids": [
+        220715,
+        220716
+      ],
+      "reference_is_I": true,
+      "mapping_method": "exact native remote-node pair plus APDL element type 188",
+      "ends": {
+        "I": {
+          "axial_force": 87.44673156738281,
+          "bending_my": -1.0375863313674927,
+          "bending_mz": -5556.33935546875,
+          "torque": -0.07650928199291229,
+          "shear_z": 0.16992942988872528,
+          "shear_y": -1176.1485595703125,
+          "shear_resultant": 1176.1485718459774,
+          "bending_resultant": 5556.339452347766
+        },
+        "J": {
+          "axial_force": 87.44673156738281,
+          "bending_my": 0.5767432451248169,
+          "bending_mz": 5617.0712890625,
+          "torque": -0.07650928199291229,
+          "shear_z": 0.16992942988872528,
+          "shear_y": -1176.1485595703125,
+          "shear_resultant": 1176.1485718459774,
+          "bending_resultant": 5617.071318671593
+        }
+      }
+    },
+    {
+      "pretension_N": 0,
+      "ReferenceNodeId": 220717,
+      "MobileNodeId": 220718,
+      "torque_Nmm": 0.0,
+      "material": "BOLT_TRIAL_STEEL_E210",
+      "bending_moment_at_I_Nmm": 0.0,
+      "beam_object_id": 525,
+      "is_solved": true,
+      "diameter_mm": 3.0,
+      "shear_at_J_N": 0.0,
+      "grade_confirmed": false,
+      "length_mm": 9.500000000036032,
+      "frame": "beam_local_I_J",
+      "axial_force_N": 0.0,
+      "shear_at_I_N": 0.0,
+      "name": "Bolt_06",
+      "mobile_point_mm": [
+        -100.874766367,
+        988.736623201,
+        0.599999475164
+      ],
+      "bending_moment_at_J_Nmm": 0.0,
+      "reference_point_mm": [
+        -100.874767131,
+        988.736623201,
+        10.0999994752
+      ],
+      "reference_node_id": 220717,
+      "mobile_node_id": 220718,
+      "element_id": 1189494,
+      "i_node_id": 220717,
+      "j_node_id": 220718,
+      "rst_connectivity_node_ids": [
+        220717,
+        220718
+      ],
+      "reference_is_I": true,
+      "mapping_method": "exact native remote-node pair plus APDL element type 188",
+      "ends": {
+        "I": {
+          "axial_force": 13.503216743469238,
+          "bending_my": 61.88764190673828,
+          "bending_mz": -5954.36669921875,
+          "torque": 15.41903305053711,
+          "shear_z": -13.803191184997559,
+          "shear_y": -1254.2064208984375,
+          "shear_resultant": 1254.282374232277,
+          "bending_resultant": 5954.688309977775
+        },
+        "J": {
+          "axial_force": 13.503216743469238,
+          "bending_my": -69.24267578125,
+          "bending_mz": 5960.5947265625,
+          "torque": 15.41903305053711,
+          "shear_z": -13.803191184997559,
+          "shear_y": -1254.2064208984375,
+          "shear_resultant": 1254.282374232277,
+          "bending_resultant": 5960.99690005573
+        }
+      }
+    },
+    {
+      "pretension_N": 0,
+      "ReferenceNodeId": 220719,
+      "MobileNodeId": 220720,
+      "torque_Nmm": 0.0,
+      "material": "BOLT_TRIAL_STEEL_E210",
+      "bending_moment_at_I_Nmm": 0.0,
+      "beam_object_id": 539,
+      "is_solved": true,
+      "diameter_mm": 3.0,
+      "shear_at_J_N": 0.0,
+      "grade_confirmed": false,
+      "length_mm": 15.25000000004005,
+      "frame": "beam_local_I_J",
+      "axial_force_N": 0.0,
+      "shear_at_I_N": 0.0,
+      "name": "Bolt_07",
+      "mobile_point_mm": [
+        -100.874766148,
+        999.486623201,
+        -2.15000052484
+      ],
+      "bending_moment_at_J_Nmm": 0.0,
+      "reference_point_mm": [
+        -100.874767373,
+        999.486623201,
+        13.0999994752
+      ],
+      "reference_node_id": 220719,
+      "mobile_node_id": 220720,
+      "element_id": 1189495,
+      "i_node_id": 220719,
+      "j_node_id": 220720,
+      "rst_connectivity_node_ids": [
+        220719,
+        220720
+      ],
+      "reference_is_I": true,
+      "mapping_method": "exact native remote-node pair plus APDL element type 188",
+      "ends": {
+        "I": {
+          "axial_force": 216.000244140625,
+          "bending_my": 53.490623474121094,
+          "bending_mz": -2440.75390625,
+          "torque": 7.593256950378418,
+          "shear_z": -5.541585922241211,
+          "shear_y": -324.18939208984375,
+          "shear_resultant": 324.2367516462562,
+          "bending_resultant": 2441.339975848158
+        },
+        "J": {
+          "axial_force": 216.000244140625,
+          "bending_my": -31.018566131591797,
+          "bending_mz": 2503.134521484375,
+          "torque": 7.593256950378418,
+          "shear_z": -5.541585922241211,
+          "shear_y": -324.18939208984375,
+          "shear_resultant": 324.2367516462562,
+          "bending_resultant": 2503.3267034271958
+        }
+      }
+    },
+    {
+      "pretension_N": 0,
+      "ReferenceNodeId": 220721,
+      "MobileNodeId": 220722,
+      "torque_Nmm": 0.0,
+      "material": "BOLT_TRIAL_STEEL_E210",
+      "bending_moment_at_I_Nmm": 0.0,
+      "beam_object_id": 553,
+      "is_solved": true,
+      "diameter_mm": 3.0,
+      "shear_at_J_N": 0.0,
+      "grade_confirmed": false,
+      "length_mm": 9.50000000004303,
+      "frame": "beam_local_I_J",
+      "axial_force_N": 0.0,
+      "shear_at_I_N": 0.0,
+      "name": "Bolt_08",
+      "mobile_point_mm": [
+        -100.874766367,
+        1010.2366232000002,
+        0.599999475157
+      ],
+      "bending_moment_at_J_Nmm": 0.0,
+      "reference_point_mm": [
+        -100.874767131,
+        1010.2366232000002,
+        10.0999994752
+      ],
+      "reference_node_id": 220721,
+      "mobile_node_id": 220722,
+      "element_id": 1189496,
+      "i_node_id": 220721,
+      "j_node_id": 220722,
+      "rst_connectivity_node_ids": [
+        220721,
+        220722
+      ],
+      "reference_is_I": true,
+      "mapping_method": "exact native remote-node pair plus APDL element type 188",
+      "ends": {
+        "I": {
+          "axial_force": 657.51708984375,
+          "bending_my": 167.5052490234375,
+          "bending_mz": -5863.9619140625,
+          "torque": 21.523046493530273,
+          "shear_z": -24.65582847595215,
+          "shear_y": -1236.0928955078125,
+          "shear_resultant": 1236.3387708078735,
+          "bending_resultant": 5866.35383675635
+        },
+        "J": {
+          "axial_force": 657.51708984375,
+          "bending_my": -66.72511291503906,
+          "bending_mz": 5878.9208984375,
+          "torque": 21.523046493530273,
+          "shear_z": -24.65582847595215,
+          "shear_y": -1236.0928955078125,
+          "shear_resultant": 1236.3387708078735,
+          "bending_resultant": 5879.299547631394
+        }
+      }
+    }
+  ],
+  "raw_reader_verified": true,
+  "reader_verification": {
+    "verified": true,
+    "element_ids": [
+      1189489,
+      1189490,
+      1189491,
+      1189492,
+      1189493,
+      1189494,
+      1189495,
+      1189496
+    ],
+    "beam_element_count": 8,
+    "apdl_element_type": 188,
+    "result_set_id": 1,
+    "smisc_sequences": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "exact_id_coverage_for_each_field": true,
+    "all_scalar_values_finite": true,
+    "native_endpoint_mapping_policy": "Caller resolves exact ReferenceNodeId/MobileNodeId against actual I/J connectivity",
+    "units_policy": "Physical field unit when declared, otherwise explicit native solver unit; normalized to N and N mm",
+    "scope": "Independent RST SMISC reader checks; does not claim agreement with Mechanical BeamProbe API values"
+  },
+  "unit_declaration_basis": "RST result_info unit system NMM",
+  "native_probe_comparison": {
+    "method": "Compare absolute axial/torque and shear/bending resultants; keep signed local components separately",
+    "beams": [
+      {
+        "name": "Bolt_01",
+        "element_id": 1189489,
+        "checks": {
+          "shear_at_I_N": {
+            "native_probe_value": 0.0,
+            "smisc_value": 1254.4430821265885,
+            "magnitude_difference": 1254.4430821265885,
+            "magnitude_agrees": false
+          },
+          "shear_at_J_N": {
+            "native_probe_value": 0.0,
+            "smisc_value": 1254.4430821265885,
+            "magnitude_difference": 1254.4430821265885,
+            "magnitude_agrees": false
+          },
+          "bending_moment_at_I_Nmm": {
+            "native_probe_value": 0.0,
+            "smisc_value": 5955.666167378885,
+            "magnitude_difference": 5955.666167378885,
+            "magnitude_agrees": false
+          },
+          "bending_moment_at_J_Nmm": {
+            "native_probe_value": 0.0,
+            "smisc_value": 5961.544295987881,
+            "magnitude_difference": 5961.544295987881,
+            "magnitude_agrees": false
+          },
+          "axial_force_N": {
+            "native_probe_value": 0.0,
+            "smisc_value": 11.427870750427246,
+            "magnitude_difference": 11.427870750427246,
+            "magnitude_agrees": false
+          },
+          "torque_Nmm": {
+            "native_probe_value": 0.0,
+            "smisc_value": -15.154130935668945,
+            "magnitude_difference": 15.154130935668945,
+            "magnitude_agrees": false
+          }
+        }
+      },
+      {
+        "name": "Bolt_02",
+        "element_id": 1189490,
+        "checks": {
+          "shear_at_I_N": {
+            "native_probe_value": 0.0,
+            "smisc_value": 324.1579777040029,
+            "magnitude_difference": 324.1579777040029,
+            "magnitude_agrees": false
+          },
+          "shear_at_J_N": {
+            "native_probe_value": 0.0,
+            "smisc_value": 324.1579777040029,
+            "magnitude_difference": 324.1579777040029,
+            "magnitude_agrees": false
+          },
+          "bending_moment_at_I_Nmm": {
+            "native_probe_value": 0.0,
+            "smisc_value": 2440.6647660500616,
+            "magnitude_difference": 2440.6647660500616,
+            "magnitude_agrees": false
+          },
+          "bending_moment_at_J_Nmm": {
+            "native_probe_value": 0.0,
+            "smisc_value": 2502.799517588741,
+            "magnitude_difference": 2502.799517588741,
+            "magnitude_agrees": false
+          },
+          "axial_force_N": {
+            "native_probe_value": 0.0,
+            "smisc_value": 220.3769989013672,
+            "magnitude_difference": 220.3769989013672,
+            "magnitude_agrees": false
+          },
+          "torque_Nmm": {
+            "native_probe_value": 0.0,
+            "smisc_value": -7.111526012420654,
+            "magnitude_difference": 7.111526012420654,
+            "magnitude_agrees": false
+          }
+        }
+      },
+      {
+        "name": "Bolt_03",
+        "element_id": 1189491,
+        "checks": {
+          "shear_at_I_N": {
+            "native_probe_value": 0.0,
+            "smisc_value": 1236.7644798542854,
+            "magnitude_difference": 1236.7644798542854,
+            "magnitude_agrees": false
+          },
+          "shear_at_J_N": {
+            "native_probe_value": 0.0,
+            "smisc_value": 1236.7644798542854,
+            "magnitude_difference": 1236.7644798542854,
+            "magnitude_agrees": false
+          },
+          "bending_moment_at_I_Nmm": {
+            "native_probe_value": 0.0,
+            "smisc_value": 5869.256301666781,
+            "magnitude_difference": 5869.256301666781,
+            "magnitude_agrees": false
+          },
+          "bending_moment_at_J_Nmm": {
+            "native_probe_value": 0.0,
+            "smisc_value": 5880.444879378148,
+            "magnitude_difference": 5880.444879378148,
+            "magnitude_agrees": false
+          },
+          "axial_force_N": {
+            "native_probe_value": 0.0,
+            "smisc_value": 662.0892333984375,
+            "magnitude_difference": 662.0892333984375,
+            "magnitude_agrees": false
+          },
+          "torque_Nmm": {
+            "native_probe_value": 0.0,
+            "smisc_value": -21.254152297973633,
+            "magnitude_difference": 21.254152297973633,
+            "magnitude_agrees": false
+          }
+        }
+      },
+      {
+        "name": "Bolt_04",
+        "element_id": 1189492,
+        "checks": {
+          "shear_at_I_N": {
+            "native_probe_value": 0.0,
+            "smisc_value": 1194.3685440533486,
+            "magnitude_difference": 1194.3685440533486,
+            "magnitude_agrees": false
+          },
+          "shear_at_J_N": {
+            "native_probe_value": 0.0,
+            "smisc_value": 1194.3685440533486,
+            "magnitude_difference": 1194.3685440533486,
+            "magnitude_agrees": false
+          },
+          "bending_moment_at_I_Nmm": {
+            "native_probe_value": 0.0,
+            "smisc_value": 5666.594799574098,
+            "magnitude_difference": 5666.594799574098,
+            "magnitude_agrees": false
+          },
+          "bending_moment_at_J_Nmm": {
+            "native_probe_value": 0.0,
+            "smisc_value": 5679.906308318467,
+            "magnitude_difference": 5679.906308318467,
+            "magnitude_agrees": false
+          },
+          "axial_force_N": {
+            "native_probe_value": 0.0,
+            "smisc_value": 66.31043243408203,
+            "magnitude_difference": 66.31043243408203,
+            "magnitude_agrees": false
+          },
+          "torque_Nmm": {
+            "native_probe_value": 0.0,
+            "smisc_value": 0.04186917841434479,
+            "magnitude_difference": 0.04186917841434479,
+            "magnitude_agrees": false
+          }
+        }
+      },
+      {
+        "name": "Bolt_05",
+        "element_id": 1189493,
+        "checks": {
+          "shear_at_I_N": {
+            "native_probe_value": 0.0,
+            "smisc_value": 1176.1485718459774,
+            "magnitude_difference": 1176.1485718459774,
+            "magnitude_agrees": false
+          },
+          "shear_at_J_N": {
+            "native_probe_value": 0.0,
+            "smisc_value": 1176.1485718459774,
+            "magnitude_difference": 1176.1485718459774,
+            "magnitude_agrees": false
+          },
+          "bending_moment_at_I_Nmm": {
+            "native_probe_value": 0.0,
+            "smisc_value": 5556.339452347766,
+            "magnitude_difference": 5556.339452347766,
+            "magnitude_agrees": false
+          },
+          "bending_moment_at_J_Nmm": {
+            "native_probe_value": 0.0,
+            "smisc_value": 5617.071318671593,
+            "magnitude_difference": 5617.071318671593,
+            "magnitude_agrees": false
+          },
+          "axial_force_N": {
+            "native_probe_value": 0.0,
+            "smisc_value": 87.44673156738281,
+            "magnitude_difference": 87.44673156738281,
+            "magnitude_agrees": false
+          },
+          "torque_Nmm": {
+            "native_probe_value": 0.0,
+            "smisc_value": -0.07650928199291229,
+            "magnitude_difference": 0.07650928199291229,
+            "magnitude_agrees": false
+          }
+        }
+      },
+      {
+        "name": "Bolt_06",
+        "element_id": 1189494,
+        "checks": {
+          "shear_at_I_N": {
+            "native_probe_value": 0.0,
+            "smisc_value": 1254.282374232277,
+            "magnitude_difference": 1254.282374232277,
+            "magnitude_agrees": false
+          },
+          "shear_at_J_N": {
+            "native_probe_value": 0.0,
+            "smisc_value": 1254.282374232277,
+            "magnitude_difference": 1254.282374232277,
+            "magnitude_agrees": false
+          },
+          "bending_moment_at_I_Nmm": {
+            "native_probe_value": 0.0,
+            "smisc_value": 5954.688309977775,
+            "magnitude_difference": 5954.688309977775,
+            "magnitude_agrees": false
+          },
+          "bending_moment_at_J_Nmm": {
+            "native_probe_value": 0.0,
+            "smisc_value": 5960.99690005573,
+            "magnitude_difference": 5960.99690005573,
+            "magnitude_agrees": false
+          },
+          "axial_force_N": {
+            "native_probe_value": 0.0,
+            "smisc_value": 13.503216743469238,
+            "magnitude_difference": 13.503216743469238,
+            "magnitude_agrees": false
+          },
+          "torque_Nmm": {
+            "native_probe_value": 0.0,
+            "smisc_value": 15.41903305053711,
+            "magnitude_difference": 15.41903305053711,
+            "magnitude_agrees": false
+          }
+        }
+      },
+      {
+        "name": "Bolt_07",
+        "element_id": 1189495,
+        "checks": {
+          "shear_at_I_N": {
+            "native_probe_value": 0.0,
+            "smisc_value": 324.2367516462562,
+            "magnitude_difference": 324.2367516462562,
+            "magnitude_agrees": false
+          },
+          "shear_at_J_N": {
+            "native_probe_value": 0.0,
+            "smisc_value": 324.2367516462562,
+            "magnitude_difference": 324.2367516462562,
+            "magnitude_agrees": false
+          },
+          "bending_moment_at_I_Nmm": {
+            "native_probe_value": 0.0,
+            "smisc_value": 2441.339975848158,
+            "magnitude_difference": 2441.339975848158,
+            "magnitude_agrees": false
+          },
+          "bending_moment_at_J_Nmm": {
+            "native_probe_value": 0.0,
+            "smisc_value": 2503.3267034271958,
+            "magnitude_difference": 2503.3267034271958,
+            "magnitude_agrees": false
+          },
+          "axial_force_N": {
+            "native_probe_value": 0.0,
+            "smisc_value": 216.000244140625,
+            "magnitude_difference": 216.000244140625,
+            "magnitude_agrees": false
+          },
+          "torque_Nmm": {
+            "native_probe_value": 0.0,
+            "smisc_value": 7.593256950378418,
+            "magnitude_difference": 7.593256950378418,
+            "magnitude_agrees": false
+          }
+        }
+      },
+      {
+        "name": "Bolt_08",
+        "element_id": 1189496,
+        "checks": {
+          "shear_at_I_N": {
+            "native_probe_value": 0.0,
+            "smisc_value": 1236.3387708078735,
+            "magnitude_difference": 1236.3387708078735,
+            "magnitude_agrees": false
+          },
+          "shear_at_J_N": {
+            "native_probe_value": 0.0,
+            "smisc_value": 1236.3387708078735,
+            "magnitude_difference": 1236.3387708078735,
+            "magnitude_agrees": false
+          },
+          "bending_moment_at_I_Nmm": {
+            "native_probe_value": 0.0,
+            "smisc_value": 5866.35383675635,
+            "magnitude_difference": 5866.35383675635,
+            "magnitude_agrees": false
+          },
+          "bending_moment_at_J_Nmm": {
+            "native_probe_value": 0.0,
+            "smisc_value": 5879.299547631394,
+            "magnitude_difference": 5879.299547631394,
+            "magnitude_agrees": false
+          },
+          "axial_force_N": {
+            "native_probe_value": 0.0,
+            "smisc_value": 657.51708984375,
+            "magnitude_difference": 657.51708984375,
+            "magnitude_agrees": false
+          },
+          "torque_Nmm": {
+            "native_probe_value": 0.0,
+            "smisc_value": 21.523046493530273,
+            "magnitude_difference": 21.523046493530273,
+            "magnitude_agrees": false
+          }
+        }
+      }
+    ],
+    "all_magnitudes_agree": false
+  },
+  "native_api_probe_policy": "Preserve original native BeamProbe scalars as diagnostics; authoritative signed beam forces are the independently read RST SMISC ends",
+  "native_results_sha256": "21fff8f44391549aa36b1dbde7b70a8a1835443bcf45874d7a53f60baaf80c52",
+  "source_sha256": "a06818a8945c92ad97c3799b60b33285bd2527192e404a9bb8710bfa36932220",
+  "source_unchanged_during_read": true,
+  "conservative_section_envelope": {
+    "units": {
+      "length": "mm",
+      "force": "N",
+      "moment": "N mm",
+      "stress": "MPa"
+    },
+    "section": "solid circular, user-authorized trial diameter",
+    "formulas": {
+      "A": "pi*d^2/4",
+      "I": "pi*d^4/64",
+      "J": "2*I",
+      "r": "d/2",
+      "V": "sqrt(SFy^2+SFz^2)",
+      "M": "sqrt(My^2+Mz^2)",
+      "sigma": "abs(N)/A + M*r/I",
+      "tau": "4*V/(3*A) + abs(T)*r/J",
+      "envelope": "sqrt(sigma^2 + 3*tau^2)",
+      "selection": "maximum of ends I and J"
+    },
+    "interpretation": "保守截面应力包络。分别叠加截面最大正应力与最大剪应力；极值可位于不同点，故非实体螺栓 von Mises，不作为已确认螺栓屈服验收。",
+    "beams": {
+      "Bolt_01": {
+        "selected_end": "J",
+        "diameter_mm": 3.0,
+        "radius_mm": 1.5,
+        "area_mm2": 7.0685834705770345,
+        "second_moment_mm4": 3.9760782021995817,
+        "polar_moment_mm4": 7.9521564043991635,
+        "ends": {
+          "I": {
+            "axial_normal_MPa": 1.6167129946184744,
+            "bending_normal_MPa": 2246.811756903142,
+            "sigma_envelope_MPa": 2248.4284698977604,
+            "transverse_shear_MPa": 236.62319093081953,
+            "torsional_shear_MPa": 2.858494633094544,
+            "tau_envelope_MPa": 239.48168556391408,
+            "equivalent_envelope_MPa": 2286.3693965342486
+          },
+          "J": {
+            "axial_normal_MPa": 1.6167129946184744,
+            "bending_normal_MPa": 2249.0293171384046,
+            "sigma_envelope_MPa": 2250.646030133023,
+            "transverse_shear_MPa": 236.62319093081953,
+            "torsional_shear_MPa": 2.858494633094544,
+            "tau_envelope_MPa": 239.48168556391408,
+            "equivalent_envelope_MPa": 2288.5501930512987
+          }
+        }
+      },
+      "Bolt_02": {
+        "selected_end": "J",
+        "diameter_mm": 3.0,
+        "radius_mm": 1.5,
+        "area_mm2": 7.0685834705770345,
+        "second_moment_mm4": 3.9760782021995817,
+        "polar_moment_mm4": 7.9521564043991635,
+        "ends": {
+          "I": {
+            "axial_normal_MPa": 31.176967750142023,
+            "bending_normal_MPa": 920.7558209116246,
+            "sigma_envelope_MPa": 951.9327886617666,
+            "transverse_shear_MPa": 61.145297178387516,
+            "torsional_shear_MPa": 1.3414335025817394,
+            "tau_envelope_MPa": 62.48673068096925,
+            "equivalent_envelope_MPa": 958.0656598913018
+          },
+          "J": {
+            "axial_normal_MPa": 31.176967750142023,
+            "bending_normal_MPa": 944.1965387668366,
+            "sigma_envelope_MPa": 975.3735065169786,
+            "transverse_shear_MPa": 61.145297178387516,
+            "torsional_shear_MPa": 1.3414335025817394,
+            "tau_envelope_MPa": 62.48673068096925,
+            "equivalent_envelope_MPa": 981.3598991954045
+          }
+        }
+      },
+      "Bolt_03": {
+        "selected_end": "J",
+        "diameter_mm": 3.0,
+        "radius_mm": 1.5,
+        "area_mm2": 7.0685834705770345,
+        "second_moment_mm4": 3.9760782021995817,
+        "polar_moment_mm4": 7.9521564043991635,
+        "ends": {
+          "I": {
+            "axial_normal_MPa": 93.66646601180884,
+            "bending_normal_MPa": 2214.213102657244,
+            "sigma_envelope_MPa": 2307.879568669053,
+            "transverse_shear_MPa": 233.28851011470974,
+            "torsional_shear_MPa": 4.009129954904261,
+            "tau_envelope_MPa": 237.297640069614,
+            "equivalent_envelope_MPa": 2344.1925290871222
+          },
+          "J": {
+            "axial_normal_MPa": 93.66646601180884,
+            "bending_normal_MPa": 2218.434062536193,
+            "sigma_envelope_MPa": 2312.100528548002,
+            "transverse_shear_MPa": 233.28851011470974,
+            "torsional_shear_MPa": 4.009129954904261,
+            "tau_envelope_MPa": 237.297640069614,
+            "equivalent_envelope_MPa": 2348.348220358253
+          }
+        }
+      },
+      "Bolt_04": {
+        "selected_end": "J",
+        "diameter_mm": 3.0,
+        "radius_mm": 1.5,
+        "area_mm2": 7.0685834705770345,
+        "second_moment_mm4": 3.9760782021995817,
+        "polar_moment_mm4": 7.9521564043991635,
+        "ends": {
+          "I": {
+            "axial_normal_MPa": 9.38100720039582,
+            "bending_normal_MPa": 2137.7578023135898,
+            "sigma_envelope_MPa": 2147.1388095139855,
+            "transverse_shear_MPa": 225.29144611503477,
+            "torsional_shear_MPa": 0.007897702764846765,
+            "tau_envelope_MPa": 225.2993438177996,
+            "equivalent_envelope_MPa": 2182.3117216143364
+          },
+          "J": {
+            "axial_normal_MPa": 9.38100720039582,
+            "bending_normal_MPa": 2142.7796510049734,
+            "sigma_envelope_MPa": 2152.160658205369,
+            "transverse_shear_MPa": 225.29144611503477,
+            "torsional_shear_MPa": 0.007897702764846765,
+            "tau_envelope_MPa": 225.2993438177996,
+            "equivalent_envelope_MPa": 2187.25281613744
+          }
+        }
+      },
+      "Bolt_05": {
+        "selected_end": "J",
+        "diameter_mm": 3.0,
+        "radius_mm": 1.5,
+        "area_mm2": 7.0685834705770345,
+        "second_moment_mm4": 3.9760782021995817,
+        "polar_moment_mm4": 7.9521564043991635,
+        "ends": {
+          "I": {
+            "axial_normal_MPa": 12.371181854381387,
+            "bending_normal_MPa": 2096.163293244828,
+            "sigma_envelope_MPa": 2108.5344750992094,
+            "transverse_shear_MPa": 221.85464772712356,
+            "torsional_shear_MPa": 0.014431799018173309,
+            "tau_envelope_MPa": 221.86907952614175,
+            "equivalent_envelope_MPa": 2143.267435023271
+          },
+          "J": {
+            "axial_normal_MPa": 12.371181854381387,
+            "bending_normal_MPa": 2119.0747640089953,
+            "sigma_envelope_MPa": 2131.445945863377,
+            "transverse_shear_MPa": 221.85464772712356,
+            "torsional_shear_MPa": 0.014431799018173309,
+            "tau_envelope_MPa": 221.86907952614175,
+            "equivalent_envelope_MPa": 2165.8115073770286
+          }
+        }
+      },
+      "Bolt_06": {
+        "selected_end": "J",
+        "diameter_mm": 3.0,
+        "radius_mm": 1.5,
+        "area_mm2": 7.0685834705770345,
+        "second_moment_mm4": 3.9760782021995817,
+        "polar_moment_mm4": 7.9521564043991635,
+        "ends": {
+          "I": {
+            "axial_normal_MPa": 1.9103143932127777,
+            "bending_normal_MPa": 2246.4428541735992,
+            "sigma_envelope_MPa": 2248.353168566812,
+            "transverse_shear_MPa": 236.59287690916202,
+            "torsional_shear_MPa": 2.9084626105958957,
+            "tau_envelope_MPa": 239.50133951975792,
+            "equivalent_envelope_MPa": 2286.301521125265
+          },
+          "J": {
+            "axial_normal_MPa": 1.9103143932127777,
+            "bending_normal_MPa": 2248.8228086502736,
+            "sigma_envelope_MPa": 2250.7331230434866,
+            "transverse_shear_MPa": 236.59287690916202,
+            "torsional_shear_MPa": 2.9084626105958957,
+            "tau_envelope_MPa": 239.50133951975792,
+            "equivalent_envelope_MPa": 2288.6420135225085
+          }
+        }
+      },
+      "Bolt_07": {
+        "selected_end": "J",
+        "diameter_mm": 3.0,
+        "radius_mm": 1.5,
+        "area_mm2": 7.0685834705770345,
+        "second_moment_mm4": 3.9760782021995817,
+        "polar_moment_mm4": 7.9521564043991635,
+        "ends": {
+          "I": {
+            "axial_normal_MPa": 30.557783612477042,
+            "bending_normal_MPa": 921.0105479681961,
+            "sigma_envelope_MPa": 951.5683315806731,
+            "transverse_shear_MPa": 61.16015615592404,
+            "torsional_shear_MPa": 1.4323014848232485,
+            "tau_envelope_MPa": 62.59245764074729,
+            "equivalent_envelope_MPa": 957.7242488982682
+          },
+          "J": {
+            "axial_normal_MPa": 30.557783612477042,
+            "bending_normal_MPa": 944.3954228725981,
+            "sigma_envelope_MPa": 974.9532064850752,
+            "transverse_shear_MPa": 61.16015615592404,
+            "torsional_shear_MPa": 1.4323014848232485,
+            "tau_envelope_MPa": 62.59245764074729,
+            "equivalent_envelope_MPa": 980.9623856683068
+          }
+        }
+      },
+      "Bolt_08": {
+        "selected_end": "J",
+        "diameter_mm": 3.0,
+        "radius_mm": 1.5,
+        "area_mm2": 7.0685834705770345,
+        "second_moment_mm4": 3.9760782021995817,
+        "polar_moment_mm4": 7.9521564043991635,
+        "ends": {
+          "I": {
+            "axial_normal_MPa": 93.01964001424949,
+            "bending_normal_MPa": 2213.1181298865276,
+            "sigma_envelope_MPa": 2306.137769900777,
+            "transverse_shear_MPa": 233.2082094343478,
+            "torsional_shear_MPa": 4.059850950923885,
+            "tau_envelope_MPa": 237.26806038527167,
+            "equivalent_envelope_MPa": 2342.468742843733
+          },
+          "J": {
+            "axial_normal_MPa": 93.01964001424949,
+            "bending_normal_MPa": 2218.0019790778797,
+            "sigma_envelope_MPa": 2311.021619092129,
+            "transverse_shear_MPa": 233.2082094343478,
+            "torsional_shear_MPa": 4.059850950923885,
+            "tau_envelope_MPa": 237.26806038527167,
+            "equivalent_envelope_MPa": 2347.2770014099688
+          }
+        }
+      }
+    }
+  }
+}

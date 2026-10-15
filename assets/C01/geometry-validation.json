@@ -1,0 +1,697 @@
+{
+  "schema": "c01-direct-step-validation/v1",
+  "source_step_sha256": "bf7b769232b58ebde69791fabd5e2f6159528f54c5ea8e9243432ebd1263182f",
+  "solid_validation": {
+    "1": {
+      "valid": true,
+      "volume_mm3": 1793.0797149996547,
+      "face_count": 26
+    },
+    "3": {
+      "valid": true,
+      "volume_mm3": 1793.0797149996547,
+      "face_count": 26
+    },
+    "6": {
+      "valid": true,
+      "volume_mm3": 41656.87705231132,
+      "face_count": 185
+    },
+    "9": {
+      "valid": true,
+      "volume_mm3": 411566.8603639102,
+      "face_count": 2073
+    }
+  },
+  "mating_contact": {
+    "distance_mm": 0.0,
+    "common_surface_area_mm2": 734.6336931495498,
+    "boolean_done": true,
+    "boolean_fuzzy_tolerance_mm": 1e-06
+  },
+  "beams": [
+    {
+      "name": "Bolt_01",
+      "reference_ring_area_mm2": 42.89059370313434,
+      "reference_ring_normal_global": [
+        -8.037956650334566e-08,
+        -1.1677302885375029e-14,
+        0.9999999999999968
+      ],
+      "reference_point_distance_to_ring_plane_mm": 1.5941880045331099e-16,
+      "reference_point_note": "Virtual beam axis point at annulus centroid; physical attachment is the local ring, not the empty center of the hole",
+      "mobile_axis_center_direct_mm": [
+        -139.87476636896605,
+        988.7366232008312,
+        0.5999963403511543
+      ],
+      "mobile_point_difference_from_cached_evidence_mm": 5.543343561953407e-13,
+      "mobile_hole_surfaces": [
+        {
+          "source_face_index": 6,
+          "hole_surface_reversed": true,
+          "diameter_mm": 3.3000000000000806,
+          "u_range_radians": [
+            3.141592653589793,
+            6.283185307179586
+          ],
+          "v_range_mm": [
+            -11.000000000003283,
+            1.7763568394002505e-15
+          ],
+          "axis_start_mm": [
+            -139.87476592687707,
+            988.7366232008312,
+            -4.90000365965047
+          ],
+          "axis_end_mm": [
+            -139.87476681105503,
+            988.7366232008311,
+            6.099996340352779
+          ],
+          "area_mm2": 57.019906662667424
+        },
+        {
+          "source_face_index": 180,
+          "hole_surface_reversed": true,
+          "diameter_mm": 3.3000000000000806,
+          "u_range_radians": [
+            0.0,
+            3.141592653589793
+          ],
+          "v_range_mm": [
+            -11.000000000003283,
+            1.7763568394002505e-15
+          ],
+          "axis_start_mm": [
+            -139.87476592687707,
+            988.7366232008312,
+            -4.90000365965047
+          ],
+          "axis_end_mm": [
+            -139.87476681105503,
+            988.7366232008311,
+            6.099996340352779
+          ],
+          "area_mm2": 57.01990666266742
+        }
+      ],
+      "length_mm": 9.50000000000165,
+      "actual_thread_pitch_not_present": "Selected engagement surfaces are smooth cylindrical STEP faces; trial anchorage does not establish real thread dimensions."
+    },
+    {
+      "name": "Bolt_02",
+      "reference_ring_area_mm2": 7.068583470578465,
+      "reference_ring_normal_global": [
+        8.037956650334566e-08,
+        1.1677302885374898e-14,
+        -0.9999999999999968
+      ],
+      "reference_point_distance_to_ring_plane_mm": 2.0245781505272287e-17,
+      "reference_point_note": "Virtual beam axis point at annulus centroid; physical attachment is the local ring, not the empty center of the hole",
+      "mobile_axis_center_direct_mm": [
+        -139.87476614672948,
+        999.4866232007405,
+        -2.150003659647055
+      ],
+      "mobile_point_difference_from_cached_evidence_mm": 1.1839454981067398e-13,
+      "mobile_hole_surfaces": [
+        {
+          "source_face_index": 126,
+          "hole_surface_reversed": true,
+          "diameter_mm": 2.9999999999998916,
+          "u_range_radians": [
+            3.141592653589793,
+            6.2831853071804105
+          ],
+          "v_range_mm": [
+            186.9999999998104,
+            192.49999999981074
+          ],
+          "axis_start_mm": [
+            -139.8747663677733,
+            999.4866232007408,
+            0.5999963403531012
+          ],
+          "axis_end_mm": [
+            -139.8747659256857,
+            999.4866232007403,
+            -4.900003659647211
+          ],
+          "area_mm2": 25.918139392114547
+        },
+        {
+          "source_face_index": 127,
+          "hole_surface_reversed": true,
+          "diameter_mm": 2.9999999999998916,
+          "u_range_radians": [
+            0.0,
+            3.1415926535898024
+          ],
+          "v_range_mm": [
+            186.9999999998104,
+            192.49999999981074
+          ],
+          "axis_start_mm": [
+            -139.8747663677733,
+            999.4866232007408,
+            0.5999963403531012
+          ],
+          "axis_end_mm": [
+            -139.8747659256857,
+            999.4866232007403,
+            -4.900003659647211
+          ],
+          "area_mm2": 25.91813939211462
+        }
+      ],
+      "length_mm": 15.249999999999973,
+      "actual_thread_pitch_not_present": "Selected engagement surfaces are smooth cylindrical STEP faces; trial anchorage does not establish real thread dimensions."
+    },
+    {
+      "name": "Bolt_03",
+      "reference_ring_area_mm2": 42.89059370313434,
+      "reference_ring_normal_global": [
+        -8.037956650334566e-08,
+        -1.1677302885375029e-14,
+        0.9999999999999968
+      ],
+      "reference_point_distance_to_ring_plane_mm": 4.361302765194244e-16,
+      "reference_point_note": "Virtual beam axis point at annulus centroid; physical attachment is the local ring, not the empty center of the hole",
+      "mobile_axis_center_direct_mm": [
+        -139.87476636896787,
+        1010.2366232008312,
+        0.5999963403441857
+      ],
+      "mobile_point_difference_from_cached_evidence_mm": 5.66042350429535e-13,
+      "mobile_hole_surfaces": [
+        {
+          "source_face_index": 5,
+          "hole_surface_reversed": true,
+          "diameter_mm": 3.3000000000000806,
+          "u_range_radians": [
+            3.141592653589793,
+            6.283185307179586
+          ],
+          "v_range_mm": [
+            -11.000000000017723,
+            1.7763568394002505e-15
+          ],
+          "axis_start_mm": [
+            -139.8747659268789,
+            1010.2366232008312,
+            -4.900003659664659
+          ],
+          "axis_end_mm": [
+            -139.87476681105684,
+            1010.2366232008311,
+            6.09999634035303
+          ],
+          "area_mm2": 57.01990666274228
+        },
+        {
+          "source_face_index": 181,
+          "hole_surface_reversed": true,
+          "diameter_mm": 3.3000000000000806,
+          "u_range_radians": [
+            0.0,
+            3.141592653589793
+          ],
+          "v_range_mm": [
+            -11.000000000017723,
+            1.7763568394002505e-15
+          ],
+          "axis_start_mm": [
+            -139.8747659268789,
+            1010.2366232008312,
+            -4.900003659664659
+          ],
+          "axis_end_mm": [
+            -139.87476681105684,
+            1010.2366232008311,
+            6.09999634035303
+          ],
+          "area_mm2": 57.01990666274227
+        }
+      ],
+      "length_mm": 9.50000000000887,
+      "actual_thread_pitch_not_present": "Selected engagement surfaces are smooth cylindrical STEP faces; trial anchorage does not establish real thread dimensions."
+    },
+    {
+      "name": "Bolt_04",
+      "reference_ring_area_mm2": 42.89059370313434,
+      "reference_ring_normal_global": [
+        -8.037956650334566e-08,
+        -1.1677302885375029e-14,
+        0.9999999999999968
+      ],
+      "reference_point_distance_to_ring_plane_mm": 1.4136334985269595e-15,
+      "reference_point_note": "Virtual beam axis point at annulus centroid; physical attachment is the local ring, not the empty center of the hole",
+      "mobile_axis_center_direct_mm": [
+        -120.37476636645962,
+        988.7366232006295,
+        0.5999979077575119
+      ],
+      "mobile_point_difference_from_cached_evidence_mm": 5.550714096083668e-13,
+      "mobile_hole_surfaces": [
+        {
+          "source_face_index": 3,
+          "hole_surface_reversed": true,
+          "diameter_mm": 3.3000000000000806,
+          "u_range_radians": [
+            3.141592653589793,
+            6.283185307179586
+          ],
+          "v_range_mm": [
+            -10.99999999999366,
+            1.7763568394002505e-15
+          ],
+          "axis_start_mm": [
+            -120.37476592437065,
+            988.7366232006297,
+            -4.900002092239301
+          ],
+          "axis_end_mm": [
+            -120.3747668085486,
+            988.7366232006295,
+            6.099997907754325
+          ],
+          "area_mm2": 57.019906662617544
+        },
+        {
+          "source_face_index": 183,
+          "hole_surface_reversed": true,
+          "diameter_mm": 3.3000000000000806,
+          "u_range_radians": [
+            0.0,
+            3.141592653589793
+          ],
+          "v_range_mm": [
+            -10.99999999999366,
+            1.7763568394002505e-15
+          ],
+          "axis_start_mm": [
+            -120.37476592437065,
+            988.7366232006297,
+            -4.900002092239301
+          ],
+          "axis_end_mm": [
+            -120.3747668085486,
+            988.7366232006295,
+            6.099997907754325
+          ],
+          "area_mm2": 57.01990666261754
+        }
+      ],
+      "length_mm": 9.499999999996838,
+      "actual_thread_pitch_not_present": "Selected engagement surfaces are smooth cylindrical STEP faces; trial anchorage does not establish real thread dimensions."
+    },
+    {
+      "name": "Bolt_05",
+      "reference_ring_area_mm2": 42.89059370313434,
+      "reference_ring_normal_global": [
+        -8.037956650334566e-08,
+        -1.1677302885375029e-14,
+        0.9999999999999968
+      ],
+      "reference_point_distance_to_ring_plane_mm": 4.29795618480351e-17,
+      "reference_point_note": "Virtual beam axis point at annulus centroid; physical attachment is the local ring, not the empty center of the hole",
+      "mobile_axis_center_direct_mm": [
+        -120.37476636882343,
+        1010.2366232008355,
+        0.5999979077505433
+      ],
+      "mobile_point_difference_from_cached_evidence_mm": 5.540012892879531e-13,
+      "mobile_hole_surfaces": [
+        {
+          "source_face_index": 4,
+          "hole_surface_reversed": true,
+          "diameter_mm": 3.3000000000000806,
+          "u_range_radians": [
+            3.141592653589793,
+            6.283185307179586
+          ],
+          "v_range_mm": [
+            -11.000000000008102,
+            1.7763568394002505e-15
+          ],
+          "axis_start_mm": [
+            -120.37476592673445,
+            1010.2366232008357,
+            -4.900002092253491
+          ],
+          "axis_end_mm": [
+            -120.3747668109124,
+            1010.2366232008355,
+            6.099997907754577
+          ],
+          "area_mm2": 57.01990666269241
+        },
+        {
+          "source_face_index": 182,
+          "hole_surface_reversed": true,
+          "diameter_mm": 3.3000000000000806,
+          "u_range_radians": [
+            0.0,
+            3.141592653589793
+          ],
+          "v_range_mm": [
+            -11.000000000008102,
+            1.7763568394002505e-15
+          ],
+          "axis_start_mm": [
+            -120.37476592673445,
+            1010.2366232008357,
+            -4.900002092253491
+          ],
+          "axis_end_mm": [
+            -120.3747668109124,
+            1010.2366232008355,
+            6.099997907754577
+          ],
+          "area_mm2": 57.0199066626924
+        }
+      ],
+      "length_mm": 9.500000000004059,
+      "actual_thread_pitch_not_present": "Selected engagement surfaces are smooth cylindrical STEP faces; trial anchorage does not establish real thread dimensions."
+    },
+    {
+      "name": "Bolt_06",
+      "reference_ring_area_mm2": 42.89059370313434,
+      "reference_ring_normal_global": [
+        -8.037956650334566e-08,
+        -1.1677302885375029e-14,
+        0.9999999999999968
+      ],
+      "reference_point_distance_to_ring_plane_mm": 9.25583606409112e-16,
+      "reference_point_note": "Virtual beam axis point at annulus centroid; physical attachment is the local ring, not the empty center of the hole",
+      "mobile_axis_center_direct_mm": [
+        -100.87476636749562,
+        988.7366232006891,
+        0.5999994751638704
+      ],
+      "mobile_point_difference_from_cached_evidence_mm": 5.66702911033944e-13,
+      "mobile_hole_surfaces": [
+        {
+          "source_face_index": 2,
+          "hole_surface_reversed": true,
+          "diameter_mm": 3.3000000000000806,
+          "u_range_radians": [
+            3.141592653589793,
+            6.283185307179586
+          ],
+          "v_range_mm": [
+            -10.999999999984036,
+            1.7763568394002505e-15
+          ],
+          "axis_start_mm": [
+            -100.87476592540665,
+            988.7366232006892,
+            -4.900000524828131
+          ],
+          "axis_end_mm": [
+            -100.8747668095846,
+            988.7366232006891,
+            6.0999994751558715
+          ],
+          "area_mm2": 57.01990666256766
+        },
+        {
+          "source_face_index": 184,
+          "hole_surface_reversed": true,
+          "diameter_mm": 3.3000000000000806,
+          "u_range_radians": [
+            0.0,
+            3.141592653589793
+          ],
+          "v_range_mm": [
+            -10.999999999984036,
+            1.7763568394002505e-15
+          ],
+          "axis_start_mm": [
+            -100.87476592540665,
+            988.7366232006892,
+            -4.900000524828131
+          ],
+          "axis_end_mm": [
+            -100.8747668095846,
+            988.7366232006891,
+            6.0999994751558715
+          ],
+          "area_mm2": 57.01990666256765
+        }
+      ],
+      "length_mm": 9.499999999992026,
+      "actual_thread_pitch_not_present": "Selected engagement surfaces are smooth cylindrical STEP faces; trial anchorage does not establish real thread dimensions."
+    },
+    {
+      "name": "Bolt_07",
+      "reference_ring_area_mm2": 7.068583470578465,
+      "reference_ring_normal_global": [
+        8.037956650334566e-08,
+        1.1677302885374898e-14,
+        -0.9999999999999968
+      ],
+      "reference_point_distance_to_ring_plane_mm": 7.660627384856568e-16,
+      "reference_point_note": "Virtual beam axis point at annulus centroid; physical attachment is the local ring, not the empty center of the hole",
+      "mobile_axis_center_direct_mm": [
+        -100.87476614763659,
+        999.4866232008314,
+        -2.1500005248439606
+      ],
+      "mobile_point_difference_from_cached_evidence_mm": 2.1390168887322673e-14,
+      "mobile_hole_surfaces": [
+        {
+          "source_face_index": 124,
+          "hole_surface_reversed": true,
+          "diameter_mm": 2.9999999999998916,
+          "u_range_radians": [
+            0.0,
+            3.141592653590622
+          ],
+          "v_range_mm": [
+            186.99999999980955,
+            192.49999999980986
+          ],
+          "axis_start_mm": [
+            -100.8747663686804,
+            999.4866232008318,
+            0.5999994751561815
+          ],
+          "axis_end_mm": [
+            -100.87476592659277,
+            999.4866232008312,
+            -4.900000524844103
+          ],
+          "area_mm2": 25.91813939211471
+        },
+        {
+          "source_face_index": 125,
+          "hole_surface_reversed": true,
+          "diameter_mm": 2.9999999999998916,
+          "u_range_radians": [
+            3.141592653589793,
+            6.283185307179586
+          ],
+          "v_range_mm": [
+            186.99999999980955,
+            192.49999999980986
+          ],
+          "axis_start_mm": [
+            -100.8747663686804,
+            999.4866232008318,
+            0.5999994751561815
+          ],
+          "axis_end_mm": [
+            -100.87476592659277,
+            999.4866232008312,
+            -4.900000524844103
+          ],
+          "area_mm2": 25.91813939211447
+        }
+      ],
+      "length_mm": 15.249999999999973,
+      "actual_thread_pitch_not_present": "Selected engagement surfaces are smooth cylindrical STEP faces; trial anchorage does not establish real thread dimensions."
+    },
+    {
+      "name": "Bolt_08",
+      "reference_ring_area_mm2": 42.89059370313434,
+      "reference_ring_normal_global": [
+        -8.037956650334566e-08,
+        -1.1677302885375029e-14,
+        0.9999999999999968
+      ],
+      "reference_point_distance_to_ring_plane_mm": 1.5235679031052034e-15,
+      "reference_point_note": "Virtual beam axis point at annulus centroid; physical attachment is the local ring, not the empty center of the hole",
+      "mobile_axis_center_direct_mm": [
+        -100.87476636746734,
+        1010.2366232006891,
+        0.5999994751569018
+      ],
+      "mobile_point_difference_from_cached_evidence_mm": 5.659418250087321e-13,
+      "mobile_hole_surfaces": [
+        {
+          "source_face_index": 1,
+          "hole_surface_reversed": true,
+          "diameter_mm": 3.3000000000000806,
+          "u_range_radians": [
+            3.141592653589793,
+            6.283185307179586
+          ],
+          "v_range_mm": [
+            -10.999999999998478,
+            1.7763568394002505e-15
+          ],
+          "axis_start_mm": [
+            -100.87476592537837,
+            1010.2366232006891,
+            -4.90000052484232
+          ],
+          "axis_end_mm": [
+            -100.87476680955632,
+            1010.236623200689,
+            6.099999475156124
+          ],
+          "area_mm2": 57.01990666264252
+        },
+        {
+          "source_face_index": 185,
+          "hole_surface_reversed": true,
+          "diameter_mm": 3.3000000000000806,
+          "u_range_radians": [
+            0.0,
+            3.141592653589793
+          ],
+          "v_range_mm": [
+            -10.999999999998478,
+            1.7763568394002505e-15
+          ],
+          "axis_start_mm": [
+            -100.87476592537837,
+            1010.2366232006891,
+            -4.90000052484232
+          ],
+          "axis_end_mm": [
+            -100.87476680955632,
+            1010.236623200689,
+            6.099999475156124
+          ],
+          "area_mm2": 57.01990666264251
+        }
+      ],
+      "length_mm": 9.499999999999245,
+      "actual_thread_pitch_not_present": "Selected engagement surfaces are smooth cylindrical STEP faces; trial anchorage does not establish real thread dimensions."
+    }
+  ],
+  "sleeves": [
+    {
+      "name": "Sleeve_A",
+      "inner_surfaces": [
+        {
+          "source_face_index": 7,
+          "area_mm2": 169.64600329384297,
+          "hole_surface_reversed": true,
+          "diameter_mm": 11.99999999999997,
+          "axial_length_mm": 8.999999999999961
+        },
+        {
+          "source_face_index": 16,
+          "area_mm2": 169.64600329384513,
+          "hole_surface_reversed": true,
+          "diameter_mm": 11.99999999999997,
+          "axial_length_mm": 9.000000000000039
+        }
+      ],
+      "outer_fitting_pairs": [
+        {
+          "source_face_index": 2,
+          "target_face_index": 20,
+          "distance_mm": 8.819392567223197e-14,
+          "common_surface_area_mm2": 17.770961365839167,
+          "boolean_done": true,
+          "boolean_fuzzy_tolerance_mm": 1e-06
+        },
+        {
+          "source_face_index": 2,
+          "target_face_index": 43,
+          "distance_mm": 8.819392567223197e-14,
+          "common_surface_area_mm2": 137.73787462376643,
+          "boolean_done": true,
+          "boolean_fuzzy_tolerance_mm": 1e-06
+        },
+        {
+          "source_face_index": 24,
+          "target_face_index": 20,
+          "distance_mm": 7.246142549764705e-14,
+          "common_surface_area_mm2": 137.73787462376862,
+          "boolean_done": true,
+          "boolean_fuzzy_tolerance_mm": 1e-06
+        },
+        {
+          "source_face_index": 24,
+          "target_face_index": 43,
+          "distance_mm": 7.246142549764705e-14,
+          "common_surface_area_mm2": 17.77096136583708,
+          "boolean_done": true,
+          "boolean_fuzzy_tolerance_mm": 1e-06
+        }
+      ],
+      "summed_actual_outer_common_area_mm2": 311.0176719792113
+    },
+    {
+      "name": "Sleeve_B",
+      "inner_surfaces": [
+        {
+          "source_face_index": 7,
+          "area_mm2": 169.64600329384297,
+          "hole_surface_reversed": true,
+          "diameter_mm": 11.99999999999997,
+          "axial_length_mm": 8.999999999999961
+        },
+        {
+          "source_face_index": 16,
+          "area_mm2": 169.64600329384515,
+          "hole_surface_reversed": true,
+          "diameter_mm": 11.99999999999997,
+          "axial_length_mm": 9.000000000000039
+        }
+      ],
+      "outer_fitting_pairs": [
+        {
+          "source_face_index": 2,
+          "target_face_index": 21,
+          "distance_mm": 1.974554668264297e-13,
+          "common_surface_area_mm2": 97.80998656653028,
+          "boolean_done": true,
+          "boolean_fuzzy_tolerance_mm": 1e-06
+        },
+        {
+          "source_face_index": 2,
+          "target_face_index": 42,
+          "distance_mm": 1.974554668264297e-13,
+          "common_surface_area_mm2": 57.698847787744725,
+          "boolean_done": true,
+          "boolean_fuzzy_tolerance_mm": 1e-06
+        },
+        {
+          "source_face_index": 24,
+          "target_face_index": 21,
+          "distance_mm": 1.7989505211591227e-13,
+          "common_surface_area_mm2": 57.698847787743055,
+          "boolean_done": true,
+          "boolean_fuzzy_tolerance_mm": 1e-06
+        },
+        {
+          "source_face_index": 24,
+          "target_face_index": 42,
+          "distance_mm": 1.7989505211591227e-13,
+          "common_surface_area_mm2": 97.80998656653142,
+          "boolean_done": true,
+          "boolean_fuzzy_tolerance_mm": 1e-06
+        }
+      ],
+      "summed_actual_outer_common_area_mm2": 311.0176687085495
+    }
+  ],
+  "actual_threads_or_bolt_specs_recovered": false
+}

@@ -1,0 +1,1021 @@
+{
+  "materials": {
+    "Calf_Main": {
+      "display_name": "X1左小腿板0907",
+      "material": "7075-T6 (GB)",
+      "E_GPa": 72,
+      "nu": 0.33,
+      "rho_kg_m3": 2810,
+      "excel_row": 17,
+      "sheet": "材料参数表",
+      "yield_MPa": 505,
+      "source_file": "Robot_Material_Report_20261013_102312.xlsx",
+      "nominal_reference_only": true,
+      "standard_grade_confirmed": null
+    },
+    "Ankle_Lugs": {
+      "display_name": "输入1-11-2-1",
+      "material": "42CrMo",
+      "E_GPa": 212,
+      "nu": 0.28,
+      "rho_kg_m3": 7850,
+      "excel_row": 13,
+      "sheet": "材料参数表",
+      "yield_MPa": 930,
+      "source_file": "Robot_Material_Report_20261013_102312.xlsx",
+      "nominal_reference_only": true,
+      "standard_grade_confirmed": null
+    },
+    "Knee_Clamp": {
+      "display_name": "X1膝盖电机副抱箍件0908",
+      "material": "7075-T6 (GB)",
+      "E_GPa": 72,
+      "nu": 0.33,
+      "rho_kg_m3": 2810,
+      "excel_row": 18,
+      "sheet": "材料参数表",
+      "yield_MPa": 505,
+      "source_file": "Robot_Material_Report_20261013_102312.xlsx",
+      "nominal_reference_only": true,
+      "standard_grade_confirmed": null
+    },
+    "Upper_Stop": {
+      "display_name": "X1脚踝上电机硬限位0907",
+      "material": "AISI 304",
+      "E_GPa": 190,
+      "nu": 0.29,
+      "rho_kg_m3": 8000,
+      "excel_row": 12,
+      "sheet": "材料参数表",
+      "yield_MPa": 206.807,
+      "source_file": "Robot_Material_Report_20261013_102312.xlsx",
+      "nominal_reference_only": true,
+      "standard_grade_confirmed": null
+    },
+    "Lower_Stop": {
+      "display_name": "X1脚踝左下电机硬限位0907",
+      "material": "AISI 304",
+      "E_GPa": 190,
+      "nu": 0.29,
+      "rho_kg_m3": 8000,
+      "excel_row": 14,
+      "sheet": "材料参数表",
+      "yield_MPa": 206.807,
+      "source_file": "Robot_Material_Report_20261013_102312.xlsx",
+      "nominal_reference_only": true,
+      "standard_grade_confirmed": null
+    },
+    "Sleeve_A": {
+      "display_name": "X1脚踝铜套0903",
+      "material": "高力黄铜",
+      "E_GPa": 105,
+      "nu": 0.34,
+      "rho_kg_m3": 8200,
+      "excel_row": 2,
+      "sheet": "材料参数表",
+      "yield_MPa": null,
+      "source_file": "Robot_Material_Report_20261013_102312.xlsx",
+      "nominal_reference_only": true,
+      "standard_grade_confirmed": false
+    },
+    "Sleeve_B": {
+      "display_name": "X1脚踝铜套0903",
+      "material": "高力黄铜",
+      "E_GPa": 105,
+      "nu": 0.34,
+      "rho_kg_m3": 8200,
+      "excel_row": 2,
+      "sheet": "材料参数表",
+      "yield_MPa": null,
+      "source_file": "Robot_Material_Report_20261013_102312.xlsx",
+      "nominal_reference_only": true,
+      "standard_grade_confirmed": false
+    }
+  },
+  "mesh": {
+    "mesh_generated": true,
+    "generate_mesh_time_seconds": 99.96105194091797,
+    "element_size_mm": 5.0,
+    "ok": true,
+    "node_count": 220706,
+    "element_count": 964420,
+    "part_counts": {
+      "Knee_Clamp": {
+        "elements": 186182,
+        "nodes": 42736
+      },
+      "Upper_Stop": {
+        "elements": 7042,
+        "nodes": 1815
+      },
+      "Calf_Main": {
+        "elements": 632907,
+        "nodes": 143738
+      },
+      "Lower_Stop": {
+        "elements": 6433,
+        "nodes": 1639
+      },
+      "Ankle_Lugs": {
+        "elements": 98624,
+        "nodes": 23058
+      },
+      "Sleeve_A": {
+        "elements": 16616,
+        "nodes": 3860
+      },
+      "Sleeve_B": {
+        "elements": 16616,
+        "nodes": 3860
+      }
+    },
+    "mesh_object_state": "Solved",
+    "element_order": "一阶四面体（Tet4）",
+    "solid_element_count": 964420,
+    "controls": {
+      "global_mm": 5,
+      "mount_mating_face_mm": 1.5,
+      "prior_too_large_mesh": {
+        "elements": 1131784,
+        "nodes": 1779491
+      },
+      "min_mm": 0.5,
+      "curvature_deg": 30,
+      "calf_mm": 5,
+      "purpose": "User-authorized resource-bounded diagnostic trial; interface and sleeve refinement retained, no convergence claim",
+      "element_order_requested": "Linear",
+      "local_pi_contact_face_mm": 2.0,
+      "clamp_mm": 5,
+      "protected_interfaces": true,
+      "engineering_decision": "First resource-bounded diagnostic trial uses linear tetrahedra; quadratic verification remains incomplete",
+      "proximity": false,
+      "stops_mm": 2,
+      "growth_rate": 1.5,
+      "bolt_face_mm": 1.5,
+      "lugs_mm": 3,
+      "sleeves_mm": 1,
+      "separate_bolt_face_sizing": true,
+      "adaptive": false,
+      "mesh_convergence_verified": false,
+      "curvature": false,
+      "local_pi_fixed_face_mm": 3.0,
+      "method_by_part": {
+        "Knee_Clamp": "PatchConforming",
+        "Upper_Stop": "PatchConforming",
+        "Calf_Main": "PatchConforming",
+        "Lower_Stop": "PatchConforming",
+        "Ankle_Lugs": "PatchConforming",
+        "Sleeve_A": "PatchConforming",
+        "Sleeve_B": "PatchConforming"
+      },
+      "global_size_mm": 5,
+      "calf_size_mm": 5,
+      "clamp_size_mm": 5,
+      "lugs_size_mm": 3,
+      "sleeve_size_mm": 1,
+      "stops_size_mm": 2,
+      "minimum_size_mm": 0.5,
+      "curvature_angle_deg": 30,
+      "bolt_face_size_mm": 1.5,
+      "mount_mating_face_size_mm": 1.5
+    },
+    "purpose": "资源约束下的诊断试算；孔面、配合面与铜套保留局部细化，未验证网格收敛",
+    "sampled_quadratic_tet_jacobians": {
+      "status": "not_applicable_no_quadratic_tetrahedra",
+      "element_count": 0,
+      "unsupported_other_solid_cell_count": 964420,
+      "minimum_sampled_determinant": null,
+      "limitation": "Tet10 mapping check is inapplicable; no sampled positivity is claimed for other cell types"
+    },
+    "physical_solid_node_count": 220706,
+    "rst_total_node_count": 220746,
+    "rst_total_element_count": 992076,
+    "auxiliary_rst_node_count": 40,
+    "auxiliary_rst_element_count": 27656,
+    "count_interpretation": "Native counts cover seven physical solid bodies. Actual RST totals also contain beam/pilot/contact/surface-effect records; the differences are measured, never assumed to equal a fixed count.",
+    "engineering_decision": "First resource-bounded diagnostic trial uses linear tetrahedra; quadratic verification remains incomplete",
+    "vtk_cell_type_counts": {
+      "1": 16,
+      "3": 8,
+      "5": 27632,
+      "10": 964420
+    },
+    "tet10_jacobian_sampling_interpretation": "Not applicable or not measured: zero sampled Tet10 cells must not be called a quality pass.",
+    "solver_warnings": {
+      "4000": {
+        "status": "parsed",
+        "attribution_status": "partial; inspect missing IDs and reader errors",
+        "source_rst_sha256": "a81b433cc8197c2c07f50f451fb5be1e9c009d7b22d5c4d66bf814b62be3abf9",
+        "source_result_set_id": 1,
+        "source_logs": [
+          {
+            "filename": "file.err",
+            "sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca",
+            "size_bytes": 7217
+          },
+          {
+            "filename": "solve.out",
+            "sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700",
+            "size_bytes": 106592
+          }
+        ],
+        "shape_warning_element_count": 12,
+        "shape_warning_message_count": 15,
+        "critical_solver_message_count": 0,
+        "critical_measured_nonpositive_volume_count": 0,
+        "error_message_count": 0,
+        "fatal_message_count": 0,
+        "shape_summary_records": [
+          {
+            "violating_element_count": 12,
+            "tested_element_count": 993608,
+            "limit_severity": "warning"
+          }
+        ],
+        "reported_ids_absent_from_rst_mesh": [
+          1217161
+        ],
+        "interpretation": "原生日志警告保留，尚未视为形状通过；缺日志时计数未知。辅助载荷元素与实体材料按实际 RST 类型和归属区分。",
+        "evidence_href": "assets/C01/4000/solver_warning_elements.json"
+      },
+      "8000": {
+        "status": "parsed",
+        "attribution_status": "partial; inspect missing IDs and reader errors",
+        "source_rst_sha256": "a06818a8945c92ad97c3799b60b33285bd2527192e404a9bb8710bfa36932220",
+        "source_result_set_id": 1,
+        "source_logs": [
+          {
+            "filename": "file.err",
+            "sha256": "3e748c3a99f4b8f8ed765fe43d8dd7034c7f8faa6803f67ab39dc98c976c38ab",
+            "size_bytes": 6754
+          },
+          {
+            "filename": "solve.out",
+            "sha256": "90a1014224c74643a6f76f4942861923244dcf6ed33860123cc5df0f10e91be6",
+            "size_bytes": 106524
+          }
+        ],
+        "shape_warning_element_count": 12,
+        "shape_warning_message_count": 15,
+        "critical_solver_message_count": 0,
+        "critical_measured_nonpositive_volume_count": 0,
+        "error_message_count": 0,
+        "fatal_message_count": 0,
+        "shape_summary_records": [
+          {
+            "violating_element_count": 12,
+            "tested_element_count": 993608,
+            "limit_severity": "warning"
+          }
+        ],
+        "reported_ids_absent_from_rst_mesh": [
+          1217161
+        ],
+        "interpretation": "原生日志警告保留，尚未视为形状通过；缺日志时计数未知。辅助载荷元素与实体材料按实际 RST 类型和归属区分。",
+        "evidence_href": "assets/C01/8000/solver_warning_elements.json"
+      }
+    },
+    "solver_warning_element_count": 12,
+    "fatal_solver_message_count": 0
+  },
+  "solver_checks": {
+    "4000": {
+      "checked_element_count": null,
+      "shape_warning_count": null,
+      "shape_error_count": null,
+      "negative_jacobian_count": null,
+      "error_count": null,
+      "note": "本轮完整 solver shape/error 解析记录尚未提供；不得引用 S01 检查数值。",
+      "solver_warning_evidence": {
+        "status": "parsed",
+        "attribution_status": "partial; inspect missing IDs and reader errors",
+        "source_rst_sha256": "a81b433cc8197c2c07f50f451fb5be1e9c009d7b22d5c4d66bf814b62be3abf9",
+        "source_result_set_id": 1,
+        "source_logs": [
+          {
+            "filename": "file.err",
+            "sha256": "691793f6edb97d23fc8b5c09673f1fea460739ac318d0b71bd9fd9dc7ef1b4ca",
+            "size_bytes": 7217
+          },
+          {
+            "filename": "solve.out",
+            "sha256": "d1b6211c5da91b8d54c87bffe47f0fa2ff556cf839dcbe26edaba294813b1700",
+            "size_bytes": 106592
+          }
+        ],
+        "shape_warning_element_count": 12,
+        "shape_warning_message_count": 15,
+        "critical_solver_message_count": 0,
+        "critical_measured_nonpositive_volume_count": 0,
+        "error_message_count": 0,
+        "fatal_message_count": 0,
+        "shape_summary_records": [
+          {
+            "violating_element_count": 12,
+            "tested_element_count": 993608,
+            "limit_severity": "warning"
+          }
+        ],
+        "reported_ids_absent_from_rst_mesh": [
+          1217161
+        ],
+        "interpretation": "原生日志警告保留，尚未视为形状通过；缺日志时计数未知。辅助载荷元素与实体材料按实际 RST 类型和归属区分。",
+        "evidence_href": "assets/C01/4000/solver_warning_elements.json"
+      }
+    },
+    "8000": {
+      "checked_element_count": null,
+      "shape_warning_count": null,
+      "shape_error_count": null,
+      "negative_jacobian_count": null,
+      "error_count": null,
+      "note": "本轮完整 solver shape/error 解析记录尚未提供；不得引用 S01 检查数值。",
+      "solver_warning_evidence": {
+        "status": "parsed",
+        "attribution_status": "partial; inspect missing IDs and reader errors",
+        "source_rst_sha256": "a06818a8945c92ad97c3799b60b33285bd2527192e404a9bb8710bfa36932220",
+        "source_result_set_id": 1,
+        "source_logs": [
+          {
+            "filename": "file.err",
+            "sha256": "3e748c3a99f4b8f8ed765fe43d8dd7034c7f8faa6803f67ab39dc98c976c38ab",
+            "size_bytes": 6754
+          },
+          {
+            "filename": "solve.out",
+            "sha256": "90a1014224c74643a6f76f4942861923244dcf6ed33860123cc5df0f10e91be6",
+            "size_bytes": 106524
+          }
+        ],
+        "shape_warning_element_count": 12,
+        "shape_warning_message_count": 15,
+        "critical_solver_message_count": 0,
+        "critical_measured_nonpositive_volume_count": 0,
+        "error_message_count": 0,
+        "fatal_message_count": 0,
+        "shape_summary_records": [
+          {
+            "violating_element_count": 12,
+            "tested_element_count": 993608,
+            "limit_severity": "warning"
+          }
+        ],
+        "reported_ids_absent_from_rst_mesh": [
+          1217161
+        ],
+        "interpretation": "原生日志警告保留，尚未视为形状通过；缺日志时计数未知。辅助载荷元素与实体材料按实际 RST 类型和归属区分。",
+        "evidence_href": "assets/C01/8000/solver_warning_elements.json"
+      }
+    }
+  },
+  "geometry_checks": {
+    "ocp_calf_volume_mm3": 411566.8603639102,
+    "dpf_calf_volume_mm3": 413176.2492787714
+  },
+  "model": {
+    "active_deformable_bodies": 7,
+    "beam_count": 8,
+    "old_pose_hold_joint_count": 0,
+    "solver": "Sparse Direct",
+    "solver_config": {
+      "minimum_substeps": 1,
+      "solver_name": "Sparse Direct",
+      "beam_connection_interpolation": "Native Beam188 default; independently inspect actual RST",
+      "solid_element_order": "Linear",
+      "memory_decision_8000": "4000 N actual factorization required 1975.495 MB in-core; host had 11.61 GB free RAM before 8000 N. Storage mode changes no geometry, material, mesh, load direction or contact.",
+      "initial_substeps": 1,
+      "large_deflection": false,
+      "stored_time_points": "LastTimePoints",
+      "solver_type": "Direct",
+      "memory_mode_by_load": {
+        "8000": "INCORE",
+        "4000": "OUTOFCORE"
+      },
+      "weak_springs": "Off",
+      "command_snippet": "FINISH\n/PREP7\nSHPP,ON\nCHECK\nFINISH\n/SOLU\nBCSOPTION,,INCORE\nDSPOPTION,,INCORE\n",
+      "maximum_substeps": 100
+    },
+    "mesh_trial_scope": "一阶四面体（Tet4）资源诊断；未网格收敛，不作为规划二次网格验收。BEAM188 连接另行记录。",
+    "saved_result_time_points": "LastTimePoints",
+    "load_centroids_mm": [
+      [
+        -99.37476625928261,
+        1051.2366232008235,
+        0.09999959558437299
+      ],
+      [
+        -141.37476639798908,
+        1051.23662320082,
+        0.09999621962193689
+      ]
+    ],
+    "load_direction_global": [
+      0,
+      -1,
+      0
+    ],
+    "active_contacts": [
+      {
+        "target": [
+          14924,
+          14988,
+          14989,
+          14964,
+          14980,
+          13647,
+          14957,
+          14941,
+          13653,
+          14981,
+          14984,
+          15671,
+          15672,
+          14942,
+          14987,
+          15668,
+          15669,
+          14075,
+          14090,
+          13652,
+          14350,
+          14326,
+          13651,
+          14960,
+          14990,
+          14986,
+          14961,
+          14991
+        ],
+        "formulation": "PurePenalty",
+        "name": "Knee_Clamp_to_Calf_Bonded_Equivalent",
+        "id": 412,
+        "type": "Bonded",
+        "source": [
+          5701,
+          5704,
+          5705,
+          5706,
+          5710,
+          5711,
+          5712,
+          5719,
+          5726,
+          5763,
+          5766,
+          5774,
+          5775,
+          5779,
+          5788,
+          5789,
+          5812,
+          5815,
+          5823,
+          5824,
+          5828,
+          5836,
+          5837,
+          5841,
+          5842,
+          5843,
+          5844,
+          5845,
+          5846,
+          5847,
+          5848,
+          5951,
+          5952
+        ]
+      },
+      {
+        "target": [
+          17909,
+          17911,
+          17899,
+          17904,
+          17910,
+          17895,
+          17905
+        ],
+        "formulation": "MPC",
+        "name": "Upper_Stop_to_Calf_Bonded_Equivalent",
+        "id": 416,
+        "type": "Bonded",
+        "source": [
+          13695,
+          14120,
+          14556,
+          14557,
+          14558,
+          14559,
+          14560,
+          14561,
+          14562
+        ]
+      },
+      {
+        "target": [
+          18770,
+          18741,
+          18771,
+          18743,
+          18774,
+          18773,
+          18772
+        ],
+        "formulation": "MPC",
+        "name": "Lower_Stop_to_Calf_Bonded_Equivalent",
+        "id": 420,
+        "type": "Bonded",
+        "source": [
+          13691,
+          13692,
+          14124,
+          14582,
+          14583,
+          14584,
+          14585,
+          14586,
+          14587
+        ]
+      },
+      {
+        "target": [
+          19418,
+          19441
+        ],
+        "formulation": "MPC",
+        "name": "Sleeve_A_Outer_to_Lugs_Bonded_Trial",
+        "id": 428,
+        "type": "Bonded",
+        "source": [
+          18191,
+          18213
+        ]
+      },
+      {
+        "target": [
+          19419,
+          19440
+        ],
+        "formulation": "MPC",
+        "name": "Sleeve_B_Outer_to_Lugs_Bonded_Trial",
+        "id": 438,
+        "type": "Bonded",
+        "source": [
+          17412,
+          17434
+        ]
+      },
+      {
+        "target": [
+          14185
+        ],
+        "formulation": "AugmentedLagrange",
+        "name": "Lugs_to_Calf_Mount_Frictionless_Trial",
+        "id": 448,
+        "type": "Frictionless",
+        "source": [
+          19422
+        ]
+      }
+    ],
+    "attachments": "Rigid on each local annular bearing / hole wall; full plate is not coupled",
+    "beam_trial": {
+      "diameter_mm": 3,
+      "E_GPa": 210,
+      "nu": 0.3,
+      "pretension_N": 0,
+      "grade_confirmed": false,
+      "yield_MPa": null
+    },
+    "assumptions": [
+      "8 个安装孔均按用户授权的 D3 实心圆梁试算，E210 GPa、ν0.30；实际规格与等级未确认。",
+      "每个局部孔壁与承载环面采用 Rigid 梁端连接，不将整块安装板刚性耦合。",
+      "安装板配合面 Frictionless，允许滑移与开离；无预紧。",
+      "删除足部、穿铜套主轴及旧 PITCH/ROLL 姿态保持关节。",
+      "保留上、下限位附件的安装连接；本轮不额外施加 203 N·m 或限位端约束。",
+      "本轮实体采用一阶四面体（Tet4）进行资源诊断试算；未网格收敛，不作为规划二次网格验收。",
+      "材料线弹性；大变形与塑性未验证，不作设计验收。",
+      "所有支承反力矩按各探针实际记录的全局求和原点解释。",
+      "梁应力为保守截面应力包络，非实体螺栓 von Mises。"
+    ],
+    "source_model_config": {
+      "load_total_N": 4000,
+      "load_centroids_mm": [
+        [
+          -99.37476625928261,
+          1051.2366232008235,
+          0.09999959558437299
+        ],
+        [
+          -141.37476639798908,
+          1051.23662320082,
+          0.09999621962193689
+        ]
+      ],
+      "trial_bolt_diameter_mm": 3.0,
+      "old_ankle_joints_count": 0,
+      "retained_source_indices": [
+        1,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9
+      ],
+      "load_each_N": 2000,
+      "global_up_vector": [
+        0,
+        -1,
+        0
+      ],
+      "study_id": "C01",
+      "active_contacts": [
+        {
+          "target": [
+            14924,
+            14988,
+            14989,
+            14964,
+            14980,
+            13647,
+            14957,
+            14941,
+            13653,
+            14981,
+            14984,
+            15671,
+            15672,
+            14942,
+            14987,
+            15668,
+            15669,
+            14075,
+            14090,
+            13652,
+            14350,
+            14326,
+            13651,
+            14960,
+            14990,
+            14986,
+            14961,
+            14991
+          ],
+          "formulation": "PurePenalty",
+          "name": "Knee_Clamp_to_Calf_Bonded_Equivalent",
+          "id": 412,
+          "type": "Bonded",
+          "source": [
+            5701,
+            5704,
+            5705,
+            5706,
+            5710,
+            5711,
+            5712,
+            5719,
+            5726,
+            5763,
+            5766,
+            5774,
+            5775,
+            5779,
+            5788,
+            5789,
+            5812,
+            5815,
+            5823,
+            5824,
+            5828,
+            5836,
+            5837,
+            5841,
+            5842,
+            5843,
+            5844,
+            5845,
+            5846,
+            5847,
+            5848,
+            5951,
+            5952
+          ]
+        },
+        {
+          "target": [
+            17909,
+            17911,
+            17899,
+            17904,
+            17910,
+            17895,
+            17905
+          ],
+          "formulation": "MPC",
+          "name": "Upper_Stop_to_Calf_Bonded_Equivalent",
+          "id": 416,
+          "type": "Bonded",
+          "source": [
+            13695,
+            14120,
+            14556,
+            14557,
+            14558,
+            14559,
+            14560,
+            14561,
+            14562
+          ]
+        },
+        {
+          "target": [
+            18770,
+            18741,
+            18771,
+            18743,
+            18774,
+            18773,
+            18772
+          ],
+          "formulation": "MPC",
+          "name": "Lower_Stop_to_Calf_Bonded_Equivalent",
+          "id": 420,
+          "type": "Bonded",
+          "source": [
+            13691,
+            13692,
+            14124,
+            14582,
+            14583,
+            14584,
+            14585,
+            14586,
+            14587
+          ]
+        },
+        {
+          "target": [
+            19418,
+            19441
+          ],
+          "formulation": "MPC",
+          "name": "Sleeve_A_Outer_to_Lugs_Bonded_Trial",
+          "id": 428,
+          "type": "Bonded",
+          "source": [
+            18191,
+            18213
+          ]
+        },
+        {
+          "target": [
+            19419,
+            19440
+          ],
+          "formulation": "MPC",
+          "name": "Sleeve_B_Outer_to_Lugs_Bonded_Trial",
+          "id": 438,
+          "type": "Bonded",
+          "source": [
+            17412,
+            17434
+          ]
+        },
+        {
+          "target": [
+            14185
+          ],
+          "formulation": "AugmentedLagrange",
+          "name": "Lugs_to_Calf_Mount_Frictionless_Trial",
+          "id": 448,
+          "type": "Frictionless",
+          "source": [
+            19422
+          ]
+        }
+      ],
+      "trial_bolt_E_GPa": 210.0,
+      "trial_bolt_nu": 0.3,
+      "pretension_N": 0,
+      "actual_bolt_grade_confirmed": false,
+      "beam_specs": [
+        {
+          "material_source": "User authorized trial steel E210GPa nu.30; no grade or yield claim",
+          "reference_face_ids": [
+            13849
+          ],
+          "radius_mm": 1.5,
+          "material_name": "BOLT_TRIAL_STEEL_E210",
+          "reference_point_mm": [
+            -139.87476713257456,
+            988.7366232008313,
+            10.099996340352774
+          ],
+          "reference_behavior": "Rigid",
+          "mobile_behavior": "Rigid",
+          "name": "Bolt_01",
+          "mobile_face_ids": [
+            19404,
+            19578
+          ],
+          "mobile_point_mm": [
+            -139.87476636896605,
+            988.7366232008312,
+            0.5999963403517087
+          ],
+          "dimensions_source": "CAD annular-bearing to cylindrical-hole-wall centroid trial anchorage; actual threaded engagement unconfirmed"
+        },
+        {
+          "material_source": "User authorized trial steel E210GPa nu.30; no grade or yield claim",
+          "reference_face_ids": [
+            13814
+          ],
+          "radius_mm": 1.5,
+          "material_name": "BOLT_TRIAL_STEEL_E210",
+          "reference_point_mm": [
+            -139.87476737371284,
+            999.4866232008292,
+            13.099996340352869
+          ],
+          "reference_behavior": "Rigid",
+          "mobile_behavior": "Rigid",
+          "name": "Bolt_02",
+          "mobile_face_ids": [
+            19524,
+            19525
+          ],
+          "mobile_point_mm": [
+            -139.8747661467295,
+            999.4866232007406,
+            -2.150003659647072
+          ],
+          "dimensions_source": "CAD annular-bearing to cylindrical-hole-wall centroid trial anchorage; actual threaded engagement unconfirmed"
+        },
+        {
+          "material_source": "User authorized trial steel E210GPa nu.30; no grade or yield claim",
+          "reference_face_ids": [
+            13847
+          ],
+          "radius_mm": 1.5,
+          "material_name": "BOLT_TRIAL_STEEL_E210",
+          "reference_point_mm": [
+            -139.8747671325764,
+            1010.2366232008313,
+            10.099996340353025
+          ],
+          "reference_behavior": "Rigid",
+          "mobile_behavior": "Rigid",
+          "name": "Bolt_03",
+          "mobile_face_ids": [
+            19403,
+            19579
+          ],
+          "mobile_point_mm": [
+            -139.8747663689679,
+            1010.2366232008313,
+            0.5999963403447395
+          ],
+          "dimensions_source": "CAD annular-bearing to cylindrical-hole-wall centroid trial anchorage; actual threaded engagement unconfirmed"
+        },
+        {
+          "material_source": "User authorized trial steel E210GPa nu.30; no grade or yield claim",
+          "reference_face_ids": [
+            13851
+          ],
+          "radius_mm": 1.5,
+          "material_name": "BOLT_TRIAL_STEEL_E210",
+          "reference_point_mm": [
+            -120.37476713006814,
+            988.73662320063,
+            10.09999790775432
+          ],
+          "reference_behavior": "Rigid",
+          "mobile_behavior": "Rigid",
+          "name": "Bolt_04",
+          "mobile_face_ids": [
+            19401,
+            19581
+          ],
+          "mobile_point_mm": [
+            -120.37476636645961,
+            988.7366232006295,
+            0.5999979077580668
+          ],
+          "dimensions_source": "CAD annular-bearing to cylindrical-hole-wall centroid trial anchorage; actual threaded engagement unconfirmed"
+        },
+        {
+          "material_source": "User authorized trial steel E210GPa nu.30; no grade or yield claim",
+          "reference_face_ids": [
+            13848
+          ],
+          "radius_mm": 1.5,
+          "material_name": "BOLT_TRIAL_STEEL_E210",
+          "reference_point_mm": [
+            -120.37476713243186,
+            1010.2366232008359,
+            10.099997907754572
+          ],
+          "reference_behavior": "Rigid",
+          "mobile_behavior": "Rigid",
+          "name": "Bolt_05",
+          "mobile_face_ids": [
+            19402,
+            19580
+          ],
+          "mobile_point_mm": [
+            -120.37476636882343,
+            1010.2366232008355,
+            0.5999979077510973
+          ],
+          "dimensions_source": "CAD annular-bearing to cylindrical-hole-wall centroid trial anchorage; actual threaded engagement unconfirmed"
+        },
+        {
+          "material_source": "User authorized trial steel E210GPa nu.30; no grade or yield claim",
+          "reference_face_ids": [
+            13846
+          ],
+          "radius_mm": 1.5,
+          "material_name": "BOLT_TRIAL_STEEL_E210",
+          "reference_point_mm": [
+            -100.87476713110422,
+            988.7366232006904,
+            10.099999475155867
+          ],
+          "reference_behavior": "Rigid",
+          "mobile_behavior": "Rigid",
+          "name": "Bolt_06",
+          "mobile_face_ids": [
+            19400,
+            19582
+          ],
+          "mobile_point_mm": [
+            -100.87476636749564,
+            988.7366232006892,
+            0.5999994751644254
+          ],
+          "dimensions_source": "CAD annular-bearing to cylindrical-hole-wall centroid trial anchorage; actual threaded engagement unconfirmed"
+        },
+        {
+          "material_source": "User authorized trial steel E210GPa nu.30; no grade or yield claim",
+          "reference_face_ids": [
+            13815
+          ],
+          "radius_mm": 1.5,
+          "material_name": "BOLT_TRIAL_STEEL_E210",
+          "reference_point_mm": [
+            -100.87476737342382,
+            999.4866232008322,
+            13.099999475155963
+          ],
+          "reference_behavior": "Rigid",
+          "mobile_behavior": "Rigid",
+          "name": "Bolt_07",
+          "mobile_face_ids": [
+            19522,
+            19523
+          ],
+          "mobile_point_mm": [
+            -100.87476614763658,
+            999.4866232008314,
+            -2.1500005248439766
+          ],
+          "dimensions_source": "CAD annular-bearing to cylindrical-hole-wall centroid trial anchorage; actual threaded engagement unconfirmed"
+        },
+        {
+          "material_source": "User authorized trial steel E210GPa nu.30; no grade or yield claim",
+          "reference_face_ids": [
+            13850
+          ],
+          "radius_mm": 1.5,
+          "material_name": "BOLT_TRIAL_STEEL_E210",
+          "reference_point_mm": [
+            -100.87476713107577,
+            1010.2366232006914,
+            10.099999475156118
+          ],
+          "reference_behavior": "Rigid",
+          "mobile_behavior": "Rigid",
+          "name": "Bolt_08",
+          "mobile_face_ids": [
+            19399,
+            19583
+          ],
+          "mobile_point_mm": [
+            -100.87476636746736,
+            1010.2366232006892,
+            0.599999475157456
+          ],
+          "dimensions_source": "CAD annular-bearing to cylindrical-hole-wall centroid trial anchorage; actual threaded engagement unconfirmed"
+        }
+      ],
+      "attachments": "Rigid on each local annular bearing / hole wall; full plate is not coupled"
+    }
+  },
+  "source_files": [
+    "ANSYS_Workbench_小腿静力学仿真任务规划 (2).md",
+    "Robot_Material_Report_20261013_102312.xlsx",
+    "导出3.zip / 导出3.STEP"
+  ]
+}

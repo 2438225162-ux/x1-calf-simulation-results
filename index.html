@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="X1 小腿静力学试验记录，独立查看 S01 足底加载与 C01 铜套加载、梁螺栓试验的结果、云图与建模核验。">
+  <meta name="theme-color" content="#15364c">
+  <title>X1 · 小腿静力学试验结果</title>
+  <link rel="stylesheet" href="styles.css?v=20261014-c01-2">
+  <script src="app.js?v=20261014-c01-2" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#results">跳到结果</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top"><strong>X1</strong><span>结构仿真记录</span></a>
+      <nav aria-label="页面导航"><a href="#results">工况结果</a><a href="#parts">零件应力</a><a href="#model">模型与载荷</a><a href="#verification">结果核验</a><a href="#sources">资料</a></nav>
+      <button class="print-button" id="print-button" type="button">打印 / 保存 PDF</button>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="eyebrow"><span id="study-subject">X1 左小腿与脚踝装配</span><span id="study-date">2026.10.13</span></div>
+      <div class="study-control" role="group" aria-label="选择试验工况"><button type="button" data-study="S01" class="active" aria-pressed="true"><strong>S01</strong> 足底加载<small>保持姿态基线</small></button><button type="button" data-study="C01" aria-pressed="false"><strong>C01</strong> 铜套加载<small>8 根梁螺栓试验</small></button></div>
+      <div class="hero-heading"><h1 id="study-title"><span>S01</span> 直立静力学<br>首轮结果</h1><p id="study-description">直立 0°，足部水平。<br>查看 8000 N 主载荷与 4000 N 对照，<br>以及模型等效、传力与验证记录。</p></div>
+      <p class="scope-note" id="study-scope">保持姿态的线弹性基线。网格收敛、塑性、大变形及实际驱动传力尚未验证，当前结果不作设计安全验收。</p>
+      <div id="c01-trial-banner" class="trial-banner" hidden><strong>一阶四面体资源诊断 · 未网格收敛 · 8 × D3 mm 试验梁</strong><p>用户授权参数：E = 210 GPa、ν = 0.30、无预紧，规格和等级尚未确认。实体采用一阶四面体，BEAM188 连接单独记录；本轮不作为规划二次网格验收。铜套与试验梁不输出正式屈服安全系数，结果只适用于当前试验假设。</p></div>
+      <ul class="study-stages" id="study-stages"></ul>
+    </section>
+
+    <div id="data-message" class="data-message" role="status">正在读取结果数据…</div>
+
+    <section id="results" class="content-section">
+      <div class="section-heading"><div><div class="section-number">01 / RESULTS</div><h2>工况结果</h2></div><div class="case-control" role="group" aria-label="选择载荷"><button type="button" data-case="4000" aria-pressed="false">4000 N <small>对照</small></button><button type="button" data-case="8000" class="active" aria-pressed="true">8000 N <small>主载荷</small></button></div></div>
+      <div class="case-meta"><span id="case-status">等待结果数据</span><span>载荷方向：CAD −Y</span><span id="load-location-note">压力中心：用户确认的足底面中心</span></div>
+      <div class="metrics" aria-live="polite">
+        <div><span class="metric-label">最大总变形</span><strong id="metric-displacement">—</strong><span class="metric-unit">mm</span></div>
+        <div><span class="metric-label">全模型最大等效应力</span><strong id="metric-stress">—</strong><span class="metric-unit">MPa</span></div>
+        <div><span class="metric-label">膝端支承反力 Fy</span><strong id="metric-force">—</strong><span class="metric-unit">N</span></div>
+        <div><span class="metric-label">力平衡相对误差</span><strong id="metric-balance">—</strong><span class="metric-unit">%</span></div>
+      </div>
+
+      <div class="viewer">
+        <div class="viewer-toolbar"><div class="view-tabs" role="group" aria-label="选择云图"><button type="button" data-view="displacement" class="active" aria-pressed="true">总变形</button><button type="button" data-view="stress" aria-pressed="false">等效应力</button><button type="button" data-view="front" aria-pressed="false">应力正视</button><button type="button" data-view="side" aria-pressed="false">应力侧视</button><button type="button" data-view="true-scale" aria-pressed="false">实际变形</button></div><label class="view-select-label" for="cloud-select">全部云图<select id="cloud-select"><optgroup label="全模型与足底"><option value="displacement">全模型总变形</option><option value="stress">全模型等效应力</option><option value="front">全模型应力正视</option><option value="side">全模型应力侧视</option><option value="true-scale">实际变形，比例 1</option><option value="foot-y">足底 Y 方向位移</option></optgroup><optgroup label="单零件等效应力"><option value="part-Calf_Main">小腿板</option><option value="part-Foot">脚掌</option><option value="part-Ankle_Lugs">脚踝铰耳</option><option value="part-Ankle_Cross">脚踝小鸟</option><option value="part-Ankle_Seat">踝关节铰座</option><option value="part-Knee_Clamp">膝端抱箍</option><option value="part-Upper_Stop">上硬限位</option><option value="part-Lower_Stop">下硬限位</option><option value="part-Pitch_Stop_Pin">PITCH 限位轴</option></optgroup></select></label><button class="image-open" type="button" id="image-open">放大图像 ↗</button></div>
+        <figure class="result-image"><img id="cloud-image" alt="等待载入工况云图" hidden><div class="image-placeholder" id="image-placeholder">云图将在结果数据载入后显示</div><figcaption><strong id="cloud-title">总变形云图</strong><span id="cloud-caption">数值来自求解结果，图像仅用于显示。</span></figcaption></figure>
+      </div>
+      <p class="technical-note">普通云图显示未变形几何，颜色表示结果数值；“实际变形”图采用变形比例 1。DPF 云图使用连接到实体单元的物理节点。节点等效应力为节点结果，不代表未平均的单元节点峰值。</p>
+      <div class="two-column response-detail"><div><h3 id="displacement-table-title">足底竖直位移</h3><div class="table-scroll"><table><thead><tr><th>分量</th><th>当前工况 / mm</th></tr></thead><tbody id="foot-rows"></tbody></table></div><p class="technical-note" id="displacement-direction-note">全局 −Y 向上；位移符号按 CAD 全局坐标记录。</p></div><div id="s01-joint-panel"><h3>姿态保持关节</h3><div class="table-scroll"><table><thead><tr><th>量</th><th>当前工况 / N·m</th></tr></thead><tbody id="joint-rows"></tbody></table></div><p class="technical-note">俯仰轴向分量为全局 X；侧倾轴向分量为全局 Z。Fixed Joint 合量包含传递的弯矩，不能作为侧倾电机需求。</p></div></div>
+      <details class="record-details"><summary>查看各探针 X / Y / Z 分量与合量</summary><div class="table-scroll"><table><thead><tr><th>探针</th><th>X</th><th>Y</th><th>Z</th><th>合量</th><th>单位</th></tr></thead><tbody id="probe-rows"></tbody></table></div><p class="technical-note">所有分量已转换至全局 X、Y、Z；力矩由 N·mm 除以 1000 转为 N·m。</p></details>
+    </section>
+
+    <section id="parts" class="content-section">
+      <div class="section-heading"><div><div class="section-number">02 / COMPONENTS</div><h2 id="parts-title">9 个承载零件的应力</h2></div><p class="section-context" id="parts-case">8000 N 主载荷</p></div>
+      <div class="table-scroll"><table class="parts-table"><thead><tr><th>零件</th><th>最大 / MPa</th><th>平均 / MPa</th><th>材料表牌号</th><th>名义屈服 / MPa</th><th>参考提示</th></tr></thead><tbody id="part-rows"></tbody></table></div>
+      <p class="reference-note">名义屈服仅引用输入材料表。峰值与名义屈服的比较用于指出需复核的位置；固定边缘与尖角峰值尚未收敛，未确认材料状态，不据此输出正式安全系数或设计通过结论。</p>
+      <div id="c01-beam-panel" hidden><h3 class="subsection-heading">8 根试验螺栓梁</h3><p class="reference-note" id="beam-data-source">梁数值来源待核对；只接受实际 RST 的独立 DPF BEAM188 SMISC。</p><div id="beam-native-warning" class="engineering-note" hidden><strong>原生 BeamProbe 读值异常 · 原生比对未通过</strong><p id="beam-native-warning-text"></p><a id="beam-native-comparison-link" download hidden>下载原生 BeamProbe 与实际 DPF 内力完整对照 ↓</a></div><p class="reference-note">统一 D3 mm 圆截面、E210 GPa、ν0.30、无预紧为用户授权试验输入，长度来自 CAD。下表取 I/J 两端保守截面应力包络较大的一端，显示该端有符号局部内力。σ = |N|/A + Mr/I，τ = 4V/(3A) + |T|r/J，包络为 √(σ² + 3τ²)。这是保守截面应力包络，不是实体螺栓 von Mises 应力；两端完整内力和公式见下载证据，不评价未知等级的正式安全系数。</p><div class="table-scroll"><table class="beam-table"><thead><tr><th>梁</th><th>取值端</th><th>D / mm</th><th>长度 / mm</th><th>轴力 / N</th><th>剪力 y / N</th><th>剪力 z / N</th><th>弯矩 y / N·m</th><th>弯矩 z / N·m</th><th>扭矩 / N·m</th><th>截面应力包络 / MPa</th></tr></thead><tbody id="beam-rows"></tbody></table></div></div>
+    </section>
+
+    <section id="model" class="content-section">
+      <div class="section-heading"><div><div class="section-number">03 / MODEL</div><h2>载荷、支承与模型范围</h2></div><p class="section-context" id="model-context">直立 0° · 足部水平</p></div>
+      <div id="s01-model-details">
+      <div class="two-column model-columns"><div><h3>边界条件</h3><dl class="definition-list"><div><dt>足底合力</dt><dd>均布面合力，Fx = Fz = 0，Fy = −F。只在足底加载一次。</dd></div><div><dt>压力中心</dt><dd class="mono">(−120.374768, 1114.736623, 27.281273) mm</dd></div><div><dt>作用面</dt><dd>脚掌足底 OCP face 34；面积中心经用户确认。</dd></div><div><dt>膝端支承</dt><dd>R62 安装圆弧固定，等效刚性电机壳体与安装端，未包含支承柔度。</dd></div></dl></div><div><h3>几何与连接等效</h3><dl class="definition-list"><div><dt>实体范围</dt><dd>保留 9 个可变形承载实体，抑制 27 个轴承、轴与紧固附件。</dd></div><div><dt>固定连接</dt><dd>6 组 Bonded：5 组 MPC；抱箍与小腿板采用 Pure Penalty，避免 MPC 冗余。</dd></div><div><dt>姿态保持</dt><dd>俯仰与侧倾各 1 组 Fixed Joint，连接面采用 Deformable 分配。</dd></div><div><dt>实际驱动</dt><dd>长、短连杆和电机传动未建立，当前模型不能给出实际驱动之间的内力分配。</dd></div></dl></div></div>
+      <div class="engineering-note"><strong>踝部关节力矩与电机峰值属于不同轴系</strong><p>所选压力中心在 8000 N 下，对踝部 PITCH 轴的几何外力矩约 217.45 N·m。资料中的 203 N·m 属电机输出 / 限位轴峰值。缺少连杆几何与传动关系，不能直接用两者判断电机能力，也不能把踝部关节力矩作为电机轴需求。</p></div>
+      </div>
+      <div id="c01-model-details" hidden><div class="two-column model-columns"><div><h3>铜套加载与支承</h3><dl class="definition-list"><div><dt>两个内孔</dt><dd id="c01-load-definition">主载荷每个铜套向上 4000 N，总计 8000 N；对照每个 2000 N，总计 4000 N。</dd></div><div><dt>载荷区域</dt><dd>两个 R6 内孔的完整分割圆柱面合并选取；定向合力作用于每个完整内孔，不使用整圈法向压力。</dd></div><div><dt>方向</dt><dd>原 CAD −Y 向上，可用加载坐标系 +Z 表示。省略原足底偏心矩与连杆分流，不额外施加 203 N·m。</dd></div><div><dt>膝端支承</dt><dd>上端实际安装接口固定，不固定铜套或安装孔，也不要求上端反力矩为零。</dd></div></dl></div><div><h3>七实体与梁连接</h3><dl class="definition-list"><div><dt>实体范围</dt><dd>小腿板、铰耳、抱箍、上/下硬限位块和两个加载铜套。原脚掌、下部轴/轴承与两组姿态保持关节取消。</dd></div><div><dt>铜套配合</dt><dd>铜套外圆与铰耳 Bonded，作为无相对滑移试验假设；内孔仅作加载区域。</dd></div><div><dt>安装板</dt><dd>配合面 Frictionless，允许分离与滑移；逐孔用 8 根 Body-Body 梁传力，不在整面另设 Bonded 或共享拓扑。</dd></div><div><dt>螺栓参数</dt><dd>8 孔全部作为 D3 mm 梁螺栓；E210 GPa、ν0.30、无预紧为授权试验参数，未确认实际等级。两端采用各孔局部承载区 Rigid 等效，整块安装板不整体刚化。</dd></div></dl></div></div><div class="engineering-note"><strong>铜套材料与试验螺栓均有强度确认项</strong><p>铜套表中登记“高力黄铜”，E105 GPa、ν0.34，缺少屈服强度；试验钢螺栓也未确认等级与屈服强度。可记录弹性应力与梁内力，不能据此给出两者正式安全系数。</p></div></div>
+    </section>
+
+    <section id="verification" class="content-section">
+      <div class="section-heading"><div><div class="section-number">04 / VERIFICATION</div><h2>结果核验与精度边界</h2></div><p class="section-context">力平衡与比例检查 · 尚无网格收敛</p></div>
+      <div class="two-column"><div><h3>求解与网格记录</h3><div class="table-scroll"><table><tbody id="mesh-rows"></tbody></table></div><p class="technical-note" id="mesh-sampling-note">DPF 对 757838 个二次实体单元各取 9 点检查，采样 Jacobian 均为正。有限采样不能证明单元内处处为正，也不替代网格收敛。</p></div><div><h3>外力与力矩平衡</h3><div class="table-scroll"><table><thead><tr><th>验证量</th><th>4000 N</th><th>8000 N</th></tr></thead><tbody id="equilibrium-rows"></tbody></table></div><p class="technical-note" id="moment-origin"></p></div></div>
+      <h3 class="subsection-heading">8000 N / 4000 N 响应比例</h3><div class="table-scroll"><table><thead><tr><th>响应</th><th>实测比例</th><th>线性参考</th><th>相对 2.0 偏差 / %</th></tr></thead><tbody id="ratio-rows"></tbody></table></div>
+      <p class="technical-note" id="ratio-note">同一边界与接触等效下的两倍响应检查仅验证线性载荷比例，不代替粗、中、细网格收敛，也不能证明塑性或大变形适用性。</p>
+      <h3 class="subsection-heading">小腿板体积核对</h3><div class="table-scroll"><table><thead><tr><th>度量</th><th>体积 / mm³</th><th>相对 OCP / %</th></tr></thead><tbody id="volume-rows"></tbody></table></div><p class="technical-note" id="volume-note">有限元单元形函数积分与 OCP 体积基本一致。原生几何质量接口偏差保留为度量记录，不把 +2.6316% 当作实际导入几何增量；体积核对也不能单独证明局部几何精度。</p>
+      <div class="limitation-list"><h3>仍需完成的验证</h3><ul id="study-limitations"><li>约 2 mm 小腿薄壁的厚度分辨率与粗、中、细网格收敛。</li><li>材料牌号、热处理状态及塑性适用性，必要时采用弹塑性材料曲线。</li><li>大变形对传力与接触状态的影响。</li><li>实际连杆、电机传动、安装端柔度与预紧接触。</li><li>允许位移、要求的安全系数与正式设计验收依据。</li></ul></div>
+    </section>
+
+    <section id="sources" class="content-section source-section">
+      <div class="section-heading"><div><div class="section-number">05 / RECORDS</div><h2>资料与可下载记录</h2></div><div class="download-links"><a href="assets/data.json" download="X1_S01_C01_results.json">下载完整结果 JSON ↓</a></div></div>
+      <div class="table-scroll"><table><thead><tr><th>输入资料</th><th>定位与用途</th></tr></thead><tbody id="source-rows"><tr><td>铝镁合金小腿仿真_DEMO_20261013.pptx</td><td>第 3–5、10–13 页：载荷、姿态、接口与电机参考。</td></tr><tr><td>Robot_Material_Report_20261013_102312.xlsx</td><td>材料参数表第 4、6、12–15、17–18、21 行：保留零件材料。</td></tr><tr><td>导出3.zip / 导出3.STEP</td><td>简化装配，36 个实际实体实例。</td></tr><tr><td>X1腿部总装0906.STEP</td><td>总装结构与省略部件核对。</td></tr></tbody></table></div>
+      <p class="technical-note" id="source-scope-note">页面数据包含已完成求解的结果、模型与核验摘要。4000 N 对照与 8000 N 主载荷属于同一个 S01 直立工况；四个限位工况与其他姿态未包含在本次结果中。</p>
+      <div class="nodal-downloads"><h3>完整节点结果</h3><p class="technical-note" id="node-download-note">下载节点位移、等效应力与坐标数据。网页合并分片，校验完整文件的 SHA-256 后交给浏览器保存。位移与应力按实体物理节点 ID 输出；坐标表另含 14 个广义节点记录。请按节点 ID 连接各字段，详见下载清单的字段说明。</p><div class="two-column"><div class="download-entry"><button type="button" data-nodal-case="4000" disabled>下载 4000 N 节点结果 (.npz) ↓</button><progress id="download-progress-4000" max="100" value="0" hidden></progress><p id="download-status-4000" role="status">节点数据准备中</p></div><div class="download-entry"><button type="button" data-nodal-case="8000" disabled>下载 8000 N 节点结果 (.npz) ↓</button><progress id="download-progress-8000" max="100" value="0" hidden></progress><p id="download-status-8000" role="status">节点数据准备中</p></div></div></div>
+      <div id="extra-downloads" class="download-links"></div>
+    </section>
+  </main>
+  <footer><div><strong id="footer-study">X1 / S01</strong><span id="footer-description">直立静力学首轮记录</span><span>当前结果未作设计安全验收。</span></div></footer>
+  <dialog id="image-dialog"><button type="button" id="dialog-close" aria-label="关闭大图">关闭 ×</button><img id="dialog-image" alt="工况云图大图"><p id="dialog-caption"></p></dialog>
+</body>
+</html>

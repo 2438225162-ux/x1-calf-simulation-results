@@ -1,0 +1,69 @@
+{
+  "schema": "c01-nodal-data-schema/v1",
+  "arrays": {
+    "mesh_node_ids": {
+      "dtype": "<i8",
+      "shape": [
+        220706
+      ],
+      "fortran_order": false
+    },
+    "mesh_coordinates": {
+      "dtype": "<f8",
+      "shape": [
+        220706,
+        3
+      ],
+      "fortran_order": false,
+      "aligned_by": "mesh_node_ids"
+    },
+    "displacement_node_ids": {
+      "dtype": "<i8",
+      "shape": [
+        220706
+      ],
+      "fortran_order": false
+    },
+    "displacement_native": {
+      "dtype": "<f8",
+      "shape": [
+        220706,
+        3
+      ],
+      "fortran_order": false,
+      "aligned_by": "displacement_node_ids"
+    },
+    "stress_node_ids": {
+      "dtype": "<i8",
+      "shape": [
+        220706
+      ],
+      "fortran_order": false
+    },
+    "von_mises_native": {
+      "dtype": "<f8",
+      "shape": [
+        220706
+      ],
+      "fortran_order": false,
+      "aligned_by": "stress_node_ids"
+    },
+    "physical_solid_element_ids": {
+      "dtype": "<i8",
+      "shape": [
+        964420
+      ],
+      "fortran_order": false
+    }
+  },
+  "units": {
+    "coordinates": "mm",
+    "displacement": "mm",
+    "equivalent_stress": "MPa"
+  },
+  "source_rst_sha256": "a06818a8945c92ad97c3799b60b33285bd2527192e404a9bb8710bfa36932220",
+  "selected_result_set_id": 1,
+  "scope": "All exported coordinate/result node arrays are restricted to physical nodes connected to 3D solids; beam-only and pilot records excluded.",
+  "alignment": "Join by each value array's explicit node-ID field. Do not assume array position matches another result or coordinate array.",
+  "beam_results": "Separate signed local I/J forces are in beam-section-evidence.json; this node NPZ is solid-only."
+}

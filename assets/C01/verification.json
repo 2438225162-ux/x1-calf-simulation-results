@@ -1,0 +1,168 @@
+{
+  "study_id": "C01",
+  "status": "verified",
+  "support_moment_summation_point_mm": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "moment_origin_basis": "Actual native summation_origin_global_mm; never inferred from Orientation axes",
+  "support_geometry_area_centroid_mm": [
+    -124.87014757882176,
+    609.8660452898347,
+    -9.012965887085544
+  ],
+  "geometry_reference_moment_basis": "Explicit algebraic shift M_geometry=M_native-(O_geometry-O_native) cross R_native; not a guessed native probe centroid",
+  "legacy_geometry_field_units": {
+    "centroid_m": "mm (misnamed raw field)",
+    "area_m2": "mm² (misnamed raw field)"
+  },
+  "load_application_points_mm": [
+    [
+      -99.37476625928261,
+      1051.2366232008235,
+      0.09999959558437299
+    ],
+    [
+      -141.37476639798908,
+      1051.23662320082,
+      0.09999621962193689
+    ]
+  ],
+  "cases": {
+    "4000": {
+      "load_N": 4000,
+      "load_each_N": 2000.0,
+      "case_label": "C00",
+      "status_verified": true,
+      "all_probes_solved": true,
+      "all_eight_beam_probes_solved": true,
+      "summation_origin_global_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "summation": "OrientationSystem",
+      "external_force_global_N": [
+        0.0,
+        -4000.0,
+        0.0
+      ],
+      "reaction_force_N": [
+        -2.3616230204704866e-07,
+        3999.9999967564713,
+        -3.1313175223764145e-08
+      ],
+      "expected_reaction_moment_Nmm": [
+        -399.99163041261977,
+        -0.0,
+        -481499.0653145433
+      ],
+      "actual_reaction_moment_Nmm": [
+        -399.9120927211706,
+        -0.0023152193965354506,
+        -481499.00595501886
+      ],
+      "expected_reaction_moment_at_geometry_center_Nmm": [
+        -36451.8551787548,
+        -0.0,
+        17981.525000743655
+      ],
+      "actual_reaction_moment_shifted_to_geometry_center_Nmm": [
+        -36451.77559273269,
+        -0.0023134378384962635,
+        17981.583811220946
+      ],
+      "equilibrium_relative_errors": {
+        "force_relative": 8.130663969501536e-10,
+        "moment_relative": 2.0617508952854473e-07,
+        "moment_at_geometry_reference_relative": 2.435304084176258e-06
+      },
+      "reaction_moment_summation_point_mm": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "8000": {
+      "load_N": 8000,
+      "load_each_N": 4000.0,
+      "case_label": "C01",
+      "status_verified": true,
+      "all_probes_solved": true,
+      "all_eight_beam_probes_solved": true,
+      "summation_origin_global_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "summation": "OrientationSystem",
+      "external_force_global_N": [
+        0.0,
+        -8000.0,
+        0.0
+      ],
+      "reaction_force_N": [
+        -4.7225572732110567e-07,
+        7999.99999349938,
+        -6.266637148436005e-08
+      ],
+      "expected_reaction_moment_Nmm": [
+        -799.9832608252395,
+        -0.0,
+        -962998.1306290866
+      ],
+      "actual_reaction_moment_Nmm": [
+        -799.8241858285621,
+        -0.0046304291264815944,
+        -962998.0119084497
+      ],
+      "expected_reaction_moment_at_geometry_center_Nmm": [
+        -72903.7103575096,
+        -0.0,
+        35963.05000148731
+      ],
+      "actual_reaction_moment_shifted_to_geometry_center_Nmm": [
+        -72903.55118570496,
+        -0.004626860392186439,
+        35963.16762237821
+      ],
+      "equilibrium_relative_errors": {
+        "force_relative": 8.147565745188994e-10,
+        "moment_relative": 2.0617575399858446e-07,
+        "moment_at_geometry_reference_relative": 2.435301244741282e-06
+      },
+      "reaction_moment_summation_point_mm": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "load_ratio_8000_over_4000": {
+    "max_total_deformation_mm": 2.0,
+    "max_equivalent_stress_MPa": 2.0,
+    "stress_Knee_Clamp": 2.0000000048604587,
+    "stress_Upper_Stop": 1.9999999999950417,
+    "stress_Calf_Main": 2.0,
+    "stress_Lower_Stop": 2.0,
+    "stress_Ankle_Lugs": 2.000000000219645,
+    "stress_Sleeve_A": 2.0,
+    "stress_Sleeve_B": 2.0,
+    "sleeve_up_Sleeve_A": 2.0,
+    "sleeve_up_Sleeve_B": 2.0
+  },
+  "ratio_zero_denominator": "null means undefined",
+  "force_and_moment_equilibrium_passed": true,
+  "both_load_levels_verified": true,
+  "mesh_convergence_verified": false,
+  "large_deflection_verified": false,
+  "actual_bolt_specification_verified": false,
+  "bolt_pretension_included": false,
+  "interpretation": "User-authorized D3/E210 trial; C00=2×2000N, C01=2×4000N; no pretension, frictionless mating. Contact changes can prevent exact 2x ratios.",
+  "reaction_moment_summation_point_mm": [
+    0.0,
+    0.0,
+    0.0
+  ]
+}

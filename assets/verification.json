@@ -1,0 +1,86 @@
+{
+  "support_moment_summation_point_mm": [
+    -124.87014757882176,
+    609.8660452898347,
+    -9.012965887085544
+  ],
+  "load_application_point_mm": [
+    -120.374768,
+    1114.736623,
+    27.281273
+  ],
+  "cases": {
+    "4000": {
+      "load_N": 4000,
+      "status_verified": true,
+      "all_probes_solved": true,
+      "reaction_force_N": [
+        -1.6715660346167116e-07,
+        4000.0000001312433,
+        6.079415593054742e-07
+      ],
+      "expected_reaction_moment_Nmm": [
+        -145176.95554834217,
+        -0.0,
+        17981.51831528702
+      ],
+      "actual_reaction_moment_Nmm": [
+        -145175.6896024303,
+        -0.004582844674374531,
+        17981.50898966901
+      ],
+      "equilibrium_relative_errors": {
+        "force_relative": 1.61004476876802e-10,
+        "moment_relative": 8.654183611998944e-06
+      },
+      "pitch_axial_pose_moment_Nm": -108.72384374999965,
+      "roll_axial_pose_moment_Nm": -3.4140772186219583e-06
+    },
+    "8000": {
+      "load_N": 8000,
+      "status_verified": true,
+      "all_probes_solved": true,
+      "reaction_force_N": [
+        -3.8412562707208775e-07,
+        8000.000000230126,
+        1.1151924018183192e-06
+      ],
+      "expected_reaction_moment_Nmm": [
+        -290353.91109668434,
+        -0.0,
+        35963.03663057404
+      ],
+      "actual_reaction_moment_Nmm": [
+        -290351.37925115135,
+        -0.009164046341788579,
+        35963.01800393085
+      ],
+      "equilibrium_relative_errors": {
+        "force_relative": 1.5021674326322698e-10,
+        "moment_relative": 8.654024758519256e-06
+      },
+      "pitch_axial_pose_moment_Nm": -217.4476874999993,
+      "roll_axial_pose_moment_Nm": -6.8272957578301215e-06
+    }
+  },
+  "load_ratio_8000_over_4000": {
+    "max_total_deformation_mm": 2.0,
+    "max_equivalent_stress_MPa": 2.0,
+    "foot_displacement_Y_min_mm": 2.0,
+    "foot_displacement_Y_max_mm": 2.0,
+    "stress_Ankle_Cross": 1.9999999999991573,
+    "stress_Knee_Clamp": 2.0,
+    "stress_Upper_Stop": 2.0,
+    "stress_Calf_Main": 2.0,
+    "stress_Lower_Stop": 2.0,
+    "stress_Ankle_Lugs": 2.0,
+    "stress_Ankle_Seat": 2.0,
+    "stress_Foot": 2.0,
+    "stress_Pitch_Stop_Pin": 2.000000000001138
+  },
+  "force_and_moment_equilibrium_passed": true,
+  "both_load_levels_verified": true,
+  "mesh_convergence_verified": false,
+  "large_deflection_verified": false,
+  "interpretation": "Conditional linear pose-held baseline; not a final design strength acceptance."
+}

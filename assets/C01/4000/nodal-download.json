@@ -1,0 +1,22 @@
+{
+  "schema": "c01-nodal-download/v1",
+  "filename": "C01_4000_nodal_results.npz",
+  "total_bytes": 15029837,
+  "sha256": "587d0bc212f6584e2229e0f1d4c9e4c5a760e85e7d0530b67e15abd9742ce129",
+  "parts": [
+    {
+      "src": "assets/C01/4000/nodal.part001",
+      "bytes": 15029837,
+      "sha256": "587d0bc212f6584e2229e0f1d4c9e4c5a760e85e7d0530b67e15abd9742ce129"
+    }
+  ],
+  "units": {
+    "coordinates": "mm",
+    "displacement": "mm",
+    "equivalent_stress": "MPa"
+  },
+  "field_schema": "assets/C01/4000/nodal-data-schema.json",
+  "description": "All exported coordinate/result node arrays are restricted to physical nodes connected to 3D solids; beam-only and pilot records excluded. Join by each value array's explicit node-ID field. Do not assume array position matches another result or coordinate array.",
+  "source_rst_sha256": "a81b433cc8197c2c07f50f451fb5be1e9c009d7b22d5c4d66bf814b62be3abf9",
+  "selected_result_set_id": 1
+}

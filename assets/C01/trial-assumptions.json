@@ -1,0 +1,254 @@
+{
+  "case": "C01",
+  "purpose": "两个铜套内孔加载、铰耳安装板用8根螺栓梁连接的首轮试验",
+  "planning_source": {
+    "file": "ANSYS_Workbench_小腿静力学仿真任务规划 (2).md",
+    "date": "2026-10-14",
+    "supersedes_S01_foot_load_and_pose_hold": true,
+    "latest_loading_and_mount_hole_images_received": false,
+    "note": "铜套选取依据CAD装配关系；尚未直接核对规划提及但未附的新图片。"
+  },
+  "user_authorization": {
+    "source": "本轮主代理转述的直接用户授权",
+    "instruction": "8个安装孔全部按beam螺栓，参数自行设置，先做试验",
+    "effect": "螺栓规格与等级未确认不阻塞此次明确标为假设的试算；不得将假设写成已确认实物规格。"
+  },
+  "retained_source_indices_recommended": [
+    1,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9
+  ],
+  "retained_parts": [
+    {
+      "source_index": 1,
+      "role": "Sleeve_A",
+      "part": "X1脚踝铜套0903",
+      "source_material_row": 2
+    },
+    {
+      "source_index": 3,
+      "role": "Sleeve_B",
+      "part": "X1脚踝铜套0903",
+      "source_material_row": 2
+    },
+    {
+      "source_index": 4,
+      "role": "Upper_Stop",
+      "part": "X1脚踝上电机硬限位0907",
+      "source_material_row": 12,
+      "C01_load": 0,
+      "treatment": "上部小腿附件，安装处连接到小腿板；限位工作端面不加载、不固定。为后续独立限位校核保留。"
+    },
+    {
+      "source_index": 6,
+      "role": "Ankle_Lugs",
+      "part": "X1脚踝铰耳0907",
+      "source_material_row": 13
+    },
+    {
+      "source_index": 7,
+      "role": "Lower_Stop",
+      "part": "X1脚踝左下电机硬限位0907",
+      "source_material_row": 14,
+      "C01_load": 0,
+      "treatment": "上部小腿附件，安装处连接到小腿板；限位工作端面不加载、不固定。为后续独立限位校核保留。"
+    },
+    {
+      "source_index": 8,
+      "role": "Knee_Clamp",
+      "part": "X1膝盖电机副抱箍件0908",
+      "source_material_row": 18
+    },
+    {
+      "source_index": 9,
+      "role": "Calf_Main",
+      "part": "X1左小腿板0907",
+      "source_material_row": 17
+    }
+  ],
+  "removed_old_mechanism": {
+    "main_pitch_shaft_through_sleeves_source_index": 21,
+    "roll_shaft_source_index": 33,
+    "pitch_stop_shaft_source_index": 10,
+    "intermediate_bird_source_index": 20,
+    "ankle_seat_source_index": 25,
+    "foot_source_index": 28,
+    "other_copper_sleeve_source_indices": [
+      16,
+      17,
+      18,
+      19,
+      23,
+      24
+    ],
+    "old_PITCH_and_ROLL_fixed_pose_joints": "取消，不继承S01姿态保持驱动",
+    "old_foot_force_remote_points_and_foot_moments": "取消",
+    "original_fisheye_rods_pins_bearings": "不参与本轮求解",
+    "knee_pressure_plate_part34_zero_indicator": "按上端安装支承等效省略，不将缺弹性材料附件重新引入本轮承载试验"
+  },
+  "sleeve_material": {
+    "source": "Robot_Material_Report_20261013_102312.xlsx / 材料参数表 / 第2行",
+    "recorded_material_name": "高力黄铜",
+    "specific_standard_grade_confirmed": false,
+    "density_kg_m3": 8200,
+    "E_GPa": 105,
+    "nu": 0.34,
+    "G_derived_GPa": 39.17910447761194,
+    "G_recorded_GPa_excluded": 0.3189,
+    "yield_MPa": null,
+    "recorded_tensile_MPa_pending_confirmation": 30,
+    "strength_acceptance_and_yield_safety_factor": false
+  },
+  "loads": {
+    "definition": "每个完整内孔圆柱面单独建立一个定向合力Force；同一孔分割面合并选取，不逐面重复施加。",
+    "C01_each_sleeve_force_N": 4000,
+    "C01_total_force_N": 8000,
+    "C00_each_sleeve_force_N": 2000,
+    "C00_total_force_N": 4000,
+    "native_CAD_up_direction": [
+      0,
+      -1,
+      0
+    ],
+    "native_CAD_C01_each_force_vector_N": [
+      0,
+      -4000,
+      0
+    ],
+    "planning_image_axis": "图示Z向上；图片未附，不能直接把原CAD全局Z当竖直。",
+    "optional_loading_coordinate_system": {
+      "X_axis_in_native_CAD": [
+        1,
+        0,
+        0
+      ],
+      "Y_axis_in_native_CAD": [
+        0,
+        0,
+        1
+      ],
+      "Z_axis_in_native_CAD": [
+        0,
+        -1,
+        0
+      ],
+      "right_handed": true,
+      "C01_force_components_in_this_system_N": [
+        0,
+        0,
+        4000
+      ]
+    },
+    "normal_pressure_on_whole_inner_cylinder": false,
+    "foot_eccentric_moment": 0,
+    "motor_or_limit_203Nm_extra_load_in_C01": false,
+    "gravity_default_for_this_trial": "未作为本轮指定外载；若加入须在两个载荷水平统一记录并修正平衡。",
+    "support_moment_note": "省略足底偏心矩不意味着上端反力矩为零；铜套相对固定端的力臂仍需平衡。"
+  },
+  "sleeve_inner_geometry": [
+    {
+      "source_index": 1,
+      "inner_face_indices": [
+        7,
+        16
+      ],
+      "inner_radius_mm": 6,
+      "inner_diameter_mm": 12,
+      "total_area_mm2": 339.2920065876881,
+      "area_centroid_mm": [
+        -99.37476625928261,
+        1051.2366232008235,
+        0.09999959558437299
+      ],
+      "axis_approximately_native_X": true,
+      "outer_fitting_radius_mm": 9,
+      "outer_fitting_face_indices": [
+        2,
+        24
+      ]
+    },
+    {
+      "source_index": 3,
+      "inner_face_indices": [
+        7,
+        16
+      ],
+      "inner_radius_mm": 6,
+      "inner_diameter_mm": 12,
+      "total_area_mm2": 339.2920065876881,
+      "area_centroid_mm": [
+        -141.37476639798908,
+        1051.23662320082,
+        0.09999621962193689
+      ],
+      "axis_approximately_native_X": true,
+      "outer_fitting_radius_mm": 9,
+      "outer_fitting_face_indices": [
+        2,
+        24
+      ]
+    }
+  ],
+  "connections": {
+    "sleeve_to_lug": "外圆真实配合区域Bonded，作为本次无相对滑移假设；内孔仅作加载面。",
+    "sleeve_outer_relief_note": "铜套另有R8.8退让圆柱面，不能自动当作与R9孔完全贴合并消除设计间隙。",
+    "lug_mount_mating_surface": "Frictionless，允许分离与切向滑移，防止实体穿透。",
+    "whole_lug_mount_Bonded_or_shared_topology": false,
+    "mount_bolt_count": 8,
+    "mount_bolt_type": "Body-Body Beam，逐孔连接铰耳安装板与小腿对应局部承载区域",
+    "mount_bolt_pretension_N": 0,
+    "mount_bolt_end_scope": "每孔局部头部承压/螺纹锚固等效区域，不作用于整块安装板，不使用Body-Ground",
+    "mount_bolt_axis": "按CAD配对孔轴线，端点与有效夹持/啮合位置测量确定，不能重合",
+    "load_sharing": "由梁与配合面接触计算，不人为给8根梁各指定相等外力。"
+  },
+  "trial_beam_parameters": {
+    "chosen_by_root_under_user_trial_authorization": true,
+    "nominal_diameter_mm": 3,
+    "radius_mm": 1.5,
+    "cross_section": "实心圆截面",
+    "area_mm2": 7.0685834705770345,
+    "Iyy_mm4": 3.9760782021995817,
+    "Izz_mm4": 3.9760782021995817,
+    "polar_J_mm4": 7.952156404399163,
+    "material_label": "Trial steel - unconfirmed grade",
+    "E_GPa": 210,
+    "nu": 0.3,
+    "G_derived_GPa": 80.76923076923076,
+    "yield_MPa": null,
+    "grade_confirmed": false,
+    "diameter_is_confirmed_actual_bolt_specification": false,
+    "thread_tensile_area_confirmed": false,
+    "beam_length_mm": "逐孔由CAD端点计算，不借用M4x12限位块螺钉规格。",
+    "nominal_beam_stress_can_be_recorded": true,
+    "formal_bolt_strength_or_safety_factor": false
+  },
+  "mount_hole_evidence": {
+    "cad_total_axis_count": 8,
+    "six_holes_D_mm": 3.3,
+    "two_stepped_holes_small_D_mm": 3,
+    "two_stepped_holes_large_D_mm": 5,
+    "hole_axes_direction": "native CAD Z",
+    "actual_bolt_vs_dowel_identity_unconfirmed": true,
+    "trial_override": "用户允许全部8孔作为D3梁螺栓进行此次试验。"
+  },
+  "specification_audit": {
+    "ZIP_material_report_matches_standalone_sha256": true,
+    "ZIP_STEP_matches_existing_geometry_cache_sha256": true,
+    "provided_BOM_confirmed_mount_bolt_material_or_grade": false,
+    "full_STEP_M3_named_solids_not_mount_bolt_proof": "两个M3-20-6命名实体包围盒约89.84x88.18x75mm，位于Y715..900，非安装孔Y988..1010区域，不能据名称作为安装螺栓规格证据。",
+    "BOM_M5_M6_not_applicable": "BOM第9/16行对应踝部轴端M6x6和M5X8，非8个Z轴安装孔；M6材料名称304与合金钢登记还存在冲突。",
+    "independent_limit_screw_M4x12_specification_not_mount_bolt_specification": true
+  },
+  "limits": [
+    "本轮是用户授权参数下的试验模型，不是实物螺栓规格和等级确认。",
+    "铜套无屈服数据，不输出铜套安全系数；试验梁无确认屈服与等级，不输出正式螺栓安全系数。",
+    "新图片未附，仅凭CAD连接关系选取两侧加载铜套。",
+    "无预紧Frictionless配合的接触状态可能随载荷改变，不能预先保证C01/C00严格2倍线性关系。",
+    "孔径与梁直径分别记录，不把D3.3孔自动认定为确认的M3螺栓。",
+    "每次导入后的Mechanical实体与面ID需重新映射，不能直接复用S01旧ObjectId或FaceId。"
+  ]
+}

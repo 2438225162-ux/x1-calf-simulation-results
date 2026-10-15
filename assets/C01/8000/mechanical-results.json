@@ -1,0 +1,437 @@
+{
+  "part_stress_MPa": {
+    "Knee_Clamp": {
+      "maximum": 0.07647213793451398,
+      "average": 0.003791011531158281
+    },
+    "Upper_Stop": {
+      "maximum": 91.37660343494389,
+      "average": 22.348549361930775
+    },
+    "Calf_Main": {
+      "maximum": 117.73981396976419,
+      "average": 7.971085223947264
+    },
+    "Lower_Stop": {
+      "maximum": 94.99780206271407,
+      "average": 23.397680937989215
+    },
+    "Ankle_Lugs": {
+      "maximum": 101.48026963844853,
+      "average": 14.80614758026137
+    },
+    "Sleeve_A": {
+      "maximum": 114.86665028531668,
+      "average": 14.098846360620767
+    },
+    "Sleeve_B": {
+      "maximum": 135.83023567383833,
+      "average": 14.14097225966032
+    }
+  },
+  "load_each_N": 4000.0,
+  "max_total_deformation_mm": 1.177722003414295,
+  "max_equivalent_stress_MPa": 135.83023567383833,
+  "actual_forces": {
+    "Force_A": {
+      "face_ids": [
+        18196,
+        18205
+      ],
+      "local_vector_N": [
+        0.0,
+        -4000.0,
+        0.0
+      ],
+      "basis_in_global": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "global_vector_N": [
+        0.0,
+        -4000.0,
+        0.0
+      ]
+    },
+    "Force_B": {
+      "face_ids": [
+        17417,
+        17426
+      ],
+      "local_vector_N": [
+        0.0,
+        -4000.0,
+        0.0
+      ],
+      "basis_in_global": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "global_vector_N": [
+        0.0,
+        -4000.0,
+        0.0
+      ]
+    }
+  },
+  "element_count": 964420,
+  "beam_results": [
+    {
+      "pretension_N": 0,
+      "ReferenceNodeId": 220707,
+      "MobileNodeId": 220708,
+      "torque_Nmm": 0.0,
+      "material": "BOLT_TRIAL_STEEL_E210",
+      "bending_moment_at_I_Nmm": 0.0,
+      "beam_object_id": 455,
+      "is_solved": true,
+      "diameter_mm": 3.0,
+      "shear_at_J_N": 0.0,
+      "grade_confirmed": false,
+      "length_mm": 9.500000000048031,
+      "frame": "beam_local_I_J",
+      "axial_force_N": 0.0,
+      "shear_at_I_N": 0.0,
+      "name": "Bolt_01",
+      "mobile_point_mm": [
+        -139.874766369,
+        988.736623201,
+        0.599996340352
+      ],
+      "bending_moment_at_J_Nmm": 0.0,
+      "reference_point_mm": [
+        -139.874767133,
+        988.736623201,
+        10.0999963404
+      ]
+    },
+    {
+      "pretension_N": 0,
+      "ReferenceNodeId": 220709,
+      "MobileNodeId": 220710,
+      "torque_Nmm": 0.0,
+      "material": "BOLT_TRIAL_STEEL_E210",
+      "bending_moment_at_I_Nmm": 0.0,
+      "beam_object_id": 469,
+      "is_solved": true,
+      "diameter_mm": 3.0,
+      "shear_at_J_N": 0.0,
+      "grade_confirmed": false,
+      "length_mm": 15.25000000005005,
+      "frame": "beam_local_I_J",
+      "axial_force_N": 0.0,
+      "shear_at_I_N": 0.0,
+      "name": "Bolt_02",
+      "mobile_point_mm": [
+        -139.874766147,
+        999.486623201,
+        -2.15000365965
+      ],
+      "bending_moment_at_J_Nmm": 0.0,
+      "reference_point_mm": [
+        -139.874767374,
+        999.486623201,
+        13.0999963404
+      ]
+    },
+    {
+      "pretension_N": 0,
+      "ReferenceNodeId": 220711,
+      "MobileNodeId": 220712,
+      "torque_Nmm": 0.0,
+      "material": "BOLT_TRIAL_STEEL_E210",
+      "bending_moment_at_I_Nmm": 0.0,
+      "beam_object_id": 483,
+      "is_solved": true,
+      "diameter_mm": 3.0,
+      "shear_at_J_N": 0.0,
+      "grade_confirmed": false,
+      "length_mm": 9.500000000055032,
+      "frame": "beam_local_I_J",
+      "axial_force_N": 0.0,
+      "shear_at_I_N": 0.0,
+      "name": "Bolt_03",
+      "mobile_point_mm": [
+        -139.874766369,
+        1010.2366232000002,
+        0.599996340345
+      ],
+      "bending_moment_at_J_Nmm": 0.0,
+      "reference_point_mm": [
+        -139.874767133,
+        1010.2366232000002,
+        10.0999963404
+      ]
+    },
+    {
+      "pretension_N": 0,
+      "ReferenceNodeId": 220713,
+      "MobileNodeId": 220714,
+      "torque_Nmm": 0.0,
+      "material": "BOLT_TRIAL_STEEL_E210",
+      "bending_moment_at_I_Nmm": 0.0,
+      "beam_object_id": 497,
+      "is_solved": true,
+      "diameter_mm": 3.0,
+      "shear_at_J_N": 0.0,
+      "grade_confirmed": false,
+      "length_mm": 9.50000000004203,
+      "frame": "beam_local_I_J",
+      "axial_force_N": 0.0,
+      "shear_at_I_N": 0.0,
+      "name": "Bolt_04",
+      "mobile_point_mm": [
+        -120.374766366,
+        988.736623201,
+        0.599997907758
+      ],
+      "bending_moment_at_J_Nmm": 0.0,
+      "reference_point_mm": [
+        -120.37476713,
+        988.736623201,
+        10.0999979078
+      ]
+    },
+    {
+      "pretension_N": 0,
+      "ReferenceNodeId": 220715,
+      "MobileNodeId": 220716,
+      "torque_Nmm": 0.0,
+      "material": "BOLT_TRIAL_STEEL_E210",
+      "bending_moment_at_I_Nmm": 0.0,
+      "beam_object_id": 511,
+      "is_solved": true,
+      "diameter_mm": 3.0,
+      "shear_at_J_N": 0.0,
+      "grade_confirmed": false,
+      "length_mm": 9.500000000049031,
+      "frame": "beam_local_I_J",
+      "axial_force_N": 0.0,
+      "shear_at_I_N": 0.0,
+      "name": "Bolt_05",
+      "mobile_point_mm": [
+        -120.374766369,
+        1010.2366232000002,
+        0.599997907751
+      ],
+      "bending_moment_at_J_Nmm": 0.0,
+      "reference_point_mm": [
+        -120.374767132,
+        1010.2366232000002,
+        10.0999979078
+      ]
+    },
+    {
+      "pretension_N": 0,
+      "ReferenceNodeId": 220717,
+      "MobileNodeId": 220718,
+      "torque_Nmm": 0.0,
+      "material": "BOLT_TRIAL_STEEL_E210",
+      "bending_moment_at_I_Nmm": 0.0,
+      "beam_object_id": 525,
+      "is_solved": true,
+      "diameter_mm": 3.0,
+      "shear_at_J_N": 0.0,
+      "grade_confirmed": false,
+      "length_mm": 9.500000000036032,
+      "frame": "beam_local_I_J",
+      "axial_force_N": 0.0,
+      "shear_at_I_N": 0.0,
+      "name": "Bolt_06",
+      "mobile_point_mm": [
+        -100.874766367,
+        988.736623201,
+        0.599999475164
+      ],
+      "bending_moment_at_J_Nmm": 0.0,
+      "reference_point_mm": [
+        -100.874767131,
+        988.736623201,
+        10.0999994752
+      ]
+    },
+    {
+      "pretension_N": 0,
+      "ReferenceNodeId": 220719,
+      "MobileNodeId": 220720,
+      "torque_Nmm": 0.0,
+      "material": "BOLT_TRIAL_STEEL_E210",
+      "bending_moment_at_I_Nmm": 0.0,
+      "beam_object_id": 539,
+      "is_solved": true,
+      "diameter_mm": 3.0,
+      "shear_at_J_N": 0.0,
+      "grade_confirmed": false,
+      "length_mm": 15.25000000004005,
+      "frame": "beam_local_I_J",
+      "axial_force_N": 0.0,
+      "shear_at_I_N": 0.0,
+      "name": "Bolt_07",
+      "mobile_point_mm": [
+        -100.874766148,
+        999.486623201,
+        -2.15000052484
+      ],
+      "bending_moment_at_J_Nmm": 0.0,
+      "reference_point_mm": [
+        -100.874767373,
+        999.486623201,
+        13.0999994752
+      ]
+    },
+    {
+      "pretension_N": 0,
+      "ReferenceNodeId": 220721,
+      "MobileNodeId": 220722,
+      "torque_Nmm": 0.0,
+      "material": "BOLT_TRIAL_STEEL_E210",
+      "bending_moment_at_I_Nmm": 0.0,
+      "beam_object_id": 553,
+      "is_solved": true,
+      "diameter_mm": 3.0,
+      "shear_at_J_N": 0.0,
+      "grade_confirmed": false,
+      "length_mm": 9.50000000004303,
+      "frame": "beam_local_I_J",
+      "axial_force_N": 0.0,
+      "shear_at_I_N": 0.0,
+      "name": "Bolt_08",
+      "mobile_point_mm": [
+        -100.874766367,
+        1010.2366232000002,
+        0.599999475157
+      ],
+      "bending_moment_at_J_Nmm": 0.0,
+      "reference_point_mm": [
+        -100.874767131,
+        1010.2366232000002,
+        10.0999994752
+      ]
+    }
+  ],
+  "workspace_mechdb_copy_kind": "database_only; independent solved delivery is the .mechpz or .wbpz archive",
+  "study_id": "C01",
+  "analysis_end_time_s": 1.0,
+  "sleeve_displacement": {
+    "Sleeve_A": {
+      "up_average_mm": 0.36891549694414677,
+      "Y_min_mm": -0.409149169921875,
+      "Y_average_mm": -0.36891549694414677,
+      "Y_max_mm": -0.3302716612815857,
+      "max_total_mm": 1.1543578706367659
+    },
+    "Sleeve_B": {
+      "up_average_mm": 0.36761488557016286,
+      "Y_min_mm": -0.4081824719905853,
+      "Y_average_mm": -0.36761488557016286,
+      "Y_max_mm": -0.3291396498680115,
+      "max_total_mm": 1.1493347343701887
+    }
+  },
+  "schema": "c01-trial-results/v1",
+  "node_count": 220706,
+  "load_N": 8000,
+  "vertical_direction_global": [
+    0,
+    -1,
+    0
+  ],
+  "solution_status": "Done",
+  "force_balance_relative_error": 8.147565745188994e-10,
+  "probes": {
+    "Knee_Force_Reaction": {
+      "y": 7999.99999349938,
+      "x": -4.7225572732110567e-07,
+      "unit": "N",
+      "z": -6.266637148436005e-08,
+      "total": 7999.99999349938,
+      "components_frame": "global_X_Y_Z",
+      "is_solved": true,
+      "local_vector": [
+        -4.7225572732110567e-07,
+        7999.99999349938,
+        -6.266637148436005e-08
+      ],
+      "local_basis_in_global": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "Knee_Moment_Reaction": {
+      "y": -0.0046304291264815944,
+      "x": -799.8241858285621,
+      "unit": "N mm",
+      "z": -962998.0119084497,
+      "total": 962998.3440579505,
+      "components_frame": "global_X_Y_Z",
+      "summation": "OrientationSystem",
+      "summation_origin_global_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "is_solved": true,
+      "local_vector": [
+        -799.8241858285621,
+        -0.0046304291264815944,
+        -962998.0119084497
+      ],
+      "local_basis_in_global": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  }
+}

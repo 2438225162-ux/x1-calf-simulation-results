@@ -1,0 +1,163 @@
+{
+  "materials": {
+    "Calf_Main": {
+      "display_name": "X1左小腿板0907",
+      "material": "7075-T6 (GB)",
+      "E_GPa": 72,
+      "nu": 0.33,
+      "yield_MPa": 505,
+      "rho_kg_m3": 2810,
+      "excel_row": 17,
+      "sheet": "材料参数表"
+    },
+    "Foot": {
+      "display_name": "X1脚掌0907",
+      "material": "7075-T6 (GB)",
+      "E_GPa": 72,
+      "nu": 0.33,
+      "yield_MPa": 505,
+      "rho_kg_m3": 2810,
+      "excel_row": 6,
+      "sheet": "材料参数表"
+    },
+    "Ankle_Lugs": {
+      "display_name": "输入1-11-2-1",
+      "material": "42CrMo",
+      "E_GPa": 212,
+      "nu": 0.28,
+      "yield_MPa": 930,
+      "rho_kg_m3": 7850,
+      "excel_row": 13,
+      "sheet": "材料参数表"
+    },
+    "Ankle_Cross": {
+      "display_name": "X1脚踝小鸟0903",
+      "material": "42CrMo",
+      "E_GPa": 212,
+      "nu": 0.28,
+      "yield_MPa": 930,
+      "rho_kg_m3": 7850,
+      "excel_row": 21,
+      "sheet": "材料参数表"
+    },
+    "Ankle_Seat": {
+      "display_name": "X1踝关节铰座0903",
+      "material": "42CrMo",
+      "E_GPa": 212,
+      "nu": 0.28,
+      "yield_MPa": 930,
+      "rho_kg_m3": 7850,
+      "excel_row": 4,
+      "sheet": "材料参数表"
+    },
+    "Knee_Clamp": {
+      "display_name": "X1膝盖电机副抱箍件0908",
+      "material": "7075-T6 (GB)",
+      "E_GPa": 72,
+      "nu": 0.33,
+      "yield_MPa": 505,
+      "rho_kg_m3": 2810,
+      "excel_row": 18,
+      "sheet": "材料参数表"
+    },
+    "Upper_Stop": {
+      "display_name": "X1脚踝上电机硬限位0907",
+      "material": "AISI 304",
+      "E_GPa": 190,
+      "nu": 0.29,
+      "yield_MPa": 206.807,
+      "rho_kg_m3": 8000,
+      "excel_row": 12,
+      "sheet": "材料参数表"
+    },
+    "Lower_Stop": {
+      "display_name": "X1脚踝左下电机硬限位0907",
+      "material": "AISI 304",
+      "E_GPa": 190,
+      "nu": 0.29,
+      "yield_MPa": 206.807,
+      "rho_kg_m3": 8000,
+      "excel_row": 14,
+      "sheet": "材料参数表"
+    },
+    "Pitch_Stop_Pin": {
+      "display_name": "X1脚踝PITCH限位轴0903",
+      "material": "42CrMo",
+      "E_GPa": 212,
+      "nu": 0.28,
+      "yield_MPa": 930,
+      "rho_kg_m3": 7850,
+      "excel_row": 15,
+      "sheet": "材料参数表"
+    }
+  },
+  "mesh": {
+    "mesh_generated": true,
+    "generate_mesh_time_seconds": 32.50750732421875,
+    "element_size_mm": 3.0,
+    "ok": true,
+    "node_count": 1229418,
+    "element_count": 757838
+  },
+  "solver_checks": {
+    "shape_warning_count": 114,
+    "checked_element_count": 804827,
+    "shape_error_count": 0,
+    "negative_jacobian_count": 0,
+    "error_count": 0,
+    "jacobian_sampling": "9 points per quadratic tetrahedron; 757838 solids, all positive"
+  },
+  "geometry_checks": {
+    "ocp_calf_volume_mm3": 411566.8603639102,
+    "dpf_calf_volume_mm3": 411956.6455506,
+    "mechanical_calf_volume_mm3": 422397.766131
+  },
+  "model": {
+    "active_deformable_bodies": 9,
+    "suppressed_bodies": 27,
+    "foot_centroid_mm": [
+      -120.374768,
+      1114.736623,
+      27.281273
+    ],
+    "foot_support_area_mm2": 13304.621,
+    "pitch_center_mm": [
+      -120.374766,
+      1051.236623,
+      0.099998
+    ],
+    "roll_center_mm": [
+      -120.374766,
+      1080.936623,
+      0.099998
+    ],
+    "load_vector_N": {
+      "4000": [
+        0,
+        -4000,
+        0
+      ],
+      "8000": [
+        0,
+        -8000,
+        0
+      ]
+    },
+    "assumptions": [
+      "Foot resultant acts at area centroid, as confirmed by user.",
+      "Uniform load on selected sole face gives the centroid resultant.",
+      "Global -Y is upward in this assembly.",
+      "Omitted proximal housing is rigid; knee R62 cylindrical faces are fixed.",
+      "Missing drive links: PITCH and ROLL are fixed pose-hold joints with deformable attachments.",
+      "Linear elasticity; no large deflection, plasticity, mesh convergence, or final strength acceptance.",
+      "PITCH joint torque is not motor shaft torque; linkage ratios are missing."
+    ]
+  },
+  "source_files": [
+    "Robot_Material_Report_20261013_102312.xlsx",
+    "X1腿部总装0906.STEP",
+    "铝镁合金小腿仿真_DEMO_20261013.pptx",
+    "导出3.zip",
+    "ANSYS_Workbench_小腿静力学仿真任务规划 (1).md"
+  ]
+}

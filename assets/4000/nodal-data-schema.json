@@ -1,0 +1,73 @@
+{
+  "schema": "s01-nodal-npz/v1",
+  "case_load_N": 4000,
+  "result_set_id": 1,
+  "model_tag": "uniform_face_force_final",
+  "file": "nodal_results_native.npz",
+  "file_size_bytes": 67577899,
+  "file_sha256": "815894c8edb7fab03c780cd351b4af4b101ac963d717c889ec4bb3bb3dd1bdad",
+  "source_rst_sha256": "f98f98517cae6b75e5bd871f7ca5fe42ac2c9a9acdfa86709189f7eacb3d91ac",
+  "source_unchanged_during_extraction": true,
+  "native_units": {
+    "mesh_coordinates": "mm",
+    "displacement_native": "mm",
+    "von_mises_native": "MPa"
+  },
+  "arrays": {
+    "mesh_node_ids": {
+      "shape": [
+        1229432
+      ],
+      "dtype": "int64",
+      "fortran_order": false,
+      "semantics": "Row IDs for mesh_coordinates. Coordinate records include non-solid solver nodes; they are not displacement row IDs."
+    },
+    "mesh_coordinates": {
+      "shape": [
+        1229432,
+        3
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "semantics": "Coordinate row j belongs to mesh_node_ids[j]. Native global X,Y,Z coordinates."
+    },
+    "displacement_node_ids": {
+      "shape": [
+        1229418
+      ],
+      "dtype": "int64",
+      "fortran_order": false,
+      "semantics": "Only physical nodes connected to 3D solid elements. Row IDs for displacement_native."
+    },
+    "displacement_native": {
+      "shape": [
+        1229418,
+        3
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "semantics": "Row k belongs to displacement_node_ids[k], global components [Ux,Uy,Uz]. Generalized joint/pilot DOFs have been excluded."
+    },
+    "stress_node_ids": {
+      "shape": [
+        1229418
+      ],
+      "dtype": "int64",
+      "fortran_order": false,
+      "semantics": "Only physical 3D-solid node IDs. Row IDs for von_mises_native; join by ID, not by row number across arrays."
+    },
+    "von_mises_native": {
+      "shape": [
+        1229418
+      ],
+      "dtype": "float64",
+      "fortran_order": false,
+      "semantics": "DPF Nodal von Mises stress. Row k belongs to stress_node_ids[k]."
+    }
+  },
+  "generalized_dofs_in_displacement_array": false,
+  "coordinate_only_solver_records_without_physical_displacement": 14,
+  "critical_alignment_rule": "displacement_native[k] belongs to displacement_node_ids[k]. Look up its coordinate by matching that ID in mesh_node_ids. Never pair displacement_native rows directly with mesh_coordinates row positions.",
+  "coordinate_id_check_evidence": "Both final exports independently checked: coordinate IDs absent from physical displacement are 1229420 through 1229433 (14 records).",
+  "rounding": "Native values are float64 in NPZ; rendered VTP boundary coordinates use float32 for display only."
+}

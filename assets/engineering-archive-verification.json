@@ -1,0 +1,558 @@
+{
+  "archive_size_bytes": 1176509526,
+  "native_complete_rst_size_bytes": 505806848,
+  "all_rst_entries": [
+    {
+      "name": "S01_files/dp0/SYS/MECH/file.rst",
+      "size_bytes": 505806848,
+      "crc32": 900689259
+    },
+    {
+      "name": "S01_files/dp0/SYS-1/MECH/file.rst",
+      "size_bytes": 505806848,
+      "crc32": 900689259
+    },
+    {
+      "name": "S01_files/user_files/S01_8000_solver_evidence/file.rst",
+      "size_bytes": 505806848,
+      "crc32": 900689259
+    }
+  ],
+  "workbench_managed_rst_entries": [
+    {
+      "name": "S01_files/dp0/SYS/MECH/file.rst",
+      "size_bytes": 505806848,
+      "crc32": 900689259
+    },
+    {
+      "name": "S01_files/dp0/SYS-1/MECH/file.rst",
+      "size_bytes": 505806848,
+      "crc32": 900689259
+    }
+  ],
+  "mechanical_database_entries": [
+    "S01_files/dp0/global/MECH/SYS-1.mechdb",
+    "S01_files/dp0/global/MECH/SYS.mechdb"
+  ],
+  "archived_runtime_verification_entries": [
+    "S01_files/user_files/workbench_result_verification.json"
+  ],
+  "runtime_metrics_verified_before_archive": {
+    "foot_displacement_Y_max_mm": 2.839125871658325,
+    "stage": "metrics_verified_waiting_for_workbench_save",
+    "max_total_deformation_mm": 13.208316374464726,
+    "workbench_saved": true,
+    "status_before_read": "Done",
+    "status_after_read": "Done",
+    "load_name": "Foot_Up_8000N_Centroid_UniformFace",
+    "stress_is_solved": true,
+    "strict_failures": [],
+    "part_stress_MPa": {
+      "Ankle_Cross": {
+        "is_solved": true,
+        "maximum": 249.54422605993935,
+        "average": 34.87607812351899
+      },
+      "Knee_Clamp": {
+        "is_solved": true,
+        "maximum": 0.5675297817911077,
+        "average": 0.009427355556349147
+      },
+      "Upper_Stop": {
+        "is_solved": true,
+        "maximum": 328.4910186313984,
+        "average": 76.01561502273348
+      },
+      "Calf_Main": {
+        "is_solved": true,
+        "maximum": 588.9556228082305,
+        "average": 32.116648624118454
+      },
+      "Lower_Stop": {
+        "is_solved": true,
+        "maximum": 492.5808668582298,
+        "average": 74.50685910002275
+      },
+      "Ankle_Lugs": {
+        "is_solved": true,
+        "maximum": 612.7186699904989,
+        "average": 31.68552972847378
+      },
+      "Ankle_Seat": {
+        "is_solved": true,
+        "maximum": 155.51029615030237,
+        "average": 9.774298183754402
+      },
+      "Foot": {
+        "is_solved": true,
+        "maximum": 151.75364421929515,
+        "average": 8.366350377199343
+      },
+      "Pitch_Stop_Pin": {
+        "is_solved": true,
+        "maximum": 57.460673957407444,
+        "average": 16.03818556918826
+      }
+    },
+    "node_count": 1229418,
+    "element_count": 757838,
+    "verified": true,
+    "load_components_N": [
+      0.0,
+      -8000.0,
+      0.0
+    ],
+    "deformation_is_solved": true,
+    "solution_status": "Done",
+    "force_balance_relative_error": 1.5021674326322698e-10,
+    "foot_displacement_Y_min_mm": -7.3526177406311035,
+    "read_results_units": "UnitsNMM",
+    "max_equivalent_stress_MPa": 612.7186699904989,
+    "load_N": 8000,
+    "result_file_size": 505806848.0,
+    "probes": {
+      "Knee_Moment_Reaction": {
+        "z": 35963.01800393085,
+        "is_solved": true,
+        "unit": "N mm",
+        "local_vector": [
+          -290351.37925115135,
+          -0.009164046341788579,
+          35963.01800393085
+        ],
+        "orientation_id": 18,
+        "local_basis_in_global": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "total": 292570.0977492352,
+        "y": -0.009164046341788579,
+        "x": -290351.37925115135,
+        "components_frame": "global_X_Y_Z"
+      },
+      "Roll_Pose_Hold_Moment": {
+        "z": -0.006827295757830121,
+        "is_solved": true,
+        "unit": "N mm",
+        "local_vector": [
+          217447.6875,
+          0.00046253568143583834,
+          0.006827295757830143
+        ],
+        "orientation_id": 409,
+        "local_basis_in_global": [
+          [
+            -0.9999999999999968,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -0.9999999999999968
+          ]
+        ],
+        "total": 217447.68750000012,
+        "y": 0.00046253568143583834,
+        "x": -217447.6874999993,
+        "components_frame": "global_X_Y_Z"
+      },
+      "Pitch_Pose_Hold_Moment": {
+        "z": -0.0005479374085552973,
+        "is_solved": true,
+        "unit": "N mm",
+        "local_vector": [
+          0.000547937408555299,
+          -0.00043691773316822946,
+          217447.6875
+        ],
+        "orientation_id": 400,
+        "local_basis_in_global": [
+          [
+            0.0,
+            0.0,
+            -0.9999999999999968
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            -0.9999999999999968,
+            0.0,
+            0.0
+          ]
+        ],
+        "total": 217447.6875,
+        "y": 0.00043691773316822946,
+        "x": -217447.6874999993,
+        "components_frame": "global_X_Y_Z"
+      },
+      "Knee_Force_Reaction": {
+        "z": 1.1151924018183192e-06,
+        "is_solved": true,
+        "unit": "N",
+        "local_vector": [
+          -3.8412562707208775e-07,
+          8000.000000230126,
+          1.1151924018183192e-06
+        ],
+        "orientation_id": 18,
+        "local_basis_in_global": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "total": 8000.000000230126,
+        "y": 8000.000000230126,
+        "x": -3.8412562707208775e-07,
+        "components_frame": "global_X_Y_Z"
+      },
+      "Roll_Pose_Hold_Force": {
+        "z": 2.945901087514348e-07,
+        "is_solved": true,
+        "unit": "N",
+        "local_vector": [
+          9.843935231401701e-07,
+          8000.0,
+          -2.9459010875143576e-07
+        ],
+        "orientation_id": 409,
+        "local_basis_in_global": [
+          [
+            -0.9999999999999968,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -0.9999999999999968
+          ]
+        ],
+        "total": 8000.0,
+        "y": 8000.0,
+        "x": -9.84393523140167e-07,
+        "components_frame": "global_X_Y_Z"
+      },
+      "Pitch_Pose_Hold_Force": {
+        "z": 8.203094239433968e-07,
+        "is_solved": true,
+        "unit": "N",
+        "local_vector": [
+          -8.203094239433995e-07,
+          -8000.0,
+          -2.353878926442121e-06
+        ],
+        "orientation_id": 400,
+        "local_basis_in_global": [
+          [
+            0.0,
+            0.0,
+            -0.9999999999999968
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            -0.9999999999999968,
+            0.0,
+            0.0
+          ]
+        ],
+        "total": 8000.0,
+        "y": 8000.0,
+        "x": 2.3538789264421135e-06,
+        "components_frame": "global_X_Y_Z"
+      }
+    },
+    "reference": {
+      "solution_status": "Done",
+      "max_equivalent_stress_MPa": 612.7186699904989,
+      "node_count": 1229418,
+      "max_total_deformation_mm": 13.208316374464726,
+      "foot_displacement_Y_min_mm": -7.3526177406311035,
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "probes": {
+        "Knee_Moment_Reaction": {
+          "z": 35963.01800393085,
+          "components_frame": "global_X_Y_Z",
+          "unit": "N mm",
+          "local_vector": [
+            -290351.37925115135,
+            -0.009164046341788579,
+            35963.01800393085
+          ],
+          "orientation_id": 18,
+          "local_basis_in_global": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "total": 292570.0977492352,
+          "y": -0.009164046341788579,
+          "x": -290351.37925115135,
+          "is_solved": true
+        },
+        "Roll_Pose_Hold_Moment": {
+          "z": -0.006827295757830121,
+          "components_frame": "global_X_Y_Z",
+          "unit": "N mm",
+          "local_vector": [
+            217447.6875,
+            0.00046253568143583834,
+            0.006827295757830143
+          ],
+          "orientation_id": 409,
+          "local_basis_in_global": [
+            [
+              -0.9999999999999968,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              -0.9999999999999968
+            ]
+          ],
+          "total": 217447.68750000012,
+          "y": 0.00046253568143583834,
+          "x": -217447.6874999993,
+          "is_solved": true
+        },
+        "Pitch_Pose_Hold_Moment": {
+          "z": -0.0005479374085552973,
+          "components_frame": "global_X_Y_Z",
+          "unit": "N mm",
+          "local_vector": [
+            0.000547937408555299,
+            -0.00043691773316822946,
+            217447.6875
+          ],
+          "orientation_id": 400,
+          "local_basis_in_global": [
+            [
+              0.0,
+              0.0,
+              -0.9999999999999968
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              -0.9999999999999968,
+              0.0,
+              0.0
+            ]
+          ],
+          "total": 217447.6875,
+          "y": 0.00043691773316822946,
+          "x": -217447.6874999993,
+          "is_solved": true
+        },
+        "Knee_Force_Reaction": {
+          "z": 1.1151924018183192e-06,
+          "components_frame": "global_X_Y_Z",
+          "unit": "N",
+          "local_vector": [
+            -3.8412562707208775e-07,
+            8000.000000230126,
+            1.1151924018183192e-06
+          ],
+          "orientation_id": 18,
+          "local_basis_in_global": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "total": 8000.000000230126,
+          "y": 8000.000000230126,
+          "x": -3.8412562707208775e-07,
+          "is_solved": true
+        },
+        "Roll_Pose_Hold_Force": {
+          "z": 2.945901087514348e-07,
+          "components_frame": "global_X_Y_Z",
+          "unit": "N",
+          "local_vector": [
+            9.843935231401701e-07,
+            8000.0,
+            -2.9459010875143576e-07
+          ],
+          "orientation_id": 409,
+          "local_basis_in_global": [
+            [
+              -0.9999999999999968,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              -0.9999999999999968
+            ]
+          ],
+          "total": 8000.0,
+          "y": 8000.0,
+          "x": -9.84393523140167e-07,
+          "is_solved": true
+        },
+        "Pitch_Pose_Hold_Force": {
+          "z": 8.203094239433968e-07,
+          "components_frame": "global_X_Y_Z",
+          "unit": "N",
+          "local_vector": [
+            -8.203094239433995e-07,
+            -8000.0,
+            -2.353878926442121e-06
+          ],
+          "orientation_id": 400,
+          "local_basis_in_global": [
+            [
+              0.0,
+              0.0,
+              -0.9999999999999968
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              -0.9999999999999968,
+              0.0,
+              0.0
+            ]
+          ],
+          "total": 8000.0,
+          "y": 8000.0,
+          "x": 2.3538789264421135e-06,
+          "is_solved": true
+        }
+      },
+      "part_stress_MPa": {
+        "Ankle_Cross": {
+          "maximum": 249.54422605993935,
+          "average": 34.87607812351899
+        },
+        "Knee_Clamp": {
+          "maximum": 0.5675297817911077,
+          "average": 0.009427355556349147
+        },
+        "Upper_Stop": {
+          "maximum": 328.4910186313984,
+          "average": 76.01561502273348
+        },
+        "Calf_Main": {
+          "maximum": 588.9556228082305,
+          "average": 32.116648624118454
+        },
+        "Lower_Stop": {
+          "maximum": 492.5808668582298,
+          "average": 74.50685910002275
+        },
+        "Ankle_Lugs": {
+          "maximum": 612.7186699904989,
+          "average": 31.68552972847378
+        },
+        "Ankle_Seat": {
+          "maximum": 155.51029615030237,
+          "average": 9.774298183754402
+        },
+        "Foot": {
+          "maximum": 151.75364421929515,
+          "average": 8.366350377199343
+        },
+        "Pitch_Stop_Pin": {
+          "maximum": 57.460673957407444,
+          "average": 16.03818556918826
+        }
+      },
+      "force_balance_relative_error": 1.5021674326322698e-10,
+      "load_N": 8000,
+      "element_count": 757838,
+      "foot_displacement_Y_max_mm": 2.839125871658325
+    }
+  },
+  "contains_database_and_actual_result_file": true,
+  "verification_limit": "No relocation/reopen test is performed by this zip inspection."
+}

@@ -1,0 +1,34 @@
+{
+  "schema": "s01-nodal-download/v1",
+  "filename": "S01_4000_nodal_results.npz",
+  "total_bytes": 67577899,
+  "sha256": "815894c8edb7fab03c780cd351b4af4b101ac963d717c889ec4bb3bb3dd1bdad",
+  "parts": [
+    {
+      "src": "assets/4000/nodal.part001",
+      "bytes": 20971520,
+      "sha256": "c92058a6c2b555ed13cb17cf80db25cc5f9608aa8f2ffb9299667a726c3d08fb"
+    },
+    {
+      "src": "assets/4000/nodal.part002",
+      "bytes": 20971520,
+      "sha256": "c5e74468d60cbb4b01fbad39aaf6b8d3b39b9876838d43ef921ffb95f72995f0"
+    },
+    {
+      "src": "assets/4000/nodal.part003",
+      "bytes": 20971520,
+      "sha256": "215f1850c628c143d687ce30e4c172ff213b1376378ddd5f02ddb8a2bde4a3e4"
+    },
+    {
+      "src": "assets/4000/nodal.part004",
+      "bytes": 4663339,
+      "sha256": "2389cbe037058ec418f751dcc74ae2442fc532f4afcdddfe2fd5490c53e7098f"
+    }
+  ],
+  "units": {
+    "coordinates": "mm",
+    "displacement": "mm",
+    "equivalent_stress": "MPa"
+  },
+  "description": "NumPy compressed arrays extracted from the actual solved RST. Use each field node ID array to align records. Physical displacement IDs exclude 14 generalized joint/pilot records. Mesh arrays may include these records; never assume identical row ordering between fields."
+}

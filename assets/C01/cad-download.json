@@ -1,0 +1,6 @@
+{
+  "filename": "C01_simplified.step",
+  "bytes": 18777359,
+  "sha256": "e022ecb847b0ca346e06881c82a7b3351624a8ffcde44137607275f20a1a8a8b",
+  "description": "七实体 C01 承载模型几何；8 梁连接与边界见 model-inputs.json，不把 STEP 当作完整求解工程。"
+}
