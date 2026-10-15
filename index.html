@@ -6,7 +6,7 @@
   <meta name="description" content="X1 小腿静力学试验记录，独立查看 S01 足底加载与 C01 铜套加载、梁螺栓试验的结果、云图与建模核验。">
   <meta name="theme-color" content="#15364c">
   <title>X1 · 小腿静力学试验结果</title>
-  <link rel="stylesheet" href="styles.css?v=20261014-c01-2">
+  <link rel="stylesheet" href="styles.css?v=20261015-downloads-1">
   <script src="app.js?v=20261014-c01-2" defer></script>
 </head>
 <body>
@@ -14,7 +14,7 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="#top"><strong>X1</strong><span>结构仿真记录</span></a>
-      <nav aria-label="页面导航"><a href="#results">工况结果</a><a href="#parts">零件应力</a><a href="#model">模型与载荷</a><a href="#verification">结果核验</a><a href="#sources">资料</a></nav>
+      <nav aria-label="页面导航"><a href="#results">工况结果</a><a href="#parts">零件应力</a><a href="#preprocessing-downloads">前处理下载</a><a href="#model">模型与载荷</a><a href="#verification">结果核验</a><a href="#sources">资料</a></nav>
       <button class="print-button" id="print-button" type="button">打印 / 保存 PDF</button>
     </div>
   </header>
@@ -76,6 +76,16 @@
 
     <section id="sources" class="content-section source-section">
       <div class="section-heading"><div><div class="section-number">05 / RECORDS</div><h2>资料与可下载记录</h2></div><div class="download-links"><a href="assets/data.json" download="X1_S01_C01_results.json">下载完整结果 JSON ↓</a></div></div>
+      <div id="preprocessing-downloads" class="nodal-downloads preprocessing-downloads">
+        <h3>2024 R2 前处理下载</h3>
+        <p class="technical-note">将文件下载到安装了 ANSYS 2024 R2 的电脑。两个包均不含求解结果；按需要选择可编辑 CAD 前处理或现成有限元网格。</p>
+        <div class="two-column">
+          <div class="download-entry"><h4>可编辑 CAD 前处理重建包</h4><p>3.36 MB · S01 / C01，含 4000 N 和 8000 N 设置。保留几何、材料、接触、关节或螺栓梁、载荷、约束与网格控制；不含现成网格。</p><div class="download-links"><a href="downloads/X1_2024R2_Preprocess.zip" download="X1_2024R2_Preprocess.zip">下载 CAD 前处理包 ZIP ↓</a></div><p>完整解压到英文路径，双击 Build_2024R2.cmd，由接收电脑的 24R2 生成原生 .mechdb / .mechpz 文件。</p></div>
+          <div class="download-entry"><h4>已有网格 CDB 备用包</h4><p>66.30 MB · S01 / C01 的 8000 N 主工况。保留现有节点、单元、材料、连接、固定约束与表面载荷。</p><div class="download-links"><a href="downloads/X1_8000N_FE_mesh_backup.zip" download="X1_8000N_FE_mesh_backup.zip">下载网格 CDB 包 ZIP ↓</a></div><p>在 24R2 Workbench 通过 External Model 导入。源单位为 mm、N、Mg、s；网格合成几何不恢复原 CAD 与网格控制树。</p></div>
+        </div>
+        <p class="technical-note">版本验证：已在 2026 R1 完成重建、回开或导出核验；2024 R2 实际运行仍需在接收电脑确认。26R1 数据库不能通过删除结果直接降版。</p>
+        <div class="download-links"><a href="downloads/README_2024R2.txt" download="README_2024R2.txt">下载操作说明 ↓</a><a href="downloads/preprocessing-downloads.json" download="preprocessing-downloads.json">下载文件大小与 SHA-256 校验清单 ↓</a></div>
+      </div>
       <div class="table-scroll"><table><thead><tr><th>输入资料</th><th>定位与用途</th></tr></thead><tbody id="source-rows"><tr><td>铝镁合金小腿仿真_DEMO_20261013.pptx</td><td>第 3–5、10–13 页：载荷、姿态、接口与电机参考。</td></tr><tr><td>Robot_Material_Report_20261013_102312.xlsx</td><td>材料参数表第 4、6、12–15、17–18、21 行：保留零件材料。</td></tr><tr><td>导出3.zip / 导出3.STEP</td><td>简化装配，36 个实际实体实例。</td></tr><tr><td>X1腿部总装0906.STEP</td><td>总装结构与省略部件核对。</td></tr></tbody></table></div>
       <p class="technical-note" id="source-scope-note">页面数据包含已完成求解的结果、模型与核验摘要。4000 N 对照与 8000 N 主载荷属于同一个 S01 直立工况；四个限位工况与其他姿态未包含在本次结果中。</p>
       <div class="nodal-downloads"><h3>完整节点结果</h3><p class="technical-note" id="node-download-note">下载节点位移、等效应力与坐标数据。网页合并分片，校验完整文件的 SHA-256 后交给浏览器保存。位移与应力按实体物理节点 ID 输出；坐标表另含 14 个广义节点记录。请按节点 ID 连接各字段，详见下载清单的字段说明。</p><div class="two-column"><div class="download-entry"><button type="button" data-nodal-case="4000" disabled>下载 4000 N 节点结果 (.npz) ↓</button><progress id="download-progress-4000" max="100" value="0" hidden></progress><p id="download-status-4000" role="status">节点数据准备中</p></div><div class="download-entry"><button type="button" data-nodal-case="8000" disabled>下载 8000 N 节点结果 (.npz) ↓</button><progress id="download-progress-8000" max="100" value="0" hidden></progress><p id="download-status-8000" role="status">节点数据准备中</p></div></div></div>

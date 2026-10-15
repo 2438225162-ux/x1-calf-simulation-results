@@ -1,0 +1,28 @@
+{
+  "target": "ANSYS 2024 R2",
+  "studies": [
+    "S01",
+    "C01"
+  ],
+  "local_validation_runtime": "2026 R1",
+  "files": [
+    {
+      "label": "CAD前处理重建包",
+      "filename": "X1_2024R2_Preprocess.zip",
+      "url": "https://2438225162-ux.github.io/x1-calf-simulation-results/downloads/X1_2024R2_Preprocess.zip",
+      "bytes": 3361595,
+      "sha256": "6d674335e494ea7a7fdaa90bae4526081efe27d1991c66640564b4ef4484f151",
+      "includes_results": false,
+      "target_2024R2_runtime_tested": false
+    },
+    {
+      "label": "已有网格CDB备用包",
+      "filename": "X1_8000N_FE_mesh_backup.zip",
+      "url": "https://2438225162-ux.github.io/x1-calf-simulation-results/downloads/X1_8000N_FE_mesh_backup.zip",
+      "bytes": 66300821,
+      "sha256": "e0d916eb5215e93c157bd0380aef1c9405efe4c8cef5c48cf2c2459aaa599a50",
+      "includes_results": false,
+      "target_2024R2_runtime_tested": false
+    }
+  ]
+}
